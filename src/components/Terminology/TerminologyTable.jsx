@@ -1,27 +1,6 @@
 import { AudioPlayer } from './AudioPlayer'
 import { cn } from '../../lib/utils'
-
-/**
- * Belt Color Configuration
- * 
- * Comprehensive mapping of Taekwon-Do belt colors to their corresponding
- * CSS classes for consistent visual representation across the application.
- * 
- * @type {Object}
- */
-const BELT_COLOR_MAP = {
-  'White': 'bg-white border-gray-300 text-gray-800 shadow-sm',
-  'White-Yellow': 'bg-gradient-to-r from-white from-70% to-yellow-400 to-70% border-gray-300 text-gray-800 shadow-sm',
-  'Yellow': 'bg-yellow-400 border-yellow-500 text-yellow-900 shadow-md',
-  'Yellow-Green': 'bg-gradient-to-r from-yellow-400 from-70% to-green-500 to-70% border-yellow-500 text-white shadow-md',
-  'Green': 'bg-green-500 border-green-600 text-white shadow-md',
-  'Green-Blue': 'bg-gradient-to-r from-green-500 from-70% to-blue-500 to-70% border-green-600 text-white shadow-md',
-  'Blue': 'bg-blue-500 border-blue-600 text-white shadow-md',
-  'Blue-Red': 'bg-gradient-to-r from-blue-500 from-70% to-red-500 to-70% border-blue-600 text-white shadow-md',
-  'Red': 'bg-red-500 border-red-600 text-white shadow-md',
-  'Red-Black': 'bg-gradient-to-r from-red-500 from-70% to-black to-70% border-red-600 text-white shadow-md',
-  'Black': 'bg-black border-gray-800 text-white shadow-lg'
-}
+import { getBeltColorClass } from '../../lib/beltColors'
 
 /**
  * Terminology Table Component
@@ -65,16 +44,6 @@ const BELT_COLOR_MAP = {
  */
 
 export const TerminologyTable = ({ terms, className }) => {
-  // ===== UTILITY FUNCTIONS =====
-
-  /**
-   * Gets CSS classes for belt color representation
-   * @param {string} beltColor - Belt color name from terminology data
-   * @returns {string} CSS classes for styling the belt badge
-   */
-  const getBeltColorClass = (beltColor) => {
-    return BELT_COLOR_MAP[beltColor] || 'bg-gray-200 border-gray-300 text-gray-800 shadow-sm'
-  }
 
   // ===== RENDER METHODS =====
 
