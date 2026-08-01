@@ -1,4 +1,17 @@
-import { Card, CardContent } from '@/components/ui/card'
+import { StatCard } from '@/components/StatCard'
+import stanceData from '@/data/techniques/stance.json'
+import strikesData from '@/data/techniques/strikes.json'
+import blocksData from '@/data/techniques/blocks.json'
+import kickData from '@/data/techniques/kick.json'
+import thrustsData from '@/data/techniques/thrusts.json'
+import punchesData from '@/data/techniques/punches.json'
+
+const countTechniques = (data) => data.beltLevels.reduce((total, level) => total + level.techniques.length, 0)
+
+const TOTAL_TECHNIQUES = [stanceData, strikesData, blocksData, kickData, thrustsData, punchesData].reduce(
+  (total, data) => total + countTechniques(data),
+  0
+)
 
 const STATISTICS = [
   {
@@ -7,7 +20,7 @@ const STATISTICS = [
     description: 'From Chon-Ji to Tong-Il, representing the 24 hours in a day',
   },
   {
-    value: '100+',
+    value: TOTAL_TECHNIQUES,
     label: 'Techniques',
     description: 'Stances, Blocks, Strikes & Kicks for practical training',
   },
@@ -32,17 +45,13 @@ export const Stats = () => {
           aria-label="ITF Taekwon-Do key statistics"
         >
           {STATISTICS.map((stat) => (
-            <Card
+            <StatCard
               key={stat.label}
-              className="transition-transform duration-300 hover:scale-105"
+              value={stat.value}
+              label={stat.label}
+              description={stat.description}
               role="listitem"
-            >
-              <CardContent>
-                <h3 className="mb-3 text-5xl font-bold text-primary">{stat.value}</h3>
-                <p className="mb-2 text-lg font-semibold text-foreground/80">{stat.label}</p>
-                <p className="text-sm leading-relaxed text-foreground/60">{stat.description}</p>
-              </CardContent>
-            </Card>
+            />
           ))}
         </div>
 

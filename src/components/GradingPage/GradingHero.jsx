@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card'
+import { StatCard } from '@/components/StatCard'
 
 const MILESTONES = [
   { value: '10', label: 'Kup Grades' },
@@ -33,17 +33,7 @@ export const GradingHero = () => {
             aria-label="Grading overview statistics"
           >
             {MILESTONES.map((milestone) => (
-              <Card
-                key={milestone.label}
-                className="flex min-h-30 flex-col justify-center text-center transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:shadow-lg"
-              >
-                <CardContent>
-                  <div className="mb-2 text-2xl font-bold text-primary sm:text-3xl">{milestone.value}</div>
-                  <div className="text-xs font-semibold uppercase leading-tight tracking-wide text-foreground/80 sm:text-sm">
-                    {milestone.label}
-                  </div>
-                </CardContent>
-              </Card>
+              <StatCard key={milestone.label} value={milestone.value} label={milestone.label} className="min-h-30 justify-center" />
             ))}
           </div>
         </div>

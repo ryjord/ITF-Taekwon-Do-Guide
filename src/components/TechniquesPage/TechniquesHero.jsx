@@ -1,6 +1,7 @@
 import { Footprints, Hand, Shield, Swords, Wind, Zap } from 'lucide-react'
 
 import { Card, CardContent } from '@/components/ui/card'
+import { StatCard } from '@/components/StatCard'
 import stanceData from '@/data/techniques/stance.json'
 import strikesData from '@/data/techniques/strikes.json'
 import blocksData from '@/data/techniques/blocks.json'
@@ -48,18 +49,7 @@ export const TechniquesHero = () => {
             aria-label="ITF Taekwon-Do technique statistics"
           >
             {TECHNIQUE_STATS.map((stat) => (
-              <Card
-                key={stat.label}
-                className="text-center transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:shadow-lg"
-              >
-                <CardContent>
-                  <stat.icon className="mx-auto mb-2 size-6 text-primary" aria-hidden="true" />
-                  <div className="text-3xl font-bold text-primary">{stat.count}</div>
-                  <div className="text-sm font-semibold uppercase tracking-wide text-foreground/80">
-                    {stat.label}
-                  </div>
-                </CardContent>
-              </Card>
+              <StatCard key={stat.label} icon={stat.icon} value={stat.count} label={stat.label} />
             ))}
           </div>
 
