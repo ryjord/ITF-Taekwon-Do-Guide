@@ -1,0 +1,269 @@
+{
+  "quizzes": [
+    {
+      "id": "terminology-crossword-easy",
+      "title": "Basic Terminology Crossword",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "crossword",
+      "description": "Solve the crossword puzzle with fundamental ITF terms",
+      "timeLimit": 600,
+      "points": 200,
+      "grid": {
+        "size": 12,
+        "words": [
+          {
+            "id": "word-1",
+            "word": "CHARYOT",
+            "clue": "Command to come to attention"
+          },
+          {
+            "id": "word-2",
+            "word": "KYONGYE",
+            "clue": "Formal bow showing respect"
+          },
+          {
+            "id": "word-3", 
+            "word": "DOBOK",
+            "clue": "Traditional training uniform"
+          },
+          {
+            "id": "word-4",
+            "word": "HANA",
+            "clue": "Korean number one"
+          },
+          {
+            "id": "word-6",
+            "word": "CHUNBI",
+            "clue": "Ready stance position"
+          },
+          {
+            "id": "word-7",
+            "word": "BARO",
+            "clue": "Command to return to ready stance"
+          },
+          {
+            "id": "word-8",
+            "word": "SABUM",
+            "clue": "Instructor or teacher"
+          }
+        ]
+      }
+    },
+    {
+      "id": "patterns-crossword-medium", 
+      "title": "Pattern Names Crossword",
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "crossword",
+      "description": "Crossword featuring ITF pattern names and meanings",
+      "timeLimit": 480,
+      "points": 250,
+      "grid": {
+        "size": 15,
+        "words": [
+          {
+            "id": "pattern-1",
+            "word": "CHONJI",
+            "clue": "Heaven and Earth - first pattern"
+          },
+          {
+            "id": "pattern-2", 
+            "word": "DANGUN",
+            "clue": "Holy founder of Korea"
+          },
+          {
+            "id": "pattern-3",
+            "word": "WONHYO",
+            "clue": "Noted monk of Silla dynasty"
+          },
+          {
+            "id": "pattern-4",
+            "word": "YULGOK",
+            "clue": "Philosopher and scholar"
+          },
+          {
+            "id": "pattern-5",
+            "word": "JOONGGUN",
+            "clue": "Patriot who assassinated Hiro-Bumi Ito"
+          },
+          {
+            "id": "pattern-6",
+            "word": "TOIGYE",
+            "clue": "Authority on neo-Confucianism"
+          },
+          {
+            "id": "pattern-7",
+            "word": "HWAARANG",
+            "clue": "Youth group of Silla dynasty"
+          },
+          {
+            "id": "pattern-8", 
+            "word": "CHOONGMOO",
+            "clue": "Famous admiral of Yi dynasty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "stances-crossword-medium",
+      "title": "Stances & Positions Crossword",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "crossword",
+      "description": "Identify different stances and body positions",
+      "timeLimit": 450,
+      "points": 220,
+      "grid": {
+        "size": 14,
+        "words": [
+          {
+            "id": "stance-1",
+            "word": "GUNNUNSEOGI",
+            "clue": "Walking stance"
+          },
+          {
+            "id": "stance-2",
+            "word": "NIUNJASEOGI",
+            "clue": "L-shaped defensive stance"
+          },
+          {
+            "id": "stance-3",
+            "word": "JUNBI",
+            "clue": "Ready stance"
+          },
+          {
+            "id": "stance-4",
+            "word": "APSEOGI",
+            "clue": "Front stance"
+          },
+          {
+            "id": "stance-5",
+            "word": "DWITKUBI",
+            "clue": "Back stance"
+          },
+          {
+            "id": "stance-6",
+            "word": "GYOCHA",
+            "clue": "X-shaped position"
+          },
+          {
+            "id": "stance-7",
+            "word": "SAN",
+            "clue": "Mountain or W-shaped position"
+          }
+        ]
+      }
+    },
+    {
+      "id": "philosophy-crossword-hard",
+      "title": "Philosophy & Tenets Crossword",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "crossword",
+      "description": "Advanced crossword on Taekwon-Do philosophy",
+      "timeLimit": 540,
+      "points": 300,
+      "grid": {
+        "size": 16,
+        "words": [
+          {
+            "id": "phil-1",
+            "word": "YEEUI",
+            "clue": "Courtesy - first tenet"
+          },
+          {
+            "id": "phil-2",
+            "word": "YOMCHI",
+            "clue": "Integrity - second tenet"
+          },
+          {
+            "id": "phil-3",
+            "word": "INNAE",
+            "clue": "Perseverance - third tenet"
+          },
+          {
+            "id": "phil-4",
+            "word": "GEUKGI",
+            "clue": "Self-control - fourth tenet"
+          },
+          {
+            "id": "phil-5",
+            "word": "BAEKJEOL",
+            "clue": "Indomitable spirit - fifth tenet"
+          },
+          {
+            "id": "phil-6",
+            "word": "DO",
+            "clue": "The way or path of life"
+          },
+          {
+            "id": "phil-7",
+            "word": "DOJANG",
+            "clue": "Training hall"
+          },
+          {
+            "id": "phil-8",
+            "word": "SABEOM",
+            "clue": "Instructor or teacher"
+          }
+        ]
+      }
+    },
+    {
+      "id": "techniques-crossword-hard",
+      "title": "Advanced Techniques Crossword",
+      "category": "techniques",
+      "difficulty": "hard",
+      "gameType": "crossword",
+      "description": "Challenge yourself with advanced techniques and terminology",
+      "timeLimit": 600,
+      "points": 350,
+      "grid": {
+        "size": 18,
+        "words": [
+          {
+            "id": "tech-1",
+            "word": "TTWIMYOCHAGI",
+            "clue": "Jumping kick"
+          },
+          {
+            "id": "tech-2",
+            "word": "DOLLYEOMAKGI",
+            "clue": "Circular block"
+          },
+          {
+            "id": "tech-3",
+            "word": "BITUREOCHAGI",
+            "clue": "Twisting kick"
+          },
+          {
+            "id": "tech-4",
+            "word": "SONKKEUTTEULGI",
+            "clue": "Fingertip thrust"
+          },
+          {
+            "id": "tech-5",
+            "word": "DEUNGJUMEOK",
+            "clue": "Back fist strike"
+          },
+          {
+            "id": "tech-6",
+            "word": "BANDALCHAGI",
+            "clue": "Crescent kick"
+          },
+          {
+            "id": "tech-7",
+            "word": "GEOLCHOMAKGI",
+            "clue": "Hooking block"
+          },
+          {
+            "id": "tech-8",
+            "word": "SSANGJUMEOK",
+            "clue": "Twin fist"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "quizzes": [
+    {
+      "id": "multiple-choice-basics-easy",
+      "title": "Basic Terminology Quiz",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "multipleChoice",
+      "description": "Test your knowledge of fundamental Taekwon-Do terms",
+      "questionCount": 8,
+      "timeLimit": 300,
+      "points": 160,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What does 'Charyeot' mean?",
+          "correctAnswer": "Attention",
+          "options": ["Attention", "Bow", "Ready", "Begin"],
+          "audio": "/audio/terminology/charyot.mp3"
+        },
+        {
+          "id": "q2",
+          "question": "What is the Korean word for 'Bow'?",
+          "correctAnswer": "Gyeongnye",
+          "options": ["Gyeongnye", "Junbi", "Sijak", "Baro"],
+          "audio": "/audio/terminology/kyongye.mp3"
+        },
+        {
+          "id": "q3",
+          "question": "What does 'Junbi' mean?",
+          "correctAnswer": "Ready Stance",
+          "options": ["Ready Stance", "Attention", "Begin", "Stop"],
+          "audio": "/audio/terminology/chunbi.mp3"
+        },
+        {
+          "id": "q4",
+          "question": "What is the Korean number for 'One'?",
+          "correctAnswer": "Hana",
+          "options": ["Hana", "Dul", "Set", "Net"],
+          "audio": "/audio/terminology/hana.mp3"
+        },
+        {
+          "id": "q5",
+          "question": "What does 'Dobok' refer to?",
+          "correctAnswer": "Training uniform",
+          "options": ["Training uniform", "Belt", "Training hall", "Instructor"],
+          "audio": "/audio/terminology/do-bok.mp3"
+        },
+        {
+          "id": "q6",
+          "question": "What is the meaning of 'Sijak'?",
+          "correctAnswer": "Begin",
+          "options": ["Begin", "Stop", "Return", "Attention"],
+          "audio": "/audio/terminology/sijak.mp3"
+        },
+        {
+          "id": "q7",
+          "question": "What does 'Baro' command?",
+          "correctAnswer": "Return to ready position",
+          "options": ["Return to ready position", "Begin exercise", "Stop immediately", "Bow"],
+          "audio": "/audio/terminology/baro.mp3"
+        },
+        {
+          "id": "q8",
+          "question": "What is 'Tti' in English?",
+          "correctAnswer": "Belt",
+          "options": ["Belt", "Uniform", "Shoes", "Gloves"],
+          "audio": "/audio/terminology/tti.mp3"
+        }
+      ]
+    },
+    {
+      "id": "multiple-choice-patterns-medium",
+      "title": "Patterns Knowledge Quiz",
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "multipleChoice",
+      "description": "Test your knowledge of ITF patterns and their meanings",
+      "questionCount": 10,
+      "timeLimit": 420,
+      "points": 200,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What does 'Chon-Ji' mean?",
+          "correctAnswer": "Heaven and Earth",
+          "options": ["Heaven and Earth", "Holy Founder", "Patriot", "Scholar"]
+        },
+        {
+          "id": "q2",
+          "question": "Which pattern is named after the holy founder of Korea?",
+          "correctAnswer": "Dan-Gun",
+          "options": ["Dan-Gun", "Do-San", "Won-Hyo", "Yul-Gok"]
+        },
+        {
+          "id": "q3",
+          "question": "How many movements are in the Chon-Ji pattern?",
+          "correctAnswer": "19",
+          "options": ["19", "21", "24", "28"]
+        },
+        {
+          "id": "q4",
+          "question": "Which pattern is named after patriot Ahn Chang-Ho?",
+          "correctAnswer": "Do-San",
+          "options": ["Do-San", "Dan-Gun", "Won-Hyo", "Joong-Gun"]
+        },
+        {
+          "id": "q5",
+          "question": "What does 'Won-Hyo' represent?",
+          "correctAnswer": "Noted Buddhist monk",
+          "options": ["Noted Buddhist monk", "Korean scholar", "Military admiral", "Ancient king"]
+        },
+        {
+          "id": "q6",
+          "question": "Which pattern has 38 movements?",
+          "correctAnswer": "Yul-Gok",
+          "options": ["Yul-Gok", "Toi-Gye", "Hwa-Rang", "Choong-Moo"]
+        },
+        {
+          "id": "q7",
+          "question": "Who was Joong-Gun named after?",
+          "correctAnswer": "Patriot Ahn Joong-Gun",
+          "options": ["Patriot Ahn Joong-Gun", "Admiral Yi Soon-Sin", "Scholar Yi Hwang", "King Kwang-Gae"]
+        },
+        {
+          "id": "q8",
+          "question": "What does 'Hwa-Rang' represent?",
+          "correctAnswer": "Youth group of Silla dynasty",
+          "options": ["Youth group of Silla dynasty", "Buddhist monk", "Military general", "Ancient philosopher"]
+        },
+        {
+          "id": "q9",
+          "question": "Which pattern is named after Admiral Yi Soon-Sin?",
+          "correctAnswer": "Choong-Moo",
+          "options": ["Choong-Moo", "Kwang-Gae", "Po-Eun", "Ge-Baek"]
+        },
+        {
+          "id": "q10",
+          "question": "How many movements are in the Toi-Gye pattern?",
+          "correctAnswer": "37",
+          "options": ["37", "32", "38", "45"]
+        }
+      ]
+    },
+    {
+      "id": "multiple-choice-techniques-medium",
+      "title": "Techniques & Stances Quiz",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "multipleChoice",
+      "description": "Test your knowledge of various techniques and stances",
+      "questionCount": 12,
+      "timeLimit": 480,
+      "points": 240,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is 'Gunnun Seogi'?",
+          "correctAnswer": "Walking Stance",
+          "options": ["Walking Stance", "L-Stance", "Ready Stance", "Back Stance"]
+        },
+        {
+          "id": "q2",
+          "question": "Which block defends the lower section?",
+          "correctAnswer": "Arae Makgi",
+          "options": ["Arae Makgi", "Momtong Makgi", "Eolgul Makgi", "Hechyo Makgi"]
+        },
+        {
+          "id": "q3",
+          "question": "What does 'Jireugi' mean?",
+          "correctAnswer": "Punch",
+          "options": ["Punch", "Kick", "Block", "Strike"]
+        },
+        {
+          "id": "q4",
+          "question": "Which kick is a front snapping kick?",
+          "correctAnswer": "Ap Chagi",
+          "options": ["Ap Chagi", "Dollyeo Chagi", "Yeop Chagi", "Bitureo Chagi"]
+        },
+        {
+          "id": "q5",
+          "question": "What is 'Niunja Seogi'?",
+          "correctAnswer": "L-Stance",
+          "options": ["L-Stance", "Walking Stance", "Fixed Stance", "Sitting Stance"]
+        },
+        {
+          "id": "q6",
+          "question": "Which technique uses the knife hand?",
+          "correctAnswer": "Sonkal",
+          "options": ["Sonkal", "Jumeok", "Palkup", "Sonkkeut"]
+        },
+        {
+          "id": "q7",
+          "question": "What does 'Dollyeo Chagi' mean?",
+          "correctAnswer": "Turning Kick",
+          "options": ["Turning Kick", "Front Kick", "Side Kick", "Back Kick"]
+        },
+        {
+          "id": "q8",
+          "question": "Which block defends the middle section?",
+          "correctAnswer": "Momtong Makgi",
+          "options": ["Momtong Makgi", "Arae Makgi", "Eolgul Makgi", "Hechyo Makgi"]
+        },
+        {
+          "id": "q9",
+          "question": "What is 'Deung Jumeok'?",
+          "correctAnswer": "Back Fist",
+          "options": ["Back Fist", "Forefist", "Knife Hand", "Palm Heel"]
+        },
+        {
+          "id": "q10",
+          "question": "Which kick involves a twisting motion?",
+          "correctAnswer": "Bitureo Chagi",
+          "options": ["Bitureo Chagi", "Ap Chagi", "Dollyeo Chagi", "Yeop Chagi"]
+        },
+        {
+          "id": "q11",
+          "question": "What does 'Palkup' refer to?",
+          "correctAnswer": "Elbow",
+          "options": ["Elbow", "Knee", "Fist", "Foot"]
+        },
+        {
+          "id": "q12",
+          "question": "Which stance is also known as 'L-Stance'?",
+          "correctAnswer": "Niunja Seogi",
+          "options": ["Niunja Seogi", "Gunnun Seogi", "Junbi Seogi", "Ap Seogi"]
+        }
+      ]
+    },
+    {
+      "id": "multiple-choice-philosophy-hard",
+      "title": "Philosophy & Tenets Quiz",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "multipleChoice",
+      "description": "Advanced quiz on Taekwon-Do philosophy and principles",
+      "questionCount": 10,
+      "timeLimit": 450,
+      "points": 250,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is the first tenet of Taekwon-Do?",
+          "correctAnswer": "Courtesy",
+          "options": ["Courtesy", "Integrity", "Perseverance", "Self-Control"]
+        },
+        {
+          "id": "q2",
+          "question": "What does 'Yeui' mean?",
+          "correctAnswer": "Courtesy",
+          "options": ["Courtesy", "Integrity", "Perseverance", "Indomitable Spirit"]
+        },
+        {
+          "id": "q3",
+          "question": "Which tenet means 'knowing right from wrong'?",
+          "correctAnswer": "Integrity",
+          "options": ["Integrity", "Courtesy", "Perseverance", "Self-Control"]
+        },
+        {
+          "id": "q4",
+          "question": "What is the Korean word for 'Perseverance'?",
+          "correctAnswer": "Innae",
+          "options": ["Innae", "Yeomchi", "Geukgi", "Baekjeol"]
+        },
+        {
+          "id": "q5",
+          "question": "Which tenet represents 'courage in facing challenges'?",
+          "correctAnswer": "Indomitable Spirit",
+          "options": ["Indomitable Spirit", "Self-Control", "Integrity", "Courtesy"]
+        },
+        {
+          "id": "q6",
+          "question": "What does 'Geukgi' mean?",
+          "correctAnswer": "Self-Control",
+          "options": ["Self-Control", "Perseverance", "Integrity", "Courtesy"]
+        },
+        {
+          "id": "q7",
+          "question": "How many tenets of Taekwon-Do are there?",
+          "correctAnswer": "5",
+          "options": ["5", "4", "6", "7"]
+        },
+        {
+          "id": "q8",
+          "question": "What is the meaning of 'Do' in Taekwon-Do?",
+          "correctAnswer": "The Way",
+          "options": ["The Way", "To Strike", "To Defend", "The Art"]
+        },
+        {
+          "id": "q9",
+          "question": "What does 'Baekjeol' represent?",
+          "correctAnswer": "Indomitable Spirit",
+          "options": ["Indomitable Spirit", "Self-Control", "Perseverance", "Integrity"]
+        },
+        {
+          "id": "q10",
+          "question": "Which tenet comes after 'Integrity'?",
+          "correctAnswer": "Perseverance",
+          "options": ["Perseverance", "Self-Control", "Indomitable Spirit", "Courtesy"]
+        }
+      ]
+    },
+    {
+      "id": "multiple-choice-advanced-hard",
+      "title": "Advanced Terminology Quiz",
+      "category": "terminology",
+      "difficulty": "hard",
+      "gameType": "multipleChoice",
+      "description": "Challenge yourself with advanced Taekwon-Do terminology",
+      "questionCount": 15,
+      "timeLimit": 600,
+      "points": 300,
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What does 'Ttwimyo' mean?",
+          "correctAnswer": "Jumping/Flying",
+          "options": ["Jumping/Flying", "Twisting", "Turning", "Spinning"]
+        },
+        {
+          "id": "q2",
+          "question": "What is 'Sonkkeut'?",
+          "correctAnswer": "Fingertip",
+          "options": ["Fingertip", "Knife Hand", "Palm", "Back Fist"]
+        },
+        {
+          "id": "q3",
+          "question": "What does 'Bandal' mean?",
+          "correctAnswer": "Crescent",
+          "options": ["Crescent", "Circular", "Straight", "Angular"]
+        },
+        {
+          "id": "q4",
+          "question": "What is 'Gyocha'?",
+          "correctAnswer": "X-Shape",
+          "options": ["X-Shape", "L-Shape", "T-Shape", "V-Shape"]
+        },
+        {
+          "id": "q5",
+          "question": "What does 'Ssewo' mean?",
+          "correctAnswer": "Vertical",
+          "options": ["Vertical", "Horizontal", "Diagonal", "Circular"]
+        },
+        {
+          "id": "q6",
+          "question": "What is 'Geolcho'?",
+          "correctAnswer": "Hooking",
+          "options": ["Hooking", "Pressing", "Pushing", "Pulling"]
+        },
+        {
+          "id": "q7",
+          "question": "What does 'Nulleo' mean?",
+          "correctAnswer": "Pressing",
+          "options": ["Pressing", "Hooking", "Twisting", "Striking"]
+        },
+        {
+          "id": "q8",
+          "question": "What is 'Milgi'?",
+          "correctAnswer": "Pushing",
+          "options": ["Pushing", "Pulling", "Pressing", "Hooking"]
+        },
+        {
+          "id": "q9",
+          "question": "What does 'Dwijibeun' mean?",
+          "correctAnswer": "Upset",
+          "options": ["Upset", "Vertical", "Horizontal", "Flat"]
+        },
+        {
+          "id": "q10",
+          "question": "What is 'Opeun'?",
+          "correctAnswer": "Flat",
+          "options": ["Flat", "Vertical", "Upset", "Crossed"]
+        },
+        {
+          "id": "q11",
+          "question": "What does 'Ssang' mean?",
+          "correctAnswer": "Twin/Double",
+          "options": ["Twin/Double", "Single", "Triple", "Multiple"]
+        },
+        {
+          "id": "q12",
+          "question": "What is 'Aneuro'?",
+          "correctAnswer": "Inward",
+          "options": ["Inward", "Outward", "Upward", "Downward"]
+        },
+        {
+          "id": "q13",
+          "question": "What does 'Bakeuro' mean?",
+          "correctAnswer": "Outward",
+          "options": ["Outward", "Inward", "Forward", "Backward"]
+        },
+        {
+          "id": "q14",
+          "question": "What is 'Biteuro'?",
+          "correctAnswer": "Twisting",
+          "options": ["Twisting", "Turning", "Spinning", "Rotating"]
+        },
+        {
+          "id": "q15",
+          "question": "What does 'Haechyeo' mean?",
+          "correctAnswer": "Wedging",
+          "options": ["Wedging", "Pressing", "Pushing", "Pulling"]
+        }
+      ]
+    }
+  ]
+}

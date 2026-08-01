@@ -1,0 +1,104 @@
+
+{
+  "quizCategories": [
+    {
+      "id": "terminology",
+      "name": "Korean Terminology", 
+      "description": "Test your knowledge of ITF Korean terms and commands",
+      "icon": "🗣️",
+      "color": "blue",
+      "availableGames": ["mcq", "wordsearch", "crossword", "translation", "flashcards", "matching"]
+    },
+    {
+      "id": "patterns",
+      "name": "Patterns (Tuls)",
+      "description": "Chon-Ji to Tong-Il pattern knowledge and movements", 
+      "icon": "🌀",
+      "color": "red",
+      "availableGames": ["mcq", "flashcards", "matching"]
+    },
+    {
+      "id": "techniques",
+      "name": "Techniques & Stances",
+      "description": "Blocks, strikes, kicks, and proper stances",
+      "icon": "🥋", 
+      "color": "green",
+      "availableGames": ["mcq", "matching", "flashcards"]
+    },
+    {
+      "id": "history",
+      "name": "History & Philosophy",
+      "description": "ITF history, founders, and the five tenets",
+      "icon": "📜",
+      "color": "purple",
+      "availableGames": ["mcq", "crossword", "flashcards"]
+    }
+  ],
+  "difficultyLevels": [
+    {
+      "id": "easy",
+      "name": "Easy - White-Yellow Belt", 
+      "description": "Fundamental knowledge for beginners",
+      "color": "green",
+      "icon": "🟢"
+    },
+    {
+      "id": "medium",
+      "name": "Medium - Green-Blue Belt",
+      "description": "Intermediate level challenges", 
+      "color": "blue",
+      "icon": "🔵"
+    },
+    {
+      "id": "hard",
+      "name": "Hard - Red-Black Bel+ t",
+      "description": "Advanced expert knowledge",
+      "color": "red",
+      "icon": "🔴"
+    }
+  ],
+  "gameTypes": [
+    {
+      "id": "mcq",
+      "name": "Multiple Choice",
+      "description": "Choose the correct answer from options",
+      "icon": "🔘",
+      "color": "blue"
+    },
+    {
+      "id": "wordsearch",
+      "name": "Word Search", 
+      "description": "Find hidden Korean terms in the grid",
+      "icon": "🔍",
+      "color": "green"
+    },
+    {
+      "id": "crossword",
+      "name": "Crossword Puzzle",
+      "description": "Solve the terminology crossword",
+      "icon": "📝",
+      "color": "purple"
+    },
+    {
+      "id": "translation",
+      "name": "Translation Challenge",
+      "description": "Translate between English and Korean",
+      "icon": "🔄", 
+      "color": "orange"
+    },
+    {
+      "id": "flashcards",
+      "name": "Flashcards",
+      "description": "Quick recall with audio pronunciation",
+      "icon": "🎴",
+      "color": "red"
+    },
+    {
+      "id": "matching",
+      "name": "Snap & Match",
+      "description": "Match Korean terms with English meanings",
+      "icon": "🃏",
+      "color": "teal"
+    }
+  ]
+}

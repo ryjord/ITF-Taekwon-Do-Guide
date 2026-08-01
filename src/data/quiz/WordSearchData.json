@@ -1,0 +1,369 @@
+{
+  "quizzes": [
+    {
+      "id": "korean-basics-wordsearch-easy",
+      "title": "Basic Korean Terms Word Search",
+      "category": "terminology",
+      "difficulty": "easy", 
+      "gameType": "wordsearch",
+      "description": "Find fundamental Korean terms in the grid",
+      "timeLimit": 300,
+      "points": 150,
+      "grid": {
+        "size": 10,
+        "words": [
+          {"word": "CHARYOT", "clue": "Attention command"},
+          {"word": "KYONGYE", "clue": "Formal bow"},
+          {"word": "DOBOK", "clue": "Training uniform"},
+          {"word": "TI", "clue": "Belt"},
+          {"word": "HANA", "clue": "Number one"},
+          {"word": "DUL", "clue": "Number two"}
+        ]
+      }
+    },
+    {
+      "id": "numbers-wordsearch-easy",
+      "title": "Korean Numbers Word Search",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "wordsearch",
+      "description": "Find Korean numbers 1-10 in the grid",
+      "timeLimit": 240,
+      "points": 120,
+      "grid": {
+        "size": 12,
+        "words": [
+          {"word": "HANA", "clue": "One"},
+          {"word": "DUL", "clue": "Two"},
+          {"word": "SET", "clue": "Three"},
+          {"word": "NET", "clue": "Four"},
+          {"word": "DASEOT", "clue": "Five"},
+          {"word": "YEOSEOT", "clue": "Six"},
+          {"word": "ILGOP", "clue": "Seven"},
+          {"word": "YEODEOL", "clue": "Eight"},
+          {"word": "AHOP", "clue": "Nine"},
+          {"word": "YEOL", "clue": "Ten"}
+        ]
+      }
+    },
+    {
+      "id": "stances-wordsearch-medium",
+      "title": "Stances Word Search",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "wordsearch",
+      "description": "Find various Taekwon-Do stances",
+      "timeLimit": 360,
+      "points": 180,
+      "grid": {
+        "size": 12,
+        "words": [
+          {"word": "JUNBI", "clue": "Ready stance"},
+          {"word": "GUNNUN", "clue": "Walking stance"},
+          {"word": "NIUNJA", "clue": "L-stance"},
+          {"word": "APSEOGI", "clue": "Front stance"},
+          {"word": "DWITKUBI", "clue": "Back stance"},
+          {"word": "JUCHUM", "clue": "Sitting stance"},
+          {"word": "KYOCHA", "clue": "X-stance"},
+          {"word": "SAN", "clue": "Mountain stance"}
+        ]
+      }
+    },
+    {
+      "id": "blocks-wordsearch-medium",
+      "title": "Blocking Techniques Word Search",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "wordsearch",
+      "description": "Find different blocking techniques",
+      "timeLimit": 300,
+      "points": 160,
+      "grid": {
+        "size": 12,
+        "words": [
+          {"word": "ARAEMAKGI", "clue": "Low block"},
+          {"word": "MOMTONGMAKGI", "clue": "Middle block"},
+          {"word": "EOLGULMAKGI", "clue": "High block"},
+          {"word": "HEANSONAL", "clue": "Knife hand block"},
+          {"word": "BATANGSON", "clue": "Palm heel block"},
+          {"word": "DOLLYEO", "clue": "Circular block"},
+          {"word": "GEOLCHO", "clue": "Hooking block"},
+          {"word": "OEMAKGI", "clue": "Outer block"}
+        ]
+      }
+    },
+    {
+      "id": "kicks-wordsearch-medium",
+      "title": "Kicking Techniques Word Search",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "wordsearch",
+      "description": "Find various kicking techniques",
+      "timeLimit": 360,
+      "points": 190,
+      "grid": {
+        "size": 14,
+        "words": [
+          {"word": "APCHAGI", "clue": "Front kick"},
+          {"word": "YEOPCHAGI", "clue": "Side kick"},
+          {"word": "DOLLYEOCHAGI", "clue": "Turning kick"},
+          {"word": "DWITCHAGI", "clue": "Back kick"},
+          {"word": "BITUREOCHAGI", "clue": "Twisting kick"},
+          {"word": "BANDALCHAGI", "clue": "Crescent kick"},
+          {"word": "TTWIMYOCHAGI", "clue": "Jumping kick"},
+          {"word": "NAERYOCHAGI", "clue": "Axe kick"},
+          {"word": "MIRUKCHAGI", "clue": "Push kick"}
+        ]
+      }
+    },
+    {
+      "id": "patterns-wordsearch-hard",
+      "title": "ITF Patterns Word Search",
+      "category": "patterns",
+      "difficulty": "hard",
+      "gameType": "wordsearch",
+      "description": "Find the names of ITF patterns",
+      "timeLimit": 420,
+      "points": 250,
+      "grid": {
+        "size": 15,
+        "words": [
+          {"word": "CHONJI", "clue": "Heaven and Earth pattern"},
+          {"word": "DANGUN", "clue": "Holy founder pattern"},
+          {"word": "DOSAN", "clue": "Patriot Ahn Chang-Ho pattern"},
+          {"word": "WONHYO", "clue": "Buddhist monk pattern"},
+          {"word": "YULGOK", "clue": "Scholar Yi I pattern"},
+          {"word": "JOONGGUN", "clue": "Patriot Ahn Joong-Gun pattern"},
+          {"word": "TOIGYE", "clue": "Scholar Yi Hwang pattern"},
+          {"word": "HWAARANG", "clue": "Youth group pattern"},
+          {"word": "CHOONGMOO", "clue": "Admiral Yi Soon-Sin pattern"},
+          {"word": "KWANGGAE", "clue": "King Kwang-Gae pattern"}
+        ]
+      }
+    },
+    {
+      "id": "philosophy-wordsearch-hard",
+      "title": "Philosophy & Tenets Word Search",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "wordsearch",
+      "description": "Find philosophical terms and tenets",
+      "timeLimit": 380,
+      "points": 220,
+      "grid": {
+        "size": 14,
+        "words": [
+          {"word": "YEEUI", "clue": "Courtesy - first tenet"},
+          {"word": "YOMCHI", "clue": "Integrity - second tenet"},
+          {"word": "INNAE", "clue": "Perseverance - third tenet"},
+          {"word": "GEUKGI", "clue": "Self-control - fourth tenet"},
+          {"word": "BAEKJEOL", "clue": "Indomitable spirit - fifth tenet"},
+          {"word": "DO", "clue": "The way or path"},
+          {"word": "DOJANG", "clue": "Training hall"},
+          {"word": "SABEOM", "clue": "Instructor"},
+          {"word": "DOBOK", "clue": "Training uniform"},
+          {"word": "HANA", "clue": "One - beginning of the way"}
+        ]
+      }
+    },
+    {
+      "id": "strikes-wordsearch-medium",
+      "title": "Striking Techniques Word Search",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "wordsearch",
+      "description": "Find various striking techniques",
+      "timeLimit": 320,
+      "points": 170,
+      "grid": {
+        "size": 13,
+        "words": [
+          {"word": "JIREUGI", "clue": "Punch"},
+          {"word": "APJIREUGI", "clue": "Front punch"},
+          {"word": "DEUNGJUMEOK", "clue": "Back fist"},
+          {"word": "SONKAL", "clue": "Knife hand"},
+          {"word": "SONNAL", "clue": "Knife hand strike"},
+          {"word": "PALKUP", "clue": "Elbow strike"},
+          {"word": "SONBADAK", "clue": "Palm heel"},
+          {"word": "SONKKEUT", "clue": "Fingertip thrust"},
+          {"word": "MEJUMMOK", "clue": "Hammer fist"}
+        ]
+      }
+    },
+    {
+      "id": "directions-wordsearch-easy",
+      "title": "Directions & Levels Word Search",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "wordsearch",
+      "description": "Find directional terms and levels",
+      "timeLimit": 280,
+      "points": 140,
+      "grid": {
+        "size": 11,
+        "words": [
+          {"word": "AP", "clue": "Front"},
+          {"word": "YEOP", "clue": "Side"},
+          {"word": "DWI", "clue": "Back"},
+          {"word": "NAERYEO", "clue": "Downward"},
+          {"word": "OLLYEO", "clue": "Upward"},
+          {"word": "DOLLYEO", "clue": "Turning"},
+          {"word": "AN", "clue": "Inner"},
+          {"word": "BAKKAT", "clue": "Outer"},
+          {"word": "KAUNDE", "clue": "Middle level"},
+          {"word": "NAJEUNDE", "clue": "Low level"},
+          {"word": "NOPEUNDE", "clue": "High level"}
+        ]
+      }
+    },
+    {
+      "id": "advanced-techniques-wordsearch-hard",
+      "title": "Advanced Techniques Word Search",
+      "category": "techniques",
+      "difficulty": "hard",
+      "gameType": "wordsearch",
+      "description": "Find advanced Taekwon-Do techniques",
+      "timeLimit": 450,
+      "points": 280,
+      "grid": {
+        "size": 16,
+        "words": [
+          {"word": "TTWIMYOAPCHAGI", "clue": "Jumping front kick"},
+          {"word": "DOLLYEOGOROCHAGI", "clue": "Hook kick"},
+          {"word": "BANDALYEOPCHAGI", "clue": "Crescent side kick"},
+          {"word": "TWIOAPCHAGI", "clue": "Jumping front kick"},
+          {"word": "DOOBALGANG", "clue": "Two directional kick"},
+          {"word": "SAMBALGANG", "clue": "Three directional kick"},
+          {"word": "HURYEOCHAGI", "clue": "Swing kick"},
+          {"word": "GOROCHAGI", "clue": "Hook kick"},
+          {"word": "PALMOKMAKGI", "clue": "Forearm block"},
+          {"word": "SONKKEUTTEULGI", "clue": "Fingertip thrust"}
+        ]
+      }
+    },
+    {
+      "id": "body-parts-wordsearch-easy",
+      "title": "Body Parts Word Search",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "wordsearch",
+      "description": "Find Korean names for body parts",
+      "timeLimit": 260,
+      "points": 130,
+      "grid": {
+        "size": 10,
+        "words": [
+          {"word": "SON", "clue": "Hand"},
+          {"word": "BAL", "clue": "Foot"},
+          {"word": "PAL", "clue": "Arm"},
+          {"word": "PALKUP", "clue": "Elbow"},
+          {"word": "MUREUP", "clue": "Knee"},
+          {"word": "MOM", "clue": "Body"},
+          {"word": "MOMTONG", "clue": "Trunk"},
+          {"word": "EOLGUL", "clue": "Face"},
+          {"word": "MEORI", "clue": "Head"}
+        ]
+      }
+    },
+    {
+      "id": "commands-wordsearch-easy",
+      "title": "Basic Commands Word Search",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "wordsearch",
+      "description": "Find basic training commands",
+      "timeLimit": 240,
+      "points": 120,
+      "grid": {
+        "size": 10,
+        "words": [
+          {"word": "CHARYOT", "clue": "Attention"},
+          {"word": "KYONGYE", "clue": "Bow"},
+          {"word": "JUNBI", "clue": "Ready stance"},
+          {"word": "SIJAK", "clue": "Begin"},
+          {"word": "GEUMAN", "clue": "Stop"},
+          {"word": "BARO", "clue": "Return"},
+          {"word": "GYESOK", "clue": "Continue"},
+          {"word": "SWIYO", "clue": "At ease"},
+          {"word": "DORRA", "clue": "Turn around"}
+        ]
+      }
+    },
+    {
+      "id": "weapons-wordsearch-medium",
+      "title": "Hand & Foot Weapons Word Search",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "wordsearch",
+      "description": "Find names of hand and foot weapons",
+      "timeLimit": 340,
+      "points": 180,
+      "grid": {
+        "size": 13,
+        "words": [
+          {"word": "JUMEOK", "clue": "Fist"},
+          {"word": "SONNAL", "clue": "Knife hand"},
+          {"word": "SONBADAK", "clue": "Palm heel"},
+          {"word": "DEUNGJUMEOK", "clue": "Back fist"},
+          {"word": "SONKKEUT", "clue": "Fingertip"},
+          {"word": "PALKUP", "clue": "Elbow"},
+          {"word": "BALNAL", "clue": "Foot sword"},
+          {"word": "BALBADAK", "clue": "Sole of foot"},
+          {"word": "BALDWITKUMCHI", "clue": "Back heel"},
+          {"word": "BALDEUNG", "clue": "Instep"},
+          {"word": "BALKKUMCHI", "clue": "Heel"}
+        ]
+      }
+    },
+    {
+      "id": "black-belt-patterns-wordsearch-hard",
+      "title": "Black Belt Patterns Word Search",
+      "category": "patterns",
+      "difficulty": "hard",
+      "gameType": "wordsearch",
+      "description": "Find advanced black belt patterns",
+      "timeLimit": 480,
+      "points": 300,
+      "grid": {
+        "size": 18,
+        "words": [
+          {"word": "KWANGGAE", "clue": "King Kwang-Gae-Toh-Wang"},
+          {"word": "POEUN", "clue": "Scholar Chong Mong-Chu"},
+          {"word": "GEBAEK", "clue": "General Ge-Baek"},
+          {"word": "EUIAM", "clue": "Scholar Son Byong Hi"},
+          {"word": "CHOONGJANG", "clue": "General Kim Duk Ryang"},
+          {"word": "JUCHE", "clue": "Philosophical idea"},
+          {"word": "SAMIL", "clue": "March 1st Independence Movement"},
+          {"word": "YUSIN", "clue": "Revitalizing Reform period"},
+          {"word": "CHOEYONG", "clue": "Son of the Dragon King"},
+          {"word": "TONGIL", "clue": "Unification of Korea"}
+        ]
+      }
+    },
+    {
+      "id": "movement-types-wordsearch-medium",
+      "title": "Movement Types Word Search",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "wordsearch",
+      "description": "Find different types of movements",
+      "timeLimit": 320,
+      "points": 170,
+      "grid": {
+        "size": 12,
+        "words": [
+          {"word": "SEOGI", "clue": "Stance"},
+          {"word": "MAKGI", "clue": "Block"},
+          {"word": "CHAGI", "clue": "Kick"},
+          {"word": "JIREUGI", "clue": "Punch"},
+          {"word": "TTEORIGI", "clue": "Strike"},
+          {"word": "TEULGI", "clue": "Thrust"},
+          {"word": "MILGI", "clue": "Push"},
+          {"word": "JAPGI", "clue": "Grasp"},
+          {"word": "GOREUGI", "clue": "Hooking"},
+          {"word": "PALLYEO", "clue": "Release"}
+        ]
+      }
+    }
+  ]
+}

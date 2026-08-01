@@ -1,0 +1,94 @@
+{
+  "achievements": [
+    {
+      "id": "first_game",
+      "name": "First Steps",
+      "description": "Complete your first game",
+      "icon": "🎯",
+      "color": "blue",
+      "conditionType": "progress",
+      "condition": "progress.totalGamesPlayed >= 1"
+    },
+    {
+      "id": "perfect_score",
+      "name": "Perfect Score",
+      "description": "Get a perfect score in any game", 
+      "icon": "⭐",
+      "color": "gold",
+      "conditionType": "game",
+      "condition": "gameResults.perfectScore"
+    },
+    {
+      "id": "speed_demon",
+      "name": "Speed Demon",
+      "description": "Complete a game in under 1 minute",
+      "icon": "⚡", 
+      "color": "red",
+      "conditionType": "game",
+      "condition": "gameResults.timeUsed < 60"
+    },
+    {
+      "id": "terminology_master",
+      "name": "Terminology Master",
+      "description": "Complete 10 terminology games",
+      "icon": "🗣️",
+      "color": "green",
+      "conditionType": "progress", 
+      "condition": "progress.categoryProgress.terminology.games >= 10"
+    },
+    {
+      "id": "pattern_pro",
+      "name": "Pattern Pro",
+      "description": "Complete 5 pattern games",
+      "icon": "🌀",
+      "color": "purple",
+      "conditionType": "progress",
+      "condition": "progress.categoryProgress.patterns.games >= 5"
+    },
+    {
+      "id": "game_collector",
+      "name": "Game Collector",
+      "description": "Play all 6 game types",
+      "icon": "🎮",
+      "color": "orange",
+      "conditionType": "progress",
+      "condition": "Object.values(progress.gamesCompleted).filter(count => count > 0).length >= 6"
+    },
+    {
+      "id": "marathon_player",
+      "name": "Marathon Player",
+      "description": "Play for more than 30 minutes total",
+      "icon": "🏃",
+      "color": "teal", 
+      "conditionType": "progress",
+      "condition": "progress.timePlayed > 1800"
+    },
+    {
+      "id": "point_master",
+      "name": "Point Master",
+      "description": "Earn 1000 total points",
+      "icon": "🏆",
+      "color": "yellow",
+      "conditionType": "progress",
+      "condition": "progress.totalPoints >= 1000"
+    },
+    {
+      "id": "quick_learner",
+      "name": "Quick Learner",
+      "description": "Complete 3 games in one session",
+      "icon": "🚀",
+      "color": "pink",
+      "conditionType": "progress",
+      "condition": "progress.totalGamesPlayed >= 3"
+    },
+    {
+      "id": "achievement_hunter",
+      "name": "Achievement Hunter",
+      "description": "Unlock 5 different achievements",
+      "icon": "🦖",
+      "color": "indigo",
+      "conditionType": "progress",
+      "condition": "progress.achievements.length >= 5"
+    }
+  ]
+}

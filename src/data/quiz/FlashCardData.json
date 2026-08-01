@@ -1,0 +1,284 @@
+{
+  "quizzes": [
+    {
+      "id": "basic-commands-flashcards-easy",
+      "title": "Basic Commands Flashcards",
+      "category": "terminology", 
+      "difficulty": "easy",
+      "gameType": "flashcards",
+      "description": "Learn fundamental Korean commands with audio pronunciation",
+      "timeLimit": 180,
+      "points": 120,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Attention",
+          "back": "차렷",
+          "romanized": "Charyeot",
+          "audio": "/audio/charyot.mp3",
+          "meaning": "Command to come to attention position"
+        },
+        {
+          "id": "card2",
+          "front": "Bow", 
+          "back": "경례",
+          "romanized": "Gyeongnye",
+          "audio": "/audio/kyongye.mp3",
+          "meaning": "Formal bow showing respect"
+        },
+        {
+          "id": "card3",
+          "front": "Ready Stance",
+          "back": "준비",
+          "romanized": "Junbi",
+          "audio": "/audio/chunbi.mp3", 
+          "meaning": "Basic ready position"
+        },
+        {
+          "id": "card4",
+          "front": "Begin",
+          "back": "시작",
+          "romanized": "Sijak",
+          "audio": "/audio/sijak.mp3",
+          "meaning": "Command to start an exercise"
+        },
+        {
+          "id": "card5",
+          "front": "One",
+          "back": "하나",
+          "romanized": "Hana",
+          "audio": "/audio/Hana.mp3",
+          "meaning": "Korean number one"
+        }
+      ]
+    },
+    {
+      "id": "pattern-meanings-flashcards-medium",
+      "title": "Pattern Meanings Flashcards", 
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "flashcards",
+      "description": "Learn pattern names and their historical meanings",
+      "timeLimit": 240,
+      "points": 150,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Chon-Ji",
+          "back": "Heaven and Earth",
+          "meaning": "Represents the beginning of the world - 19 movements"
+        },
+        {
+          "id": "card2",
+          "front": "Dan-Gun",
+          "back": "Holy founder of Korea", 
+          "meaning": "Named after legendary founder in 2333 BC - 21 movements"
+        },
+        {
+          "id": "card3",
+          "front": "Do-San",
+          "back": "Patriot Ahn Chang-Ho",
+          "meaning": "Pseudonym of patriot Ahn Chang-Ho - 24 movements"
+        },
+        {
+          "id": "card4",
+          "front": "Won-Hyo",
+          "back": "Noted Buddhist monk",
+          "meaning": "Monk who introduced Buddhism to Silla dynasty - 28 movements"
+        },
+        {
+          "id": "card5",
+          "front": "Yul-Gok",
+          "back": "Scholar Yi I",
+          "meaning": "Pseudonym of philosopher and scholar Yi I - 38 movements"
+        },
+        {
+          "id": "card6",
+          "front": "Joong-Gun",
+          "back": "Patriot Ahn Joong-Gun",
+          "meaning": "Patriot who assassinated Hiro-Bumi Ito - 32 movements"
+        }
+      ]
+    },
+    {
+      "id": "techniques-flashcards-medium",
+      "title": "Techniques & Stances Flashcards",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "flashcards",
+      "description": "Learn various techniques and stances with descriptions",
+      "timeLimit": 300,
+      "points": 180,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Walking Stance",
+          "back": "건눈 서기",
+          "romanized": "Gunnun Seogi",
+          "audio": "/audio/gunnun-seogi.mp3",
+          "meaning": "Forward walking stance used in basic movements"
+        },
+        {
+          "id": "card2",
+          "front": "L-Stance",
+          "back": "니운자 서기",
+          "romanized": "Niunja Seogi",
+          "audio": "/audio/niunja-seogi.mp3",
+          "meaning": "L-shaped defensive stance"
+        },
+        {
+          "id": "card3",
+          "front": "Low Block",
+          "back": "아래 막기",
+          "romanized": "Arae Makgi",
+          "audio": "/audio/arae-makgi.mp3",
+          "meaning": "Block defending lower section"
+        },
+        {
+          "id": "card4",
+          "front": "Middle Block",
+          "back": "몸통 막기",
+          "romanized": "Momtong Makgi",
+          "audio": "/audio/momtong-makgi.mp3",
+          "meaning": "Block defending middle section"
+        },
+        {
+          "id": "card5",
+          "front": "Front Punch",
+          "back": "앞 지르기",
+          "romanized": "Ap Jireugi",
+          "audio": "/audio/ap-jireugi.mp3",
+          "meaning": "Straight forward punch"
+        },
+        {
+          "id": "card6",
+          "front": "Front Kick",
+          "back": "앞 차기",
+          "romanized": "Ap Chagi",
+          "audio": "/audio/ap-chagi.mp3",
+          "meaning": "Front snapping kick technique"
+        }
+      ]
+    },
+    {
+      "id": "philosophy-flashcards-hard",
+      "title": "Philosophy & Tenets Flashcards",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "flashcards",
+      "description": "Advanced flashcards on Taekwon-Do philosophy and principles",
+      "timeLimit": 360,
+      "points": 220,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Courtesy",
+          "back": "예의",
+          "romanized": "Yeui",
+          "audio": "/audio/ye-ui.mp3",
+          "meaning": "First tenet: Showing respect to others"
+        },
+        {
+          "id": "card2",
+          "front": "Integrity",
+          "back": "염치",
+          "romanized": "Yeomchi",
+          "audio": "/audio/yeomchi.mp3",
+          "meaning": "Second tenet: Knowing right from wrong"
+        },
+        {
+          "id": "card3",
+          "front": "Perseverance",
+          "back": "인내",
+          "romanized": "Innae",
+          "audio": "/audio/innae.mp3",
+          "meaning": "Third tenet: Persistence in achieving goals"
+        },
+        {
+          "id": "card4",
+          "front": "Self-Control",
+          "back": "극기",
+          "romanized": "Geukgi",
+          "audio": "/audio/geukgi.mp3",
+          "meaning": "Fourth tenet: Controlling one's actions"
+        },
+        {
+          "id": "card5",
+          "front": "Indomitable Spirit",
+          "back": "백절",
+          "romanized": "Baekjeol",
+          "audio": "/audio/baekjeol.mp3",
+          "meaning": "Fifth tenet: Courage in facing challenges"
+        },
+        {
+          "id": "card6",
+          "front": "The Way",
+          "back": "도",
+          "romanized": "Do",
+          "audio": "/audio/do.mp3",
+          "meaning": "The path of life and moral discipline"
+        }
+      ]
+    },
+    {
+      "id": "advanced-techniques-flashcards-hard",
+      "title": "Advanced Techniques Flashcards",
+      "category": "techniques",
+      "difficulty": "hard",
+      "gameType": "flashcards",
+      "description": "Master advanced techniques and their applications",
+      "timeLimit": 420,
+      "points": 250,
+      "cards": [
+        {
+          "id": "card1",
+          "front": "Twisting Kick",
+          "back": "비트로 차기",
+          "romanized": "Bitureo Chagi",
+          "audio": "/audio/bitureo-chagi.mp3",
+          "meaning": "Advanced twisting kick technique"
+        },
+        {
+          "id": "card2",
+          "front": "Jumping Kick",
+          "back": "뛰묘 차기",
+          "romanized": "Ttwimyo Chagi",
+          "audio": "/audio/ttwimyo-chagi.mp3",
+          "meaning": "Jumping or flying kick techniques"
+        },
+        {
+          "id": "card3",
+          "front": "Circular Block",
+          "back": "돌려 막기",
+          "romanized": "Dollyeo Makgi",
+          "audio": "/audio/dollyeo-makgi.mp3",
+          "meaning": "Circular blocking motion"
+        },
+        {
+          "id": "card4",
+          "front": "Back Fist Strike",
+          "back": "등 주먹",
+          "romanized": "Deung Jumeok",
+          "audio": "/audio/deung-jumeok.mp3",
+          "meaning": "Back fist strike technique"
+        },
+        {
+          "id": "card5",
+          "front": "Elbow Strike",
+          "back": "팔굽",
+          "romanized": "Palkup",
+          "audio": "/audio/palkup.mp3",
+          "meaning": "Elbow strike technique"
+        },
+        {
+          "id": "card6",
+          "front": "Crescent Kick",
+          "back": "반달 차기",
+          "romanized": "Bandal Chagi",
+          "audio": "/audio/bandal-chagi.mp3",
+          "meaning": "Crescent-shaped kicking motion"
+        }
+      ]
+    }
+  ]
+}

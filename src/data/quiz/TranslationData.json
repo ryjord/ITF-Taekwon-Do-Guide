@@ -1,0 +1,321 @@
+{
+  "quizzes": [
+    {
+      "id": "english-korean-translation-easy",
+      "title": "English to Korean Translation",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "translation", 
+      "description": "Translate basic English terms to Korean",
+      "questionCount": 6,
+      "timeLimit": 240,
+      "points": 120,
+      "questions": [
+        {
+          "id": "q1",
+          "english": "Attention",
+          "korean": "차렷",
+          "romanized": "Charyeot",
+          "audio": "/audio/terminology/charyot.mp3"
+        },
+        {
+          "id": "q2", 
+          "english": "Bow",
+          "korean": "경례",
+          "romanized": "Gyeongnye",
+          "audio": "/audio/terminology/kyongye.mp3"
+        },
+        {
+          "id": "q3",
+          "english": "Ready Stance",
+          "korean": "준비",
+          "romanized": "Junbi",
+          "audio": "/audio/terminology/junbi.mp3"
+        },
+        {
+          "id": "q4",
+          "english": "Begin",
+          "korean": "시작",
+          "romanized": "Sijak",
+          "audio": "/audio/terminology/sijak.mp3"
+        },
+        {
+          "id": "q5",
+          "english": "Uniform",
+          "korean": "도복",
+          "romanized": "Dobok",
+          "audio": "/audio/terminology/dobok.mp3"
+        },
+        {
+          "id": "q6",
+          "english": "Belt",
+          "korean": "띠",
+          "romanized": "Tti",
+          "audio": "/audio/terminology/tti.mp3"
+        }
+      ]
+    },
+    {
+      "id": "korean-english-translation-easy",
+      "title": "Korean to English Translation",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "translation",
+      "description": "Translate Korean terms to English",
+      "questionCount": 6,
+      "timeLimit": 240,
+      "points": 120,
+      "questions": [
+        {
+          "id": "q1",
+          "korean": "차렷",
+          "english": "Attention",
+          "romanized": "Charyeot",
+          "audio": "/audio/terminology/charyot.mp3"
+        },
+        {
+          "id": "q2",
+          "korean": "경례",
+          "english": "Bow",
+          "romanized": "Gyeongnye",
+          "audio": "/audio/terminology/kyongye.mp3"
+        },
+        {
+          "id": "q3",
+          "korean": "준비",
+          "english": "Ready Stance",
+          "romanized": "Junbi",
+          "audio": "/audio/terminology/junbi.mp3"
+        },
+        {
+          "id": "q4",
+          "korean": "하나",
+          "english": "One",
+          "romanized": "Hana",
+          "audio": "/audio/terminology/hana.mp3"
+        },
+        {
+          "id": "q5",
+          "korean": "둘",
+          "english": "Two",
+          "romanized": "Dul",
+          "audio": "/audio/terminology/dul.mp3"
+        },
+        {
+          "id": "q6",
+          "korean": "셋",
+          "english": "Three",
+          "romanized": "Set",
+          "audio": "/audio/terminology/set.mp3"
+        }
+      ]
+    },
+    {
+      "id": "techniques-translation-medium",
+      "title": "Techniques Translation Challenge",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "translation",
+      "description": "Translate technique names between English and Korean",
+      "questionCount": 8,
+      "timeLimit": 300,
+      "points": 160,
+      "questions": [
+        {
+          "id": "q1",
+          "english": "Walking Stance",
+          "korean": "건눈 서기",
+          "romanized": "Gunnun Seogi",
+          "audio": "/audio/terminology/gunnun-seogi.mp3"
+        },
+        {
+          "id": "q2",
+          "english": "L-Stance",
+          "korean": "니운자 서기",
+          "romanized": "Niunja Seogi",
+          "audio": "/audio/terminology/niunja-seogi.mp3"
+        },
+        {
+          "id": "q3",
+          "english": "Low Block",
+          "korean": "아래 막기",
+          "romanized": "Arae Makgi",
+          "audio": "/audio/terminology/arae-makgi.mp3"
+        },
+        {
+          "id": "q4",
+          "english": "Middle Block",
+          "korean": "몸통 막기",
+          "romanized": "Momtong Makgi",
+          "audio": "/audio/terminology/momtong-makgi.mp3"
+        },
+        {
+          "id": "q5",
+          "english": "Front Punch",
+          "korean": "앞 지르기",
+          "romanized": "Ap Jireugi",
+          "audio": "/audio/terminology/ap-jireugi.mp3"
+        },
+        {
+          "id": "q6",
+          "english": "Front Kick",
+          "korean": "앞 차기",
+          "romanized": "Ap Chagi",
+          "audio": "/audio/terminology/ap-chagi.mp3"
+        },
+        {
+          "id": "q7",
+          "english": "Turning Kick",
+          "korean": "돌려 차기",
+          "romanized": "Dollyeo Chagi",
+          "audio": "/audio/terminology/dollyeo-chagi.mp3"
+        },
+        {
+          "id": "q8",
+          "english": "Knife Hand",
+          "korean": "손칼",
+          "romanized": "Sonkal",
+          "audio": "/audio/terminology/sonkal.mp3"
+        }
+      ]
+    },
+    {
+      "id": "numbers-translation-easy",
+      "title": "Numbers Translation",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "translation",
+      "description": "Translate Korean numbers to English and vice versa",
+      "questionCount": 10,
+      "timeLimit": 300,
+      "points": 140,
+      "questions": [
+        {
+          "id": "q1",
+          "english": "One",
+          "korean": "하나",
+          "romanized": "Hana",
+          "audio": "/audio/terminology/hana.mp3"
+        },
+        {
+          "id": "q2",
+          "english": "Two",
+          "korean": "둘",
+          "romanized": "Dul",
+          "audio": "/audio/terminology/dul.mp3"
+        },
+        {
+          "id": "q3",
+          "english": "Three",
+          "korean": "셋",
+          "romanized": "Set",
+          "audio": "/audio/terminology/set.mp3"
+        },
+        {
+          "id": "q4",
+          "english": "Four",
+          "korean": "넷",
+          "romanized": "Net",
+          "audio": "/audio/terminology/net.mp3"
+        },
+        {
+          "id": "q5",
+          "english": "Five",
+          "korean": "다섯",
+          "romanized": "Daseot",
+          "audio": "/audio/terminology/daseot.mp3"
+        },
+        {
+          "id": "q6",
+          "english": "Six",
+          "korean": "여섯",
+          "romanized": "Yeoseot",
+          "audio": "/audio/terminology/yeoseot.mp3"
+        },
+        {
+          "id": "q7",
+          "english": "Seven",
+          "korean": "일곱",
+          "romanized": "Ilgop",
+          "audio": "/audio/terminology/ilgop.mp3"
+        },
+        {
+          "id": "q8",
+          "english": "Eight",
+          "korean": "여덟",
+          "romanized": "Yeodeol",
+          "audio": "/audio/terminology/yeodeol.mp3"
+        },
+        {
+          "id": "q9",
+          "english": "Nine",
+          "korean": "아홉",
+          "romanized": "Ahop",
+          "audio": "/audio/terminology/ahop.mp3"
+        },
+        {
+          "id": "q10",
+          "english": "Ten",
+          "korean": "열",
+          "romanized": "Yeol",
+          "audio": "/audio/terminology/yeol.mp3"
+        }
+      ]
+    },
+    {
+      "id": "philosophy-translation-hard",
+      "title": "Philosophy Translation",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "translation",
+      "description": "Translate philosophical terms and tenets",
+      "questionCount": 6,
+      "timeLimit": 360,
+      "points": 200,
+      "questions": [
+        {
+          "id": "q1",
+          "english": "Courtesy",
+          "korean": "예의",
+          "romanized": "Yeui",
+          "audio": "/audio/terminology/ye-ui.mp3"
+        },
+        {
+          "id": "q2",
+          "english": "Integrity",
+          "korean": "염치",
+          "romanized": "Yeomchi",
+          "audio": "/audio/terminology/yeomchi.mp3"
+        },
+        {
+          "id": "q3",
+          "english": "Perseverance",
+          "korean": "인내",
+          "romanized": "Innae",
+          "audio": "/audio/terminology/innae.mp3"
+        },
+        {
+          "id": "q4",
+          "english": "Self-Control",
+          "korean": "극기",
+          "romanized": "Geukgi",
+          "audio": "/audio/terminology/geukgi.mp3"
+        },
+        {
+          "id": "q5",
+          "english": "Indomitable Spirit",
+          "korean": "백절",
+          "romanized": "Baekjeol",
+          "audio": "/audio/terminology/baekjeol.mp3"
+        },
+        {
+          "id": "q6",
+          "english": "The Way",
+          "korean": "도",
+          "romanized": "Do",
+          "audio": "/audio/terminology/do.mp3"
+        }
+      ]
+    }
+  ]
+}

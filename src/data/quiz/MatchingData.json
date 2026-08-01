@@ -1,0 +1,274 @@
+{
+  "quizzes": [
+    {
+      "id": "korean-english-matching-easy",
+      "title": "Korean-English Snap Match",
+      "category": "terminology",
+      "difficulty": "easy", 
+      "gameType": "matching",
+      "description": "Match Korean terms with their English meanings",
+      "timeLimit": 180,
+      "points": 130,
+      "pairs": [
+        {
+          "id": "pair1",
+          "korean": "차렷",
+          "english": "Attention",
+          "romanized": "Charyeot",
+          "audio": "/audio/charyeot.mp3"
+        },
+        {
+          "id": "pair2",
+          "korean": "경례",
+          "english": "Bow", 
+          "romanized": "Gyeongnye",
+          "audio": "/audio/Gyeongnye.mp3"
+        },
+        {
+          "id": "pair3",
+          "korean": "준비",
+          "english": "Ready Stance",
+          "romanized": "Junbi",
+          "audio": "/audio/Junbi.mp3"
+        },
+        {
+          "id": "pair4", 
+          "korean": "하나",
+          "english": "One",
+          "romanized": "Hana",
+          "audio": "/audio/hana.mp3"
+        },
+        {
+          "id": "pair5",
+          "korean": "둘",
+          "english": "Two",
+          "romanized": "Dul", 
+          "audio": "/audio/dul.mp3"
+        },
+        {
+          "id": "pair6",
+          "korean": "도복",
+          "english": "Uniform",
+          "romanized": "Dobok",
+          "audio": "/audio/do-bok.mp3"
+        }
+      ]
+    },
+    {
+      "id": "pattern-meanings-matching-medium", 
+      "title": "Pattern Meanings Match",
+      "category": "patterns",
+      "difficulty": "medium",
+      "gameType": "matching",
+      "description": "Match pattern names with their historical meanings",
+      "timeLimit": 210,
+      "points": 160,
+      "pairs": [
+        {
+          "id": "pair1", 
+          "korean": "천지",
+          "english": "",
+          "romanized": "Chon-Ji",
+          "audio": "/audio/chon-ji.mp3"
+        },
+        {
+          "id": "pair2",
+          "korean": "단군",
+          "english": "",
+          "romanized": "Dan-Gun",
+          "audio": "/audio/dan-gun.mp3"
+        },
+        {
+          "id": "pair3",
+          "korean": "도산",
+          "english": "",
+          "romanized": "Do-San",
+          "audio": "/audio/do-san.mp3"
+        },
+        {
+          "id": "pair4",
+          "korean": "원효",
+          "english": "",
+          "romanized": "Won-Hyo",
+          "audio": "/audio/won-hyo.mp3"
+        },
+        {
+          "id": "pair5",
+          "korean": "율곡",
+          "english": "",
+          "romanized": "Yul-Gok",
+          "audio": "/audio/yul-gok.mp3"
+        },
+        {
+          "id": "pair6",
+          "korean": "중건",
+          "english": "",
+          "romanized": "Joong-Gun",
+          "audio": "/audio/joong-gun.mp3"
+        }
+      ]
+    },
+    {
+      "id": "techniques-matching-medium",
+      "title": "Techniques & Stances Match",
+      "category": "techniques",
+      "difficulty": "medium",
+      "gameType": "matching",
+      "description": "Match techniques with their correct descriptions",
+      "timeLimit": 240,
+      "points": 180,
+      "pairs": [
+        {
+          "id": "pair1",
+          "korean": "아래 막기",
+          "english": "Low Block",
+          "romanized": "Arae Makgi",
+          "audio": "/audio/arae-makgi.mp3"
+        },
+        {
+          "id": "pair2",
+          "korean": "몸통 막기",
+          "english": "Middle Block",
+          "romanized": "Momtong Makgi",
+          "audio": "/audio/momtong-makgi"
+        },
+        {
+          "id": "pair3",
+          "korean": "지르기",
+          "english": "Punch",
+          "romanized": "Jireugi",
+          "audio": "/audio/jireugi.mp3"
+        },
+        {
+          "id": "pair4",
+          "korean": "앞 차기",
+          "english": "Front Kick",
+          "romanized": "Ap Chagi",
+          "audio": "/audio/ap-chagi"
+        },
+        {
+          "id": "pair5",
+          "korean": "돌려 차기",
+          "english": "Turning Kick",
+          "romanized": "Dollyeo Chagi",
+          "audio": "/audio/dollyo-chagi.mp3"
+        },
+        {
+          "id": "pair6",
+          "korean": "손칼",
+          "english": "Knife Hand",
+          "romanized": "Sonkal",
+          "audio": "/audio/sonkal.mp3"
+        }
+      ]
+    },
+    {
+      "id": "numbers-matching-easy",
+      "title": "Korean Numbers Match",
+      "category": "terminology",
+      "difficulty": "easy",
+      "gameType": "matching",
+      "description": "Match Korean numbers with their English equivalents",
+      "timeLimit": 150,
+      "points": 120,
+      "pairs": [
+        {
+          "id": "pair1",
+          "korean": "하나",
+          "english": "One",
+          "romanized": "Hana",
+          "audio": "/audio/Hana.mp3"
+        },
+        {
+          "id": "pair2",
+          "korean": "둘",
+          "english": "Two",
+          "romanized": "Dul",
+          "audio": "/audio/Dul.mp3"
+        },
+        {
+          "id": "pair3",
+          "korean": "셋",
+          "english": "Three",
+          "romanized": "Set",
+          "audio": "/audio/Set.mp3"
+        },
+        {
+          "id": "pair4",
+          "korean": "넷",
+          "english": "Four",
+          "romanized": "Net",
+          "audio": "/audio/Net.mp3"
+        },
+        {
+          "id": "pair5",
+          "korean": "다섯",
+          "english": "Five",
+          "romanized": "Daseot",
+          "audio": "/audio/Daseot.mp3"
+        },
+        {
+          "id": "pair6",
+          "korean": "여섯",
+          "english": "Six",
+          "romanized": "Yeoseot",
+          "audio": "/audio/yeoseot.mp3"
+        }
+      ]
+    },
+    {
+      "id": "philosophy-matching-hard",
+      "title": "Philosophy & Tenets Match",
+      "category": "history",
+      "difficulty": "hard",
+      "gameType": "matching",
+      "description": "Match philosophical concepts with their meanings",
+      "timeLimit": 270,
+      "points": 200,
+      "pairs": [
+        {
+          "id": "pair1",
+          "korean": "예의",
+          "english": "Courtesy",
+          "romanized": "Yeui",
+          "audio": "/audio/ye-ui.mp3"
+        },
+        {
+          "id": "pair2",
+          "korean": "염치",
+          "english": "Integrity",
+          "romanized": "Yeomchi",
+          "audio": "/audio/yeom-chi.mp3"
+        },
+        {
+          "id": "pair3",
+          "korean": "인내",
+          "english": "Perseverance",
+          "romanized": "Innae",
+          "audio": "/audio/in-nae.mp3"
+        },
+        {
+          "id": "pair4",
+          "korean": "극기",
+          "english": "Self-Control",
+          "romanized": "Geukgi",
+          "audio": "/audio/kuk-gi.mp3"
+        },
+        {
+          "id": "pair5",
+          "korean": "백절",
+          "english": "Indomitable Spirit",
+          "romanized": "Baekjeol",
+          "audio": "/audio/baekjul.mp3"
+        },
+        {
+          "id": "pair6",
+          "korean": "도",
+          "english": "The Way",
+          "romanized": "Do",
+          "audio": "/audio/do.mp3"
+        }
+      ]
+    }
+  ]
+}
