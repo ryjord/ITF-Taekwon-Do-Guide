@@ -1,0 +1,142 @@
+{
+  "disclaimer": {
+    "summary": "This content was researched from published ITF-affiliated sources and is provided as general educational guidance, not an official syllabus.",
+    "detail": "ITF Taekwon-Do has been governed by multiple separate organisations since a split in 2002, and individual schools set their own exact syllabus, technique lists, and time-in-grade requirements. The belt-colour meanings below are consistently reproduced across independent ITF-affiliated sources and are quoted from General Choi Hong Hi's writings. The grading structure describes the general pattern used across ITF schools; always confirm the exact requirements for your own grading with your instructor."
+  },
+  "beltMeanings": [
+    {
+      "color": "White",
+      "kupRange": "10th Kup",
+      "meaning": "Signifies innocence, as that of the beginning student who has no previous knowledge of Taekwon-Do."
+    },
+    {
+      "color": "Yellow",
+      "kupRange": "9th-8th Kup",
+      "meaning": "Signifies the earth, from which a plant sprouts and takes root, as the Taekwon-Do foundation is being laid."
+    },
+    {
+      "color": "Green",
+      "kupRange": "7th-6th Kup",
+      "meaning": "Signifies the plant's growth, as Taekwon-Do skills begin to develop."
+    },
+    {
+      "color": "Blue",
+      "kupRange": "5th-4th Kup",
+      "meaning": "Signifies the sky and the heavens, towards which the plant matures into a tree, as training in Taekwon-Do progresses."
+    },
+    {
+      "color": "Red",
+      "kupRange": "3rd-2nd Kup",
+      "meaning": "Signifies danger, cautioning the student to exercise control and warning the opponent to stay away."
+    },
+    {
+      "color": "Black",
+      "kupRange": "1st Kup and 1st-9th Dan",
+      "meaning": "The opposite of white, therefore signifying maturity and proficiency in Taekwon-Do, and the wearer's imperviousness to darkness and fear."
+    }
+  ],
+  "beltMeaningsSource": {
+    "attribution": "Reproduced from General Choi Hong Hi's \"Taekwon-Do\" (The Condensed Encyclopedia)",
+    "urls": [
+      "https://www.itftaekwondo.com/belt-colour-meanings/",
+      "http://itftaekwondotheory.com/terms/belts.html",
+      "https://uktc.co.uk/theory/"
+    ]
+  },
+  "gradingStructure": [
+    {
+      "category": "Patterns (Tul)",
+      "description": "Demonstrating the new pattern for the grade being tested, plus some or all previously learned patterns."
+    },
+    {
+      "category": "Fundamental Movements",
+      "description": "Stances, blocks, strikes, punches, and kicks performed individually or as line-work combinations, testing precision and control."
+    },
+    {
+      "category": "Step Sparring",
+      "description": "Pre-arranged sparring with a partner, starting at 3-step sparring for beginners and progressing to 2-step and 1-step sparring at higher grades."
+    },
+    {
+      "category": "Sparring",
+      "description": "Semi-free and free sparring, introduced partway through the colour belts and expanding in intensity and format at black belt."
+    },
+    {
+      "category": "Self-Defence",
+      "description": "Releases from grabs and holds, introduced partway through the colour belts and expanded with takedowns and multiple-attacker scenarios at black belt."
+    },
+    {
+      "category": "Breaking (Power Test)",
+      "description": "Board breaking to demonstrate technique power, introduced from black tag (1st Kup) onward."
+    },
+    {
+      "category": "Terminology & Theory",
+      "description": "Korean terminology, belt-colour meanings, the Student Oath and Tenets, and ITF history and founder facts, with depth increasing at each grade."
+    },
+    {
+      "category": "Time in Grade",
+      "description": "A minimum training period between gradings that increases with rank, from roughly a few months between early colour belts to 18+ months between dan grades."
+    }
+  ],
+  "gradingStructureSources": [
+    "https://www.itftaekwondo.com/itf-events/itf-gradings/",
+    "https://www.taekwondonation.com/taekwondo-belt-order-and-rank-for-itf/",
+    "https://www.itf-administration.com/articles/?arturn=668"
+  ],
+  "tiers": [
+    {
+      "kupRange": "10th Kup",
+      "color": "White",
+      "focus": "Foundational stances, the four-directional punch and block drills (Saju Jirugi, Saju Makgi), and basic etiquette. No sparring or breaking yet."
+    },
+    {
+      "kupRange": "9th Kup",
+      "color": "White with Yellow Stripe",
+      "focus": "First pattern, Chon-Ji. Introduction to 3-step pre-arranged sparring."
+    },
+    {
+      "kupRange": "8th Kup",
+      "color": "Yellow",
+      "focus": "Second pattern, Dan-Gun. Continued fundamentals and 3-step sparring."
+    },
+    {
+      "kupRange": "7th Kup",
+      "color": "Yellow with Green Stripe",
+      "focus": "Third pattern, Do-San. Expanding technique vocabulary and combinations."
+    },
+    {
+      "kupRange": "6th Kup",
+      "color": "Green",
+      "focus": "Fourth pattern, Won-Hyo. 3-step sparring sequences continue, semi-free sparring introduced."
+    },
+    {
+      "kupRange": "5th Kup",
+      "color": "Green with Blue Stripe",
+      "focus": "Fifth pattern, Yul-Gok. One-step sparring and free sparring introduced, along with self-defence release techniques."
+    },
+    {
+      "kupRange": "4th Kup",
+      "color": "Blue",
+      "focus": "Sixth pattern, Joong-Gun. Continued sparring and self-defence development."
+    },
+    {
+      "kupRange": "3rd Kup",
+      "color": "Blue with Red Stripe",
+      "focus": "Seventh pattern, Toi-Gye. Increasing sparring intensity and technique combinations."
+    },
+    {
+      "kupRange": "2nd Kup",
+      "color": "Red",
+      "focus": "Eighth pattern, Hwa-Rang. More advanced self-defence and sparring scenarios."
+    },
+    {
+      "kupRange": "1st Kup",
+      "color": "Red with Black Stripe",
+      "focus": "Ninth pattern, Choong-Moo. Breaking (power test) introduced, along with a longer minimum training period before the Black Belt grading."
+    },
+    {
+      "kupRange": "1st Dan and above",
+      "color": "Black",
+      "focus": "All colour-belt patterns plus a new dan-level pattern, advanced sparring (including 2-on-1 free sparring), multi-attacker self-defence, breaking, a written theory essay, and a grading panel of senior ITF examiners. Time between dan grades increases substantially with rank."
+    }
+  ]
+}
