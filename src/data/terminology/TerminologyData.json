@@ -1,0 +1,924 @@
+{
+  "categories": [
+    "Basics & Commands",
+    "Stances",
+    "Blocks",
+    "Strikes & Punches",
+    "Kicks",
+    "Numbers & Counting",
+    "Patterns & Forms",
+    "Sparring",
+    "Weapons",
+    "Philosophy & Principles",
+    "Rank & Titles",
+    "Training & Equipment",
+    "Thrusts",
+    "Technique Types",
+    "Directions",
+    "Levels",
+    "Body Parts",
+    "Positions"
+  ],
+  "terms": [
+    {
+      "id": "charyeot",
+      "englishName": "Attention",
+      "koreanName": "차렷",
+      "romanized": "Charyeot",
+      "beltLearnt": "White",
+      "category": "Basics & Commands",
+      "sound": "/../public/audio/charyot.mp3",
+      "meaning": "Command to come to attention position"
+    },
+    {
+      "id": "gyeongnye",
+      "englishName": "Bow",
+      "koreanName": "경례",
+      "romanized": "Gyeongnye",
+      "beltLearnt": "White",
+      "category": "Basics & Commands",
+      "sound": "/../public/audio/Gyeongnye.mp3",
+      "meaning": "Formal bow showing respect"
+    },
+    {
+      "id": "junbi",
+      "englishName": "Ready Stance",
+      "koreanName": "준비",
+      "romanized": "Junbi",
+      "beltLearnt": "White",
+      "category": "Stances",
+      "sound": "/audio/Junbi.mp3",
+      "meaning": "Basic ready position"
+    },
+    {
+      "id": "sijak",
+      "englishName": "Begin",
+      "koreanName": "시작",
+      "romanized": "Sijak",
+      "beltLearnt": "White",
+      "category": "Basics & Commands",
+      "sound": "/audio/Sijak.mp3",
+      "meaning": "Command to start an exercise"
+    },
+    {
+      "id": "geuman",
+      "englishName": "Finish/Stop",
+      "koreanName": "그만",
+      "romanized": "Geuman",
+      "beltLearnt": "White",
+      "category": "Basics & Commands",
+      "sound": "/audio/Geuman.mp3",
+      "meaning": "Command to stop or finish"
+    },
+    {
+      "id": "baro",
+      "englishName": "Return",
+      "koreanName": "바로",
+      "romanized": "Baro",
+      "beltLearnt": "White",
+      "category": "Basics & Commands",
+      "sound": "/audio/Baro.mp3",
+      "meaning": "Command to return to ready position"
+    },
+    {
+      "id": "dobok",
+      "englishName": "Uniform",
+      "koreanName": "도복",
+      "romanized": "Dobok",
+      "beltLearnt": "White",
+      "category": "Training & Equipment",
+      "sound": "/audio/Dobok.mp3",
+      "meaning": "Traditional Taekwon-Do uniform"
+    },
+    {
+      "id": "tti",
+      "englishName": "Belt",
+      "koreanName": "띠",
+      "romanized": "Tti",
+      "beltLearnt": "White",
+      "category": "Training & Equipment",
+      "sound": "/audio/Tti.mp3",
+      "meaning": "Belt indicating rank"
+    },
+    {
+      "id": "hana",
+      "englishName": "One",
+      "koreanName": "하나",
+      "romanized": "Hana",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/Hana.mp3",
+      "meaning": "Korean number one"
+    },
+    {
+      "id": "dul",
+      "englishName": "Two",
+      "koreanName": "둘",
+      "romanized": "Dul",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/Dul.mp3",
+      "meaning": "Korean number two"
+    },
+    {
+      "id": "set",
+      "englishName": "Three",
+      "koreanName": "셋",
+      "romanized": "Set",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/Set.mp3",
+      "meaning": "Korean number three"
+    },
+    {
+      "id": "net",
+      "englishName": "Four",
+      "koreanName": "넷",
+      "romanized": "Net",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/Net.mp3",
+      "meaning": "Korean number four"
+    },
+    {
+      "id": "daseot",
+      "englishName": "Five",
+      "koreanName": "다섯",
+      "romanized": "Daseot",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/Daseot.mp3",
+      "meaning": "Korean number five"
+    },
+    {
+      "id": "gunnun-seogi",
+      "englishName": "Walking Stance",
+      "koreanName": "건눈 서기",
+      "romanized": "Gunnun Seogi",
+      "beltLearnt": "White-Yellow",
+      "category": "Stances",
+      "sound": "/audio/Gunnun-Seogi.mp3",
+      "meaning": "Forward walking stance"
+    },
+    {
+      "id": "niunja-seogi",
+      "englishName": "L-Stance",
+      "koreanName": "니운자 서기",
+      "romanized": "Niunja Seogi",
+      "beltLearnt": "White-Yellow",
+      "category": "Stances",
+      "sound": "/audio/niunja-soghi.mp3",
+      "meaning": "L-shaped defensive stance"
+    },
+    {
+      "id": "arae-makgi",
+      "englishName": "Low Block",
+      "koreanName": "아래 막기",
+      "romanized": "Arae Makgi",
+      "beltLearnt": "White-Yellow",
+      "category": "Blocks",
+      "sound": "/audio/arae-makgi.mp3",
+      "meaning": "Block defending lower section"
+    },
+    {
+      "id": "momtong-makgi",
+      "englishName": "Middle Block",
+      "koreanName": "몸통 막기",
+      "romanized": "Momtong Makgi",
+      "beltLearnt": "White-Yellow",
+      "category": "Blocks",
+      "sound": "/audio/momtong-makgi.mp3",
+      "meaning": "Block defending middle section"
+    },
+    {
+      "id": "jireugi",
+      "englishName": "Punch",
+      "koreanName": "지르기",
+      "romanized": "Jireugi",
+      "beltLearnt": "Yellow",
+      "category": "Strikes & Punches",
+      "sound": "/audio/jireugi.mp3",
+      "meaning": "Basic punching technique"
+    },
+    {
+      "id": "ap-jireugi",
+      "englishName": "Front Punch",
+      "koreanName": "앞 지르기",
+      "romanized": "Ap Jireugi",
+      "beltLearnt": "Yellow",
+      "category": "Strikes & Punches",
+      "sound": "/audio/ap-jireugi.mp3",
+      "meaning": "Straight forward punch"
+    },
+    {
+      "id": "ap-chagi",
+      "englishName": "Front Snap Kick",
+      "koreanName": "앞 차기",
+      "romanized": "Ap Chagi",
+      "beltLearnt": "Yellow",
+      "category": "Kicks",
+      "sound": "/audio/ap-chagi.mp3",
+      "meaning": "Front snapping kick technique"
+    },
+    {
+      "id": "cheonji",
+      "englishName": "Chon-Ji Pattern",
+      "koreanName": "천지",
+      "romanized": "Cheonji",
+      "beltLearnt": "White-Yellow",
+      "category": "Patterns & Forms",
+      "sound": "/audio/chon-ji.mp3",
+      "meaning": "Heaven and Earth - first pattern"
+    },
+    {
+      "id": "dangun",
+      "englishName": "Dan-Gun Pattern",
+      "koreanName": "단군",
+      "romanized": "Dangun",
+      "beltLearnt": "Yellow",
+      "category": "Patterns & Forms",
+      "sound": "/audio/dan-gun.mp3",
+      "meaning": "Named after holy Dan-Gun"
+    },
+    {
+      "id": "dosan",
+      "englishName": "Do-San Pattern",
+      "koreanName": "도산",
+      "romanized": "Dosan",
+      "beltLearnt": "Yellow-Green",
+      "category": "Patterns & Forms",
+      "sound": "/audio/do-san.mp3",
+      "meaning": "Pseudonym of patriot Ahn Chang-Ho"
+    },
+    {
+      "id": "yeop-chagi",
+      "englishName": "Side Piercing Kick",
+      "koreanName": "얻 차기",
+      "romanized": "Yeop Chagi",
+      "beltLearnt": "Yellow-Green",
+      "category": "Kicks",
+      "sound": "/audio/yeot-chagi.mp3",
+      "meaning": "Side piercing kick technique"
+    },
+    {
+      "id": "wonhyo",
+      "englishName": "Won-Hyo Pattern",
+      "koreanName": "원효",
+      "romanized": "Wonhyo",
+      "beltLearnt": "Green",
+      "category": "Patterns & Forms",
+      "sound": "/audio/won-hyo.mp3",
+      "meaning": "Noted monk who introduced Buddhism"
+    },
+    {
+      "id": "dollyeo-chagi",
+      "englishName": "Turning Kick",
+      "koreanName": "돌려 차기",
+      "romanized": "Dollyeo Chagi",
+      "beltLearnt": "Green",
+      "category": "Kicks",
+      "sound": "/audio/dollyo-chagi.mp3",
+      "meaning": "Roundhouse turning kick"
+    },
+    {
+      "id": "yulgok",
+      "englishName": "Yul-Gok Pattern",
+      "koreanName": "율곡",
+      "romanized": "Yulgok",
+      "beltLearnt": "Green-Blue",
+      "category": "Patterns & Forms",
+      "sound": "/audio/yul-gok.mp3",
+      "meaning": "Scholar Yi I pseudonym"
+    },
+    {
+      "id": "sonkal",
+      "englishName": "Knife Hand",
+      "koreanName": "손칼",
+      "romanized": "Sonkal",
+      "beltLearnt": "Green-Blue",
+      "category": "Strikes & Punches",
+      "sound": "/audio/sonkal.mp3",
+      "meaning": "Knife hand strike"
+    },
+    {
+      "id": "junggeon",
+      "englishName": "Joong-Gun Pattern",
+      "koreanName": "중건",
+      "romanized": "Junggeon",
+      "beltLearnt": "Blue",
+      "category": "Patterns & Forms",
+      "sound": "/audio/joong-gun.mp3",
+      "meaning": "Patriot Ahn Joong-Gun"
+    },
+    {
+      "id": "deung-jumeok",
+      "englishName": "Back Fist",
+      "koreanName": "등 주먹",
+      "romanized": "Deung Jumeok",
+      "beltLearnt": "Blue",
+      "category": "Strikes & Punches",
+      "sound": "/audio/dung-jumeok.mp3",
+      "meaning": "Back fist strike"
+    },
+    {
+      "id": "toegye",
+      "englishName": "Toi-Gye Pattern",
+      "koreanName": "퇴계",
+      "romanized": "Toegye",
+      "beltLearnt": "Blue-Red",
+      "category": "Patterns & Forms",
+      "sound": "/audio/toi-gye.mp3",
+      "meaning": "Scholar Yi Hwang pen name"
+    },
+    {
+      "id": "palkup",
+      "englishName": "Elbow",
+      "koreanName": "팔굽",
+      "romanized": "Palkup",
+      "beltLearnt": "Blue-Red",
+      "category": "Strikes & Punches",
+      "sound": "/audio/palkup.mp3",
+      "meaning": "Elbow strike technique"
+    },
+    {
+      "id": "hwarang",
+      "englishName": "Hwa-Rang Pattern",
+      "koreanName": "화랑",
+      "romanized": "Hwarang",
+      "beltLearnt": "Red",
+      "category": "Patterns & Forms",
+      "sound": "/audio/hwa-rang.mp3",
+      "meaning": "Hwa-Rang youth group"
+    },
+    {
+      "id": "bitureo-chagi",
+      "englishName": "Twisting Kick",
+      "koreanName": "비트로 차기",
+      "romanized": "Bitureo Chagi",
+      "beltLearnt": "Red",
+      "category": "Kicks",
+      "sound": "/audio/bituro-chagi.mp3",
+      "meaning": "Twisting kick technique"
+    },
+    {
+      "id": "chungmu",
+      "englishName": "Choong-Moo Pattern",
+      "koreanName": "충무",
+      "romanized": "Chungmu",
+      "beltLearnt": "Red-Black",
+      "category": "Patterns & Forms",
+      "sound": "/audio/choong-moo.mp3",
+      "meaning": "Admiral Yi Soon-Sin"
+    },
+    {
+      "id": "ttwimyo",
+      "englishName": "Jumping/Flying",
+      "koreanName": "뛰묘",
+      "romanized": "Ttwimyo",
+      "beltLearnt": "Red-Black",
+      "category": "Kicks",
+      "sound": "/audio/twimyo.mp3",
+      "meaning": "Jumping or flying techniques"
+    },
+    {
+      "id": "gwanggae",
+      "englishName": "Kwang-Gae Pattern",
+      "koreanName": "광개",
+      "romanized": "Gwanggae",
+      "beltLearnt": "Black",
+      "category": "Patterns & Forms",
+      "sound": "/audio/kwang-gae.mp3",
+      "meaning": "King Kwang-Gae-Toh-Wang"
+    },
+    {
+      "id": "sabeom",
+      "englishName": "Instructor",
+      "koreanName": "사범",
+      "romanized": "Sabeom",
+      "beltLearnt": "Black",
+      "category": "Rank & Titles",
+      "sound": "/audio/sabum.mp3",
+      "meaning": "Instructor or teacher"
+    },
+    {
+      "id": "dojang",
+      "englishName": "Training Hall",
+      "koreanName": "도장",
+      "romanized": "Dojang",
+      "beltLearnt": "Black",
+      "category": "Training & Equipment",
+      "sound": "/audio/dojang.mp3",
+      "meaning": "Martial arts training hall"
+    },
+    {
+      "id": "do",
+      "englishName": "The Way",
+      "koreanName": "도",
+      "romanized": "Do",
+      "beltLearnt": "White",
+      "category": "Philosophy & Principles",
+      "sound": "/audio/do.mp3",
+      "meaning": "The way or path of life"
+    },
+    {
+      "id": "ye-ui",
+      "englishName": "Courtesy",
+      "koreanName": "예의",
+      "romanized": "Yeui",
+      "beltLearnt": "White",
+      "category": "Philosophy & Principles",
+      "sound": "/audio/ye-ui.mp3",
+      "meaning": "First tenet of Taekwon-Do"
+    },
+    {
+      "id": "yeomchi",
+      "englishName": "Integrity",
+      "koreanName": "염치",
+      "romanized": "Yeomchi",
+      "beltLearnt": "White",
+      "category": "Philosophy & Principles",
+      "sound": "/audio/yom-chi.mp3",
+      "meaning": "Second tenet of Taekwon-Do"
+    },
+    {
+      "id": "innae",
+      "englishName": "Perseverance",
+      "koreanName": "인내",
+      "romanized": "Innae",
+      "beltLearnt": "White",
+      "category": "Philosophy & Principles",
+      "sound": "/audio/in-nea.mp3",
+      "meaning": "Third tenet of Taekwon-Do"
+    },
+    {
+      "id": "geukgi",
+      "englishName": "Self-Control",
+      "koreanName": "극기",
+      "romanized": "Geukgi",
+      "beltLearnt": "White",
+      "category": "Philosophy & Principles",
+      "sound": "/audio/kuk-gi.mp3",
+      "meaning": "Fourth tenet of Taekwon-Do"
+    },
+    {
+      "id": "baekjeol",
+      "englishName": "Indomitable Spirit",
+      "koreanName": "백절",
+      "romanized": "Baekjeol",
+      "beltLearnt": "White",
+      "category": "Philosophy & Principles",
+      "sound": "/audio/baekjul.mp3",
+      "meaning": "Fifth tenet of Taekwon-Do"
+    },
+    {
+      "id": "seogi",
+      "englishName": "Stance",
+      "koreanName": "서기",
+      "romanized": "Seogi",
+      "beltLearnt": "White",
+      "category": "Technique Types",
+      "sound": "/audio/sogi.mp3",
+      "meaning": "Basic stance or posture"
+    },
+    {
+      "id": "teulgi",
+      "englishName": "Thrust",
+      "koreanName": "틀기",
+      "romanized": "Teulgi",
+      "beltLearnt": "Yellow-Green",
+      "category": "Thrusts",
+      "sound": "/audio/tulgi.mp3",
+      "meaning": "Thrusting techniques using fingertips, palms, and elbows"
+    },
+    {
+      "id": "chagi",
+      "englishName": "Kick",
+      "koreanName": "차기",
+      "romanized": "Chagi",
+      "beltLearnt": "White-Yellow",
+      "category": "Kicks",
+      "sound": "/audio/chagi.mp3",
+      "meaning": "Kicking techniques"
+    },
+    {
+      "id": "ttaerigi",
+      "englishName": "Strike",
+      "koreanName": "때리기",
+      "romanized": "Ttaerigi",
+      "beltLearnt": "White-Yellow",
+      "category": "Strikes & Punches",
+      "sound": "/audio/taerigi.mp3",
+      "meaning": "Striking techniques using various hand surfaces"
+    },
+    {
+      "id": "makgi",
+      "englishName": "Block",
+      "koreanName": "막기",
+      "romanized": "Makgi",
+      "beltLearnt": "White",
+      "category": "Blocks",
+      "sound": "/audio/makgi.mp3",
+      "meaning": "Blocking techniques for defense"
+    },
+    {
+      "id": "sonkkeut",
+      "englishName": "Fingertip",
+      "koreanName": "손끝",
+      "romanized": "Sonkkeut",
+      "beltLearnt": "Yellow-Green",
+      "category": "Thrusts",
+      "sound": "/audio/sonkut.mp3",
+      "meaning": "Fingertip techniques"
+    },
+    {
+      "id": "jumeok",
+      "englishName": "Fist",
+      "koreanName": "주먹",
+      "romanized": "Jumeok",
+      "beltLearnt": "White",
+      "category": "Strikes & Punches",
+      "sound": "/audio/joomok.mp3",
+      "meaning": "Fist techniques"
+    },
+    {
+      "id": "sonnal",
+      "englishName": "Knife Hand",
+      "koreanName": "손날",
+      "romanized": "Sonnal",
+      "beltLearnt": "Green-Blue",
+      "category": "Strikes & Punches",
+      "sound": "/audio/sonnal.mp3",
+      "meaning": "Knife hand techniques"
+    },
+    {
+      "id": "sonbadak",
+      "englishName": "Palm",
+      "koreanName": "손바닥",
+      "romanized": "Sonbadak",
+      "beltLearnt": "Blue",
+      "category": "Blocks",
+      "sound": "/audio/sonbadak.mp3",
+      "meaning": "Palm techniques"
+    },
+    {
+      "id": "ap",
+      "englishName": "Front",
+      "koreanName": "앞",
+      "romanized": "Ap",
+      "beltLearnt": "White",
+      "category": "Directions",
+      "sound": "/audio/ap.mp3",
+      "meaning": "Front direction"
+    },
+    {
+      "id": "yeop",
+      "englishName": "Side",
+      "koreanName": "옆",
+      "romanized": "Yeop",
+      "beltLearnt": "White-Yellow",
+      "category": "Directions",
+      "sound": "/audio/yop.mp3",
+      "meaning": "Side direction"
+    },
+    {
+      "id": "dwi",
+      "englishName": "Back",
+      "koreanName": "뒤",
+      "romanized": "Dwi",
+      "beltLearnt": "Green",
+      "category": "Directions",
+      "sound": "/audio/dwi.mp3",
+      "meaning": "Back direction"
+    },
+    {
+      "id": "naeryeo",
+      "englishName": "Downward",
+      "koreanName": "내려",
+      "romanized": "Naeryeo",
+      "beltLearnt": "Yellow-Green",
+      "category": "Directions",
+      "sound": "/audio/naeryo.mp3",
+      "meaning": "Downward direction"
+    },
+    {
+      "id": "ollyeo",
+      "englishName": "Upward",
+      "koreanName": "올려",
+      "romanized": "Ollyeo",
+      "beltLearnt": "Blue-Red",
+      "category": "Directions",
+      "sound": "/audio/ollyo.mp3",
+      "meaning": "Upward direction"
+    },
+    {
+      "id": "dollyeo",
+      "englishName": "Turning",
+      "koreanName": "돌려",
+      "romanized": "Dollyeo",
+      "beltLearnt": "Green",
+      "category": "Directions",
+      "sound": "/audio/dollyo.mp3",
+      "meaning": "Turning or circular motion"
+    },
+    {
+      "id": "bandae",
+      "englishName": "Reverse",
+      "koreanName": "반대",
+      "romanized": "Bandae",
+      "beltLearnt": "Blue",
+      "category": "Directions",
+      "sound": "/audio/bandae.mp3",
+      "meaning": "Reverse or opposite side"
+    },
+    {
+      "id": "ssang",
+      "englishName": "Twin/Double",
+      "koreanName": "쌍",
+      "romanized": "Ssang",
+      "beltLearnt": "Blue",
+      "category": "Technique Types",
+      "sound": "/audio/sang.mp3",
+      "meaning": "Twin or double techniques"
+    },
+    {
+      "id": "kaunde",
+      "englishName": "Middle Level",
+      "koreanName": "큰데",
+      "romanized": "Keunde",
+      "beltLearnt": "White",
+      "category": "Levels",
+      "sound": "/audio/kaunde.mp3",
+      "meaning": "Middle section level"
+    },
+    {
+      "id": "najeunde",
+      "englishName": "Low Level",
+      "koreanName": "낮은데",
+      "romanized": "Najeunde",
+      "beltLearnt": "White",
+      "category": "Levels",
+      "sound": "/audio/najunde.mp3",
+      "meaning": "Low section level"
+    },
+    {
+      "id": "nopeunde",
+      "englishName": "High Level",
+      "koreanName": "높은데",
+      "romanized": "Nopeunde",
+      "beltLearnt": "Yellow",
+      "category": "Levels",
+      "sound": "/audio/nopunde.mp3",
+      "meaning": "High section level"
+    },
+    {
+      "id": "an",
+      "englishName": "Inner",
+      "koreanName": "안",
+      "romanized": "An",
+      "beltLearnt": "White",
+      "category": "Directions",
+      "sound": "/audio/an.mp3",
+      "meaning": "Inner or inside"
+    },
+    {
+      "id": "bakkat",
+      "englishName": "Outer",
+      "koreanName": "바깥",
+      "romanized": "Bakkat",
+      "beltLearnt": "White-Yellow",
+      "category": "Directions",
+      "sound": "/audio/bakat.mp3",
+      "meaning": "Outer or outside"
+    },
+    {
+      "id": "palmok",
+      "englishName": "Forearm",
+      "koreanName": "팔목",
+      "romanized": "Palmok",
+      "beltLearnt": "White",
+      "category": "Body Parts",
+      "sound": "/audio/palmok.mp3",
+      "meaning": "Forearm techniques"
+    },
+    {
+      "id": "deung",
+      "englishName": "Back/Reverse",
+      "koreanName": "등",
+      "romanized": "Deung",
+      "beltLearnt": "Blue",
+      "category": "Directions",
+      "sound": "/audio/dung.mp3",
+      "meaning": "Back or reverse side"
+    },
+    {
+      "id": "ssewo",
+      "englishName": "Vertical",
+      "koreanName": "세워",
+      "romanized": "Ssewo",
+      "beltLearnt": "Blue",
+      "category": "Directions",
+      "sound": "/audio/sewo.mp3",
+      "meaning": "Vertical position"
+    },
+    {
+      "id": "dwijibeun",
+      "englishName": "Upset",
+      "koreanName": "뒤집은",
+      "romanized": "Dwijibeun",
+      "beltLearnt": "Blue-Red",
+      "category": "Directions",
+      "sound": "/audio/dwijibun.mp3",
+      "meaning": "Upset or upward angle"
+    },
+    {
+      "id": "opeun",
+      "englishName": "Flat",
+      "koreanName": "오픈",
+      "romanized": "Opeun",
+      "beltLearnt": "Blue-Red",
+      "category": "Positions",
+      "sound": "/audio/opun.mp3",
+      "meaning": "Flat or open position"
+    },
+    {
+      "id": "geolcho",
+      "englishName": "Hooking",
+      "koreanName": "걸초",
+      "romanized": "Geolcho",
+      "beltLearnt": "Blue-Red",
+      "category": "Technique Types",
+      "sound": "/audio/golcho.mp3",
+      "meaning": "Hooking motion"
+    },
+    {
+      "id": "bandal",
+      "englishName": "Crescent",
+      "koreanName": "반달",
+      "romanized": "Bandal",
+      "beltLearnt": "Blue-Red",
+      "category": "Kicks",
+      "sound": "/audio/bandal.mp3",
+      "meaning": "Crescent-shaped motion"
+    },
+    {
+      "id": "aneuro",
+      "englishName": "Inward",
+      "koreanName": "아느로",
+      "romanized": "Aneuro",
+      "beltLearnt": "Green",
+      "category": "Directions",
+      "sound": "/audio/anuro.mp3",
+      "meaning": "Inward direction"
+    },
+    {
+      "id": "bakeuro",
+      "englishName": "Outward",
+      "koreanName": "바크로",
+      "romanized": "Bakeuro",
+      "beltLearnt": "White",
+      "category": "Directions",
+      "sound": "/audio/bakuro.mp3",
+      "meaning": "Outward direction"
+    },
+    {
+      "id": "biteuro",
+      "englishName": "Twisting",
+      "koreanName": "비트로",
+      "romanized": "Biteuro",
+      "beltLearnt": "Red",
+      "category": "Directions",
+      "sound": "/audio/bituro.mp3",
+      "meaning": "Twisting motion"
+    },
+    {
+      "id": "chukkyo",
+      "englishName": "Rising",
+      "koreanName": "추교",
+      "romanized": "Chukkyo",
+      "beltLearnt": "Yellow",
+      "category": "Directions",
+      "sound": "/audio/chookyo.mp3",
+      "meaning": "Rising motion"
+    },
+    {
+      "id": "haechyeo",
+      "englishName": "Wedging",
+      "koreanName": "해쳐",
+      "romanized": "Haechyeo",
+      "beltLearnt": "Yellow-Green",
+      "category": "Blocks",
+      "sound": "/audio/hechyo.mp3",
+      "meaning": "Wedging action"
+    },
+    {
+      "id": "dollyeo-makgi",
+      "englishName": "Circular Block",
+      "koreanName": "돌려 막기",
+      "romanized": "Dollyeo Makgi",
+      "beltLearnt": "Green",
+      "category": "Blocks",
+      "sound": "/audio/dollimyo.mp3",
+      "meaning": "Circular blocking motion"
+    },
+    {
+      "id": "nulleo",
+      "englishName": "Pressing",
+      "koreanName": "눌러",
+      "romanized": "Nulleo",
+      "beltLearnt": "Blue",
+      "category": "Technique Types",
+      "sound": "/audio/noollo.mp3",
+      "meaning": "Pressing action"
+    },
+    {
+      "id": "milgi",
+      "englishName": "Pushing",
+      "koreanName": "밀기",
+      "romanized": "Milgi",
+      "beltLearnt": "Blue-Red",
+      "category": "Technique Types",
+      "sound": "/audio/milgi.mp3",
+      "meaning": "Pushing action"
+    },
+    {
+      "id": "gyocha",
+      "englishName": "X-Shape",
+      "koreanName": "교차",
+      "romanized": "Gyocha",
+      "beltLearnt": "Blue",
+      "category": "Positions",
+      "sound": "/audio/kyocha.mp3",
+      "meaning": "Crossed or X-shaped position"
+    },
+    {
+      "id": "san",
+      "englishName": "Mountain/W-Shape",
+      "koreanName": "산",
+      "romanized": "San",
+      "beltLearnt": "Blue-Red",
+      "category": "Positions",
+      "sound": "/audio/san.mp3",
+      "meaning": "Mountain or W-shaped position"
+    },
+    {
+      "id": "du",
+      "englishName": "Double",
+      "koreanName": "두",
+      "romanized": "Du",
+      "beltLearnt": "Green-Blue",
+      "category": "Technique Types",
+      "sound": "/audio/doo.mp3",
+      "meaning": "Double or reinforced"
+    },
+    {
+      "id": "yeoseot",
+      "englishName": "Six",
+      "koreanName": "여섯",
+      "romanized": "Yeoseot",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/yeoseot.mp3",
+      "meaning": "Korean number six"
+    },
+    {
+      "id": "ilgop",
+      "englishName": "Seven",
+      "koreanName": "일곱",
+      "romanized": "Ilgop",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/ilgop.mp3",
+      "meaning": "Korean number seven"
+    },
+    {
+      "id": "yeodeol",
+      "englishName": "Eight",
+      "koreanName": "여덟",
+      "romanized": "Yeodeol",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/yeodeol.mp3",
+      "meaning": "Korean number eight"
+    },
+    {
+      "id": "ahop",
+      "englishName": "Nine",
+      "koreanName": "아홉",
+      "romanized": "Ahop",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/ahop.mp3",
+      "meaning": "Korean number nine"
+    },
+    {
+      "id": "yeol",
+      "englishName": "Ten",
+      "koreanName": "열",
+      "romanized": "Yeol",
+      "beltLearnt": "White",
+      "category": "Numbers & Counting",
+      "sound": "/audio/yeol.mp3",
+      "meaning": "Korean number ten"
+    } 
+  ]
+}
