@@ -1,0 +1,571 @@
+{
+  "patterns": [
+    {
+      "id": "saju-jirugi",
+      "name": "Saju Jirugi",
+      "moveCount": 10,
+      "beltColor": "White",
+      "beltRank": "10th Kup",
+      "meaning": "Four-direction Punch - basic punching practice in four directions",
+      "diagram": "➕",
+      "patternShape": "+",
+      "patternDescription": "Four-direction movement pattern",
+      "focus": "Basic punching, stances, and directional awareness",
+      "movements": [
+        {
+          "stance": "Parallel Ready Stance",
+          "description": "Assume parallel ready stance facing D",
+          "steps": ["Feet shoulder width", "Hands in ready position", "Bow"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Left walking stance toward D while executing low block",
+          "steps": ["Step left forward", "Left low block", "Right fist on hip"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Right walking stance toward D while executing middle punch",
+          "steps": ["Step right forward", "Right middle punch", "Maintain stance"]
+        }
+      ]
+    },
+    {
+      "id": "saju-makgi",
+      "name": "Saju Makgi",
+      "moveCount": 8,
+      "beltColor": "White",
+      "beltRank": "10th Kup",
+      "meaning": "Four-direction Block - basic blocking practice in four directions",
+      "diagram": "🛡️",
+      "patternShape": "+",
+      "patternDescription": "Four-direction blocking pattern",
+      "focus": "Basic blocking techniques and directional movement",
+      "movements": [
+        {
+          "stance": "Parallel Ready Stance",
+          "description": "Assume parallel ready stance facing D",
+          "steps": ["Natural ready stance", "Hands relaxed", "Focus forward"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Left walking stance toward D while executing rising block",
+          "steps": ["Step left forward", "Left rising block", "Right guard"]
+        }
+      ]
+    },
+    {
+      "id": "chon-ji",
+      "name": "Chon-Ji",
+      "moveCount": 19,
+      "beltColor": "White with Yellow Stripe",
+      "beltRank": "9th Kup",
+      "meaning": "Heaven and Earth - representing the beginning of the world",
+      "diagram": "🌍",
+      "patternShape": "+",
+      "patternDescription": "Cross-shaped pattern representing heaven and earth",
+      "focus": "Introduction to pattern training, basic blocks and punches",
+      "movements": [
+        {
+          "stance": "Parallel Ready Stance",
+          "description": "Assume parallel ready stance facing D",
+          "steps": ["Feet shoulder width", "Hands in ready position", "Bow"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left to B, left walking stance, left low block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left outward low block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to B, right walking stance, right middle punch",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn right 180° to A, right walking stance, right low block",
+          "steps": ["Turn 180° right", "Right walking stance", "Right outward low block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to A, left walking stance, left middle punch",
+          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 90° to D, left walking stance, left inner forearm middle block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to D, right walking stance, right middle punch",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn right 180° to C, right walking stance, right inner forearm middle block",
+          "steps": ["Turn 180° right", "Right walking stance", "Right inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to C, left walking stance, left middle punch",
+          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 90° to B, left walking stance, left low block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left outward low block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to B, right walking stance, right middle punch",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to B, left walking stance, left middle punch",
+          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to B, right walking stance, right middle punch with kihap",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch", "Kihap!"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 180° to A, left walking stance, left low block",
+          "steps": ["Turn 180° left", "Left walking stance", "Left outward low block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to A, right walking stance, right middle punch",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to A, left walking stance, left middle punch",
+          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to A, right walking stance, right middle punch with kihap",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch", "Kihap!"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 90° to D, left walking stance, left inner forearm middle block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+        },
+        {
+          "stance": "Parallel Ready Stance",
+          "description": "Bring right foot to left foot, parallel ready stance facing D",
+          "steps": ["Bring feet together", "Hands in ready position", "End"]
+        }
+      ]
+    },
+    {
+      "id": "dan-gun",
+      "name": "Dan-Gun",
+      "moveCount": 21,
+      "beltColor": "Yellow",
+      "beltRank": "8th Kup",
+      "meaning": "Named after the holy Dan-Gun, legendary founder of Korea in 2333 BC",
+      "diagram": "⛰️",
+      "patternShape": "工",
+      "patternDescription": "Chinese character for 'worker' or 'founder'",
+      "focus": "Walking stance, middle section punches, and front snap kick",
+      "movements": [
+        {
+          "stance": "Parallel Ready Stance",
+          "description": "Assume parallel ready stance facing D",
+          "steps": ["Feet shoulder width", "Hands in ready position", "Bow"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left to B, left walking stance, left middle block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to B, right walking stance, right high punch",
+          "steps": ["Step forward", "Right walking stance", "Right high section punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn right 180° to A, right walking stance, right middle block",
+          "steps": ["Turn 180° right", "Right walking stance", "Right inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to A, left walking stance, left high punch",
+          "steps": ["Step forward", "Left walking stance", "Left high section punch"]
+        },
+        {
+          "stance": "L-Stance",
+          "description": "Turn left 90° to D, right L-stance, knife-hand guarding block",
+          "steps": ["Turn 90° left", "Right L-stance", "Knife-hand guarding block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to D, left walking stance, left middle punch",
+          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to D, right walking stance, right middle punch",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "L-Stance",
+          "description": "Turn right 270° to C, left L-stance, knife-hand guarding block",
+          "steps": ["Turn 270° right", "Left L-stance", "Knife-hand guarding block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to C, right walking stance, right middle punch",
+          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to C, left walking stance, left middle punch",
+          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 90° to B, left walking stance, left middle block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to B, right walking stance, right high punch",
+          "steps": ["Step forward", "Right walking stance", "Right high section punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn right 180° to A, right walking stance, right middle block",
+          "steps": ["Turn 180° right", "Right walking stance", "Right inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Step forward to A, left walking stance, left high punch",
+          "steps": ["Step forward", "Left walking stance", "Left high section punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 90° to D, left walking stance, left middle block",
+          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Right front snap kick, landing in right walking stance, right middle punch",
+          "steps": ["Right front snap kick", "Land in walking stance", "Right middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Left front snap kick, landing in left walking stance, left middle punch",
+          "steps": ["Left front snap kick", "Land in walking stance", "Left middle punch"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Right front snap kick, landing in right walking stance, right middle punch with kihap",
+          "steps": ["Right front snap kick", "Land in walking stance", "Right middle punch", "Kihap!"]
+        },
+        {
+          "stance": "Walking Stance",
+          "description": "Turn left 270° to C, left walking stance, left middle block",
+          "steps": ["Turn 270° left", "Left walking stance", "Left inner forearm middle block"]
+        },
+        {
+          "stance": "Parallel Ready Stance",
+          "description": "Bring right foot to left foot, parallel ready stance facing D",
+          "steps": ["Bring feet together", "Hands in ready position", "End"]
+        }
+      ]
+    },
+    {
+      "id": "do-san",
+      "name": "Do-San",
+      "moveCount": 24,
+      "beltColor": "Yellow with Green Stripe",
+      "beltRank": "7th Kup",
+      "meaning": "Pseudonym of the patriot Ahn Chang-Ho (1876-1938)",
+      "diagram": "📚",
+      "patternShape": "山",
+      "patternDescription": "Mountain shape representing steadfastness",
+      "focus": "Front stance, twin forearm block, and side piercing kick",
+      "movements": []
+    },
+    {
+      "id": "won-hyo",
+      "name": "Won-Hyo",
+      "moveCount": 28,
+      "beltColor": "Green",
+      "beltRank": "6th Kup",
+      "meaning": "The noted monk who introduced Buddhism to the Silla Dynasty in 686 AD",
+      "diagram": "☸️",
+      "patternShape": "十",
+      "patternDescription": "Cross pattern representing Buddhism",
+      "focus": "L-stance, forearm guarding block, and side thrusting kick",
+      "movements": []
+    },
+    {
+      "id": "yul-gok",
+      "name": "Yul-Gok",
+      "moveCount": 38,
+      "beltColor": "Green with Blue Stripe",
+      "beltRank": "5th Kup",
+      "meaning": "Pseudonym of great philosopher and scholar Yi I (1536-1584)",
+      "diagram": "🎓",
+      "patternShape": "士",
+      "patternDescription": "Scholar pattern representing learning",
+      "focus": "Sitting stance, upset punches, and knife-hand strikes",
+      "movements": []
+    },
+    {
+      "id": "joong-gun",
+      "name": "Joong-Gun",
+      "moveCount": 32,
+      "beltColor": "Blue",
+      "beltRank": "4th Kup",
+      "meaning": "Named after patriot Ahn Joong-Gun who assassinated Hiro-Bumi Ito",
+      "diagram": "⚔️",
+      "patternShape": "工",
+      "patternDescription": "Pattern representing 32 movements for his age at death",
+      "focus": "Twisting stance, twin vertical punches, and back fist strikes",
+      "movements": []
+    },
+    {
+      "id": "toi-gye",
+      "name": "Toi-Gye",
+      "moveCount": 37,
+      "beltColor": "Blue with Red Stripe",
+      "beltRank": "3rd Kup",
+      "meaning": "Pen name of the noted scholar Yi Hwang (16th century)",
+      "diagram": "🏔️",
+      "patternShape": "士",
+      "patternDescription": "Scholar pattern representing his 37 years of development",
+      "focus": "X-stance, circular blocks, and reverse knife-hand strikes",
+      "movements": []
+    },
+    {
+      "id": "hwa-rang",
+      "name": "Hwa-Rang",
+      "moveCount": 29,
+      "beltColor": "Red",
+      "beltRank": "2nd Kup",
+      "meaning": "Named after the Hwa-Rang youth group of the Silla Dynasty",
+      "diagram": "🌸",
+      "patternShape": "工",
+      "patternDescription": "Pattern representing the youth group",
+      "focus": "Low stance, elbow strikes, and knee strikes",
+      "movements": []
+    },
+    {
+      "id": "choong-moo",
+      "name": "Choong-Moo",
+      "moveCount": 30,
+      "beltColor": "Red with Black Stripe",
+      "beltRank": "1st Kup",
+      "meaning": "Named after Admiral Yi Soon-Sin who invented the first armored battleship",
+      "diagram": "⚓",
+      "patternShape": "十",
+      "patternDescription": "Pattern ending with left hand attack representing his unfinished work",
+      "focus": "Bending ready stance, upward kicks, and flying techniques",
+      "movements": []
+    },
+    {
+      "id": "kwang-gae",
+      "name": "Kwang-Gae",
+      "moveCount": 39,
+      "beltColor": "Black",
+      "beltRank": "1st Dan",
+      "meaning": "Named after Kwang-Gae-Toh-Wang, 19th king of the Koguryo Dynasty",
+      "diagram": "👑",
+      "patternShape": "士",
+      "patternDescription": "Pattern representing expansion and recovery of lost territories",
+      "focus": "Wide stance, palm heel strikes, and pushing techniques",
+      "movements": []
+    },
+    {
+      "id": "po-eun",
+      "name": "Po-Eun",
+      "moveCount": 36,
+      "beltColor": "Black",
+      "beltRank": "1st Dan",
+      "meaning": "Pseudonym of loyal subject Chong Mong-Chu (14th century)",
+      "diagram": "📜",
+      "patternShape": "一",
+      "patternDescription": "Straight line representing his unerring loyalty to the king",
+      "focus": "Fixed stance, side elbow thrust, and horizontal strikes",
+      "movements": []
+    },
+    {
+      "id": "ge-baek",
+      "name": "Ge-Baek",
+      "moveCount": 44,
+      "beltColor": "Black",
+      "beltRank": "1st Dan",
+      "meaning": "Named after Ge-Baek, a great general from the Baek Je Dynasty",
+      "diagram": "⚡",
+      "patternShape": "丨",
+      "patternDescription": "Straight line representing severe and strict military discipline",
+      "focus": "Close stance, slow motion techniques, and simultaneous blocks",
+      "movements": []
+    },
+    {
+      "id": "eui-am",
+      "name": "Eui-Am",
+      "moveCount": 45,
+      "beltColor": "Black",
+      "beltRank": "2nd Dan",
+      "meaning": "Pseudonym of Son Byong Hi, leader of Korean Independence Movement",
+      "diagram": "✊",
+      "patternShape": "山",
+      "patternDescription": "Mountain shape representing his spirit",
+      "focus": "Shifted stance, U-shaped blocks, and circular techniques",
+      "movements": []
+    },
+    {
+      "id": "choong-jang",
+      "name": "Choong-Jang",
+      "moveCount": 52,
+      "beltColor": "Black",
+      "beltRank": "2nd Dan",
+      "meaning": "Pseudonym of Kim Duk Ryang, a great general and poet",
+      "diagram": "🎭",
+      "patternShape": "工",
+      "patternDescription": "Pattern ending with left hand attack representing his tragic death",
+      "focus": "Bent wrist strikes, pressing blocks, and crescent kicks",
+      "movements": []
+    },
+    {
+      "id": "juche",
+      "name": "Juche",
+      "moveCount": 45,
+      "beltColor": "Black",
+      "beltRank": "2nd Dan",
+      "meaning": "Philosophical idea that man is the master of everything",
+      "diagram": "🔥",
+      "patternShape": "山",
+      "patternDescription": "Mountain shape representing the Baekdu Mountain",
+      "focus": "Overlapping kicks, jumping techniques, and combination attacks",
+      "movements": []
+    },
+    {
+      "id": "sam-il",
+      "name": "Sam-Il",
+      "moveCount": 33,
+      "beltColor": "Black",
+      "beltRank": "3rd Dan",
+      "meaning": "Historical date of Korean Independence Movement (March 1, 1919)",
+      "diagram": "🇰🇷",
+      "patternShape": "卍",
+      "patternDescription": "Pattern representing the revolutionary spirit",
+      "focus": "Waving techniques, circular motions, and rhythmic patterns",
+      "movements": []
+    },
+    {
+      "id": "yoo-sin",
+      "name": "Yoo-Sin",
+      "moveCount": 68,
+      "beltColor": "Black",
+      "beltRank": "3rd Dan",
+      "meaning": "Named after General Kim Yoo Sin, unified three kingdoms of Korea",
+      "diagram": "🕊️",
+      "patternShape": "十",
+      "patternDescription": "Pattern representing unification",
+      "focus": "Flexible stances, flowing movements, and continuous techniques",
+      "movements": []
+    },
+    {
+      "id": "choi-yong",
+      "name": "Choi-Yong",
+      "moveCount": 46,
+      "beltColor": "Black",
+      "beltRank": "3rd Dan",
+      "meaning": "Named after General Choi Yong, premier and commander-in-chief",
+      "diagram": "🛡️",
+      "patternShape": "工",
+      "patternDescription": "Pattern representing loyalty and patriotism",
+      "focus": "Strong linear movements, powerful strikes, and stable stances",
+      "movements": []
+    },
+    {
+      "id": "yong-gae",
+      "name": "Yong-Gae",
+      "moveCount": 49,
+      "beltColor": "Black",
+      "beltRank": "4th Dan",
+      "meaning": "Named after famous general during Koguryo Dynasty",
+      "diagram": "🌊",
+      "patternShape": "士",
+      "patternDescription": "Pattern representing his aggressive battles",
+      "focus": "Aggressive attacks, rapid combinations, and powerful kicks",
+      "movements": []
+    },
+    {
+      "id": "ul-ji",
+      "name": "Ul-Ji",
+      "moveCount": 42,
+      "beltColor": "Black",
+      "beltRank": "4th Dan",
+      "meaning": "Named after General Ul-Ji Moon Dok who defended Korea against Chinese",
+      "diagram": "🏹",
+      "patternShape": "士",
+      "patternDescription": "Pattern representing his skillful tactics",
+      "focus": "Deceptive movements, tactical positioning, and counter-attacks",
+      "movements": []
+    },
+    {
+      "id": "moon-moo",
+      "name": "Moon-Moo",
+      "moveCount": 61,
+      "beltColor": "Black",
+      "beltRank": "4th Dan",
+      "meaning": "Named after 30th king of Silla Dynasty",
+      "diagram": "👑",
+      "patternShape": "一",
+      "patternDescription": "Pattern representing his death and burial at sea",
+      "focus": "Graceful movements, flowing transitions, and circular defense",
+      "movements": []
+    },
+    {
+      "id": "so-san",
+      "name": "So-San",
+      "moveCount": 72,
+      "beltColor": "Black",
+      "beltRank": "5th Dan",
+      "meaning": "Pseudonym of Choi Hyong Ung, great monk during Yi Dynasty",
+      "diagram": "🙏",
+      "patternShape": "山",
+      "patternDescription": "Mountain pattern representing his monastic life",
+      "focus": "Endurance techniques, long combinations, and spiritual focus",
+      "movements": []
+    },
+    {
+      "id": "se-jong",
+      "name": "Se-Jong",
+      "moveCount": 24,
+      "beltColor": "Black",
+      "beltRank": "5th Dan",
+      "meaning": "Named after greatest Korean king, inventor of Korean alphabet",
+      "diagram": "🔠",
+      "patternShape": "王",
+      "patternDescription": "King pattern representing his majesty",
+      "focus": "Precise movements, intellectual approach, and strategic positioning",
+      "movements": []
+    },
+    {
+      "id": "tong-il",
+      "name": "Tong-Il",
+      "moveCount": 56,
+      "beltColor": "Black",
+      "beltRank": "6th Dan",
+      "meaning": "Represents the unification of Korea which has been divided since 1945",
+      "diagram": "☮️",
+      "patternShape": "一",
+      "patternDescription": "Straight line representing unified Korea",
+      "focus": "Unified techniques, harmonious movements, and complete mastery",
+      "movements": []
+    }
+  ]
+}
