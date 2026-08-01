@@ -1,0 +1,167 @@
+{
+  "category": "Punches",
+  "koreanName": "Jirugi",
+  "description": "Fundamental hand techniques delivering powerful, direct attacks with proper fist formation and body mechanics.",
+  "trainingPrinciples": {
+    "focusAreas": [
+      "Proper fist formation and wrist alignment",
+      "Hip rotation and shoulder extension",
+      "Target accuracy and penetration",
+      "Breathing coordination with execution",
+      "Quick retraction and ready position"
+    ],
+    "safety": [
+      "Always use proper fist formation to prevent injury",
+      "Start with slow, controlled movements",
+      "Use focus mitts or bags for power training",
+      "Maintain wrist alignment throughout execution",
+      "Build power gradually over time"
+    ]
+  },
+  "beltLevels": [
+    {
+      "belt": "White Belt",
+      "beltColor": "from-gray-300 to-gray-900",
+      "techniques": [
+        {
+          "korean": "Baro Jirugi",
+          "english": "Obverse Punch",
+          "description": "Basic punch with same-side arm and leg forward",
+          "detailedDescription": "The fundamental punching technique where the punching arm is on the same side as the forward leg. Emphasizes basic power generation and alignment.",
+          "application": "Basic attacking technique, foundation for all hand strikes, and building fundamental power mechanics.",
+          "steps": [
+            "Assume walking stance with same-side leg forward",
+            "Form proper fist with thumb outside fingers",
+            "Extend arm straight from shoulder",
+            "Rotate fist to palm-down position at impact",
+            "Retract quickly to guarding position"
+          ],
+          "commonMistakes": [
+            "Incorrect fist formation",
+            "Poor wrist alignment",
+            "Insufficient hip rotation",
+            "Punching from chest instead of shoulder",
+            "Slow retraction after punch"
+          ],
+          "image": "/images/techniques/baro-jireugi.jpg"
+        },
+        {
+          "korean": "Bandae Jirugi",
+          "english": "Reverse Punch",
+          "description": "Powerful punch with opposite arm to forward leg",
+          "detailedDescription": "A strong punching technique using the arm opposite to the forward leg, allowing for maximum hip rotation and power generation.",
+          "application": "Primary power punch in patterns and sparring, utilizing full body rotation for maximum impact.",
+          "steps": [
+            "Assume walking stance with one leg forward",
+            "Punch with arm opposite to forward leg",
+            "Rotate hips fully for power generation",
+            "Extend arm straight with proper alignment",
+            "Retract quickly while maintaining guard"
+          ],
+          "commonMistakes": [
+            "Incomplete hip rotation",
+            "Arm not fully extended",
+            "Poor timing of hip and arm coordination",
+            "Leaning forward during punch",
+            "Inadequate guarding with non-punching hand"
+          ],
+          "image": "/images/techniques/bandae-jireugi.jpg"
+        },
+        {
+          "korean": "Ap Joomok Jirugi",
+          "english": "Forefist Punch",
+          "description": "Standard punch using front two knuckles as striking surface",
+          "detailedDescription": "The classic punching technique using the first two knuckles as primary striking surface, with proper fist alignment and wrist position.",
+          "application": "Versatile punching technique for various targets, foundation for all fist-based attacks.",
+          "steps": [
+            "Form tight fist with knuckles aligned",
+            "Position wrist straight and strong",
+            "Extend arm with knuckles facing target",
+            "Make contact with first two knuckles",
+            "Retract along same path to ready position"
+          ],
+          "commonMistakes": [
+            "Striking with wrong knuckles",
+            "Bent wrist during impact",
+            "Loose fist formation",
+            "Incorrect alignment with target",
+            "Poor follow-through"
+          ],
+          "image": "/images/techniques/joomok-jireugi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt",
+      "beltColor": "from-blue-500 to-blue-600",
+      "techniques": [
+        {
+          "korean": "Sang Joomok Sewo Jirugi",
+          "english": "Twin Fist Vertical Punch",
+          "description": "Simultaneous double punch with vertical fist alignment",
+          "detailedDescription": "An advanced punching technique delivering two simultaneous punches with fists in vertical alignment, requiring coordination and balance.",
+          "application": "Powerful double attack, breaking techniques, and demonstrating advanced punching control.",
+          "steps": [
+            "Assume stable stance for double power generation",
+            "Form both fists in vertical position",
+            "Execute simultaneous punches to same target",
+            "Maintain balance and alignment during double extension",
+            "Retract both arms simultaneously"
+          ],
+          "commonMistakes": [
+            "Uneven power between fists",
+            "Poor balance during double execution",
+            "Incorrect vertical fist alignment",
+            "Insufficient coordination",
+            "Loss of form with simultaneous action"
+          ],
+          "image": "/images/techniques/sang-joomok-sewo-jireugi.jpg"
+        },
+        {
+          "korean": "Sang Joomok Dwijibo Jirugi",
+          "english": "Twin Fist Upset Punch",
+          "description": "Double punch delivered in upward motion from low position",
+          "detailedDescription": "A sophisticated double punching technique executed in upward motion, starting from low position and rising to target.",
+          "application": "Attacking from low positions, countering against taller opponents, and combination techniques.",
+          "steps": [
+            "Start from low or crouching position",
+            "Execute double punch in upward arc motion",
+            "Coordinate both arms in synchronized upward movement",
+            "Strike with upward penetrating force",
+            "Return to ready position"
+          ],
+          "commonMistakes": [
+            "Poor synchronization between fists",
+            "Insufficient upward power",
+            "Loss of balance during upward motion",
+            "Incorrect arc path",
+            "Inadequate low starting position"
+          ],
+          "image": "/images/techniques/sang-joomok-dwijibun-jireugi.jpg"
+        },
+        {
+          "korean": "Giokja Jirugi",
+          "english": "Angle Punch",
+          "description": "Punch delivered at specific angles rather than straight line",
+          "detailedDescription": "An advanced punching technique executed at precise angles, requiring understanding of geometry and targeting in combat situations.",
+          "application": "Attacking around guards, hitting specific angles, and advanced sparring techniques.",
+          "steps": [
+            "Identify specific angle of attack",
+            "Adjust body alignment for angular delivery",
+            "Execute punch along precise angular path",
+            "Maintain power despite non-linear motion",
+            "Recover to defensive position"
+          ],
+          "commonMistakes": [
+            "Incorrect angle calculation",
+            "Loss of power in angular delivery",
+            "Poor body alignment for specific angle",
+            "Telegraphing the angular intent",
+            "Inadequate targeting precision"
+          ],
+          "image": "/images/techniques/giokja-jireugi.jpg"
+        }
+      ]
+    }
+  ]
+}

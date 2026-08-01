@@ -1,0 +1,455 @@
+{
+  "category": "Stances",
+  "koreanName": "Sogi",
+  "description": "Fundamental positions that provide balance, power, and stability for all Taekwondo techniques.",
+  "trainingPrinciples": {
+    "focusAreas": [
+      "Proper weight distribution and balance",
+      "Correct foot positioning and alignment",
+      "Knee bend and hip positioning",
+      "Spinal alignment and posture",
+      "Smooth transitions between stances"
+    ],
+    "safety": [
+      "Maintain proper knee alignment over feet",
+      "Avoid locking knees in any stance",
+      "Build stance endurance gradually",
+      "Focus on form before depth",
+      "Use mirrors to check alignment"
+    ]
+  },
+  "beltLevels": [
+    {
+      "belt": "White Belt",
+      "beltColor": "from-gray-300 to-gray-900",
+      "techniques": [
+        {
+          "korean": "Charyot Sogi",
+          "english": "Attention Stance",
+          "description": "Basic standing position with feet together, ready for action",
+          "detailedDescription": "The fundamental ready position where feet are together, hands at sides, and body is alert. Used for bowing and beginning/ending patterns.",
+          "application": "Starting position for all patterns, formal greetings, and mental preparation before technique execution.",
+          "steps": [
+            "Stand with heels together, feet at 45-degree angle",
+            "Keep hands naturally at sides with fingers straight",
+            "Maintain straight back and relaxed shoulders",
+            "Focus eyes forward with determined expression",
+            "Keep weight evenly distributed on both feet"
+          ],
+          "commonMistakes": [
+            "Feet too far apart or uneven",
+            "Slouching or leaning forward",
+            "Hands tense or in fists",
+            "Weight unevenly distributed",
+            "Lack of mental focus"
+          ],
+          "image": "/images/techniques/charyot-sogi.jpg"
+        },
+        {
+          "korean": "junbi Sogi",
+          "english": "Parallel Stance",
+          "description": "Feet shoulder-width apart, parallel to each other",
+          "detailedDescription": "A stable standing position with feet parallel and shoulder-width apart. Provides solid base for various techniques.",
+          "application": "Foundation for basic techniques, ready position for some patterns, and stable platform for power generation.",
+          "steps": [
+            "Place feet shoulder-width apart, parallel to each other",
+            "Distribute weight evenly on both feet",
+            "Bend knees slightly for stability",
+            "Keep back straight and shoulders relaxed",
+            "Position hands in ready position or guarding block"
+          ],
+          "commonMistakes": [
+            "Feet too narrow or too wide",
+            "Knees locked straight",
+            "Weight on heels or toes only",
+            "Hips tilted forward or backward",
+            "Upper body tense"
+          ],
+          "image": "/images/techniques/naranhi-sogi.jpg"
+        },
+        {
+          "korean": "Naranhi Junbi Sogi",
+          "english": "Parallel Ready Stance",
+          "description": "Parallel stance with specific hand positioning for readiness",
+          "detailedDescription": "A prepared version of parallel stance with hands positioned for immediate technique execution. Shows mental and physical readiness.",
+          "application": "Ready position for patterns and techniques, demonstrates preparedness for action.",
+          "steps": [
+            "Assume parallel stance with feet shoulder-width apart",
+            "Bring hands up to chest level, palms facing each other",
+            "Keep elbows slightly bent and relaxed",
+            "Maintain alert posture with focused expression",
+            "Be prepared to move in any direction immediately"
+          ],
+          "commonMistakes": [
+            "Hands too high or too low",
+            "Elbows flared out excessively",
+            "Stance too rigid or tense",
+            "Lack of mental alertness",
+            "Poor weight distribution"
+          ],
+          "image": "/images/techniques/naranhi-junbi-sogi.jpg"
+        },
+        {
+          "korean": "Annun Sogi",
+          "english": "Sitting Stance",
+          "description": "Deep stance with wide base, knees bent outward",
+          "detailedDescription": "A powerful, stable stance with wide foot placement and deep knee bend. Provides excellent stability for strong techniques.",
+          "application": "Used for powerful blocks, strikes, and developing leg strength. Common in many patterns.",
+          "steps": [
+            "Place feet two shoulder-widths apart",
+            "Turn feet slightly outward at 25-degree angle",
+            "Bend knees deeply, keeping them over feet",
+            "Keep back straight and perpendicular to ground",
+            "Distribute weight evenly between both feet"
+          ],
+          "commonMistakes": [
+            "Knees collapsing inward",
+            "Back leaning forward",
+            "Feet too narrow or too wide",
+            "Weight on heels only",
+            "Insufficient knee bend"
+          ],
+          "image": "/images/techniques/annun-sogi.jpg"
+        },
+        {
+          "korean": "Annun Junbi Sogi",
+          "english": "Sitting Ready Stance",
+          "description": "Sitting stance with ready hand positioning",
+          "detailedDescription": "The prepared version of sitting stance, combining the stability of deep stance with readiness for immediate action.",
+          "application": "Ready position for techniques requiring power and stability, often used in pattern beginnings.",
+          "steps": [
+            "Assume proper sitting stance position",
+            "Position hands in ready posture at chest level",
+            "Keep elbows slightly bent and relaxed",
+            "Maintain deep, stable base with straight back",
+            "Focus eyes forward with determined expression"
+          ],
+          "commonMistakes": [
+            "Hands positioned incorrectly",
+            "Stance too shallow for ready position",
+            "Upper body tense or rigid",
+            "Poor alignment of knees and feet",
+            "Lack of mental preparation"
+          ],
+          "image": "/images/techniques/annun-junbi-sogi.jpg"
+        },
+        {
+          "korean": "Gunnun Sogi",
+          "english": "Walking Stance",
+          "description": "Forward-facing stance with 70% weight on front leg",
+          "detailedDescription": "A dynamic, forward-oriented stance ideal for attacking techniques. Provides strong forward momentum and balance.",
+          "application": "Primary stance for forward attacks, punches, and front kicks. Used extensively in patterns.",
+          "steps": [
+            "Step forward with one foot, shoulder-width apart",
+            "Bend front knee to align with ankle",
+            "Keep back leg straight with foot at 25-degree angle",
+            "Distribute weight: 70% front, 30% back",
+            "Keep hips and shoulders square to front"
+          ],
+          "commonMistakes": [
+            "Front knee extending past toes",
+            "Back foot angled incorrectly",
+            "Hips turned sideways",
+            "Weight distribution incorrect",
+            "Stance too long or too short"
+          ],
+          "image": "/images/techniques/gunnun-sogi.jpg"
+        },
+        {
+          "korean": "Gunnun Junbi Sogi",
+          "english": "Walking Ready Stance",
+          "description": "Walking stance prepared for immediate action",
+          "detailedDescription": "The ready version of walking stance, positioned for quick forward movement and technique execution.",
+          "application": "Ready position for forward-attacking techniques and patterns requiring immediate forward motion.",
+          "steps": [
+            "Assume proper walking stance position",
+            "Position hands in ready posture appropriate for technique",
+            "Keep body weight slightly forward for quick movement",
+            "Maintain alert, focused posture",
+            "Be prepared to execute techniques immediately"
+          ],
+          "commonMistakes": [
+            "Hands not in proper ready position",
+            "Weight too far back for quick forward movement",
+            "Stance too deep for quick transitions",
+            "Lack of forward intention",
+            "Poor mental focus"
+          ],
+          "image": "/images/techniques/gunnun-junbi-sogi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "White Belt with Yellow Stripe",
+      "beltColor": "from-yellow-300 to-yellow-500",
+      "techniques": [
+        {
+          "korean": "Niunja Sogi",
+          "english": "L-Stance",
+          "description": "Side-facing stance with feet in L-shape, weight distributed 50/50",
+          "detailedDescription": "A versatile side-facing stance providing excellent mobility and defensive positioning. Feet form an L-shape with even weight distribution.",
+          "application": "Used for defensive techniques, side kicks, and creating angles against opponents.",
+          "steps": [
+            "Place feet in L-shape, one foot forward, one perpendicular",
+            "Keep distance of one shoulder-width between feet",
+            "Bend both knees equally, weight 50/50 distribution",
+            "Align front knee with front foot, back knee with back foot",
+            "Keep hips and shoulders at 45-degree angle to front"
+          ],
+          "commonMistakes": [
+            "Weight distribution uneven",
+            "Feet too close or too far apart",
+            "Knees collapsing inward",
+            "Hips squared to front instead of angled",
+            "Back foot not perpendicular"
+          ],
+          "image": "/images/techniques/niunja-sogi.jpg"
+        },
+        {
+          "korean": "Niunja Junbi Sogi",
+          "english": "L-Ready Stance",
+          "description": "L-stance prepared for immediate defensive or offensive action",
+          "detailedDescription": "The ready version of L-stance, positioned for quick angular movement and technique execution from side-facing position.",
+          "application": "Ready position for angular attacks, defensive techniques, and patterns requiring side-facing readiness.",
+          "steps": [
+            "Assume proper L-stance position",
+            "Position hands for angular technique execution",
+            "Maintain 50/50 weight distribution for quick movement",
+            "Keep body alert to both front and side directions",
+            "Be prepared for quick angular transitions"
+          ],
+          "commonMistakes": [
+            "Hands positioned for forward-only techniques",
+            "Weight favoring one direction",
+            "Lack of angular awareness",
+            "Stance too rigid for quick movement",
+            "Poor peripheral vision focus"
+          ],
+          "image": "/images/techniques/niunja-junbi-sogi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt",
+      "beltColor": "from-green-500 to-green-700",
+      "techniques": [
+        {
+          "korean": "Gojung Sogi",
+          "english": "Fixed Stance",
+          "description": "Very deep, wide stance for maximum stability and power",
+          "detailedDescription": "An extremely deep and wide stance designed for maximum stability and power generation. Used for powerful techniques requiring solid base.",
+          "application": "Powerful breaking techniques, strong defensive positions, and developing exceptional leg strength.",
+          "steps": [
+            "Place feet very wide, beyond shoulder-width",
+            "Bend knees deeply until thighs are nearly parallel to ground",
+            "Keep back straight and vertical",
+            "Distribute weight evenly between both feet",
+            "Turn feet outward at 45-degree angles"
+          ],
+          "commonMistakes": [
+            "Insufficient depth in stance",
+            "Knees collapsing inward",
+            "Back leaning forward excessively",
+            "Weight on toes instead of whole foot",
+            "Feet too narrow for proper stability"
+          ],
+          "image": "/images/techniques/gojung-sogi.jpg"
+        },
+        {
+          "korean": "Moa Junbi Sogi A",
+          "english": "Closed Ready Stance A",
+          "description": "Feet together with specific hand positioning variation A",
+          "detailedDescription": "A closed stance with feet together and specific hand positioning (variation A) used in advanced patterns and formal ready positions.",
+          "application": "Formal ready position for advanced patterns, demonstrates precision and control in technique preparation.",
+          "steps": [
+            "Bring feet together with heels touching",
+            "Position hands in specific pattern-ready position A",
+            "Keep back straight and shoulders relaxed",
+            "Maintain alert, focused posture",
+            "Be prepared for immediate pattern execution"
+          ],
+          "commonMistakes": [
+            "Feet not properly together",
+            "Hand position incorrect for variation A",
+            "Body tense or rigid",
+            "Lack of pattern-specific focus",
+            "Poor balance in closed position"
+          ],
+          "image": "/images/techniques/moa-junbi-sogi-a.jpg"
+        },
+        {
+          "korean": "Guburyo Junbi Sogi A",
+          "english": "Bending Ready Stance A",
+          "description": "Bent-knee ready stance variation A for dynamic techniques",
+          "detailedDescription": "A ready stance with bent knees and specific hand positioning (variation A) designed for quick, dynamic technique execution.",
+          "application": "Ready position for dynamic, flowing techniques and patterns requiring quick weight transfers.",
+          "steps": [
+            "Assume position with knees comfortably bent",
+            "Position hands in bending ready variation A",
+            "Keep weight on balls of feet for quick movement",
+            "Maintain relaxed but alert upper body",
+            "Be prepared for rapid technique execution"
+          ],
+          "commonMistakes": [
+            "Knees too bent or too straight",
+            "Weight on heels instead of balls of feet",
+            "Hand position incorrect for variation A",
+            "Upper body too tense",
+            "Lack of dynamic readiness"
+          ],
+          "image": "/images/techniques/guburyo-junbi-sogi-a.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt with Blue Stripe",
+      "beltColor": "from-green-500 to-blue-500",
+      "techniques": [
+        {
+          "korean": "Kyocha Sogi",
+          "english": "X-Stance",
+          "description": "Cross-legged stance for quick direction changes and agility",
+          "detailedDescription": "A dynamic, cross-legged stance used for quick direction changes, spinning techniques, and demonstrating advanced balance and agility.",
+          "application": "Spinning techniques, quick direction changes, and advanced pattern movements requiring cross-legged stability.",
+          "steps": [
+            "Cross one leg behind the other",
+            "Keep feet close together, one supporting most weight",
+            "Bend supporting knee slightly for stability",
+            "Keep upper body upright and balanced",
+            "Be prepared to uncross quickly for movement"
+          ],
+          "commonMistakes": [
+            "Feet too far apart in cross position",
+            "Insufficient weight on supporting leg",
+            "Upper body leaning excessively",
+            "Cross position too deep for quick movement",
+            "Poor balance in crossed position"
+          ],
+          "image": "/images/techniques/kyocha-sogi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt",
+      "beltColor": "from-blue-500 to-blue-700",
+      "techniques": [
+        {
+          "korean": "Moa Junbi Sogi B",
+          "english": "Closed Ready Stance B",
+          "description": "Closed stance with advanced hand positioning variation B",
+          "detailedDescription": "Advanced closed ready stance with specific hand positioning (variation B) used in high-level patterns and demonstrating precision readiness.",
+          "application": "Formal ready position for advanced patterns, demonstrates mastery of stance precision and control.",
+          "steps": [
+            "Bring feet together with precise alignment",
+            "Position hands in specific pattern-ready position B",
+            "Maintain perfect posture and balance",
+            "Demonstrate mental and physical readiness",
+            "Be prepared for complex pattern execution"
+          ],
+          "commonMistakes": [
+            "Imperfect foot alignment",
+            "Hand position incorrect for variation B",
+            "Lack of precision in posture",
+            "Insufficient mental focus",
+            "Poor demonstration of control"
+          ],
+          "image": "/images/techniques/moa-junbi-sogi-b.jpg"
+        },
+        {
+          "korean": "Dwitbal Sogi",
+          "english": "Rear Foot Stance",
+          "description": "Stance with most weight on rear foot for defensive positioning",
+          "detailedDescription": "A defensive-oriented stance with majority of weight on rear foot, allowing for quick backward movement and counter-attacks.",
+          "application": "Defensive techniques, creating distance from opponents, and preparing for counter-attacking moves.",
+          "steps": [
+            "Position feet in walking stance configuration",
+            "Shift weight 90% to rear foot, 10% on front",
+            "Keep front foot touching lightly for balance",
+            "Maintain body alignment for quick backward movement",
+            "Be prepared for defensive techniques"
+          ],
+          "commonMistakes": [
+            "Weight distribution incorrect",
+            "Front foot bearing too much weight",
+            "Body alignment favoring forward movement",
+            "Stance too deep for quick backward motion",
+            "Poor balance in rear-weighted position"
+          ],
+          "image": "/images/techniques/dwit-bal-sogi.jpg"
+        },
+        {
+          "korean": "Nachuo Sogi",
+          "english": "Low Stance",
+          "description": "Exceptionally deep stance for maximum power and stability",
+          "detailedDescription": "An extremely low version of basic stances, demonstrating advanced leg strength, balance, and power generation capability.",
+          "application": "Maximum power techniques, advanced breaking, and demonstrations of exceptional physical conditioning.",
+          "steps": [
+            "Assume basic stance (sitting or walking)",
+            "Lower body exceptionally deep while maintaining form",
+            "Keep back straight and vertical despite depth",
+            "Maintain proper knee and foot alignment",
+            "Demonstrate control and stability in deep position"
+          ],
+          "commonMistakes": [
+            "Form breaking due to excessive depth",
+            "Knees losing proper alignment",
+            "Back rounding or leaning forward",
+            "Loss of balance or stability",
+            "Insufficient strength for proper form"
+          ],
+          "image": "/images/techniques/najunde-sogi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Red Belt",
+      "beltColor": "from-red-500 to-red-700",
+      "techniques": [
+        {
+          "korean": "Moa Junbi Sogi C",
+          "english": "Closed Ready Stance C",
+          "description": "Master-level closed ready stance with variation C hand positioning",
+          "detailedDescription": "The most advanced closed ready stance variation, demonstrating master-level precision, control, and readiness for complex techniques.",
+          "application": "Ready position for master-level patterns, demonstrates ultimate control and preparation for advanced technique execution.",
+          "steps": [
+            "Achieve perfect foot-together alignment",
+            "Execute precise hand positioning variation C",
+            "Demonstrate complete physical and mental control",
+            "Maintain perfect balance and posture",
+            "Exhibit master-level readiness and focus"
+          ],
+          "commonMistakes": [
+            "Any imperfection in alignment",
+            "Hand position not precisely variation C",
+            "Lack of complete mental focus",
+            "Demonstrating tension or rigidity",
+            "Insufficient demonstration of mastery"
+          ],
+          "image": "/images/techniques/moa-junbi-sogi-c.jpg"
+        },
+        {
+          "korean": "Soojik Sogi",
+          "english": "Vertical Stance",
+          "description": "Advanced stance emphasizing perfect vertical alignment and balance",
+          "detailedDescription": "A master-level stance focusing on perfect vertical alignment from head through feet, demonstrating ultimate balance and body control.",
+          "application": "Advanced patterns requiring perfect alignment, demonstrations of master-level balance, and techniques demanding absolute precision.",
+          "steps": [
+            "Achieve perfect vertical alignment throughout body",
+            "Maintain exact 90-degree angles where required",
+            "Demonstrate complete balance and stability",
+            "Exhibit control over every body segment",
+            "Show master-level understanding of body mechanics"
+          ],
+          "commonMistakes": [
+            "Any deviation from perfect vertical alignment",
+            "Insufficient demonstration of balance",
+            "Lack of complete body control",
+            "Tension in any body part",
+            "Failure to demonstrate mastery"
+          ],
+          "image": "/images/techniques/soojik-sogi.jpg"
+        }
+      ]
+    }
+  ]
+}

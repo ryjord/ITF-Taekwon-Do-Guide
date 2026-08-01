@@ -1,0 +1,241 @@
+{
+  "category": "Strikes",
+  "koreanName": "Taerigi",
+  "description": "Versatile hand techniques using various striking surfaces beyond the fist for specialized attacks and applications.",
+  "trainingPrinciples": {
+    "focusAreas": [
+      "Proper striking surface formation and alignment",
+      "Body mechanics for different strike types",
+      "Target specificity and accuracy",
+      "Speed and snap in execution",
+      "Adaptation to different combat ranges"
+    ],
+    "safety": [
+      "Use controlled force when training strikes",
+      "Focus on proper surface formation to prevent injury",
+      "Build flexibility for specialized strikes gradually",
+      "Use appropriate targets for each strike type",
+      "Maintain awareness of strike limitations"
+    ]
+  },
+  "beltLevels": [
+    {
+      "belt": "White Belt with Yellow Stripe",
+      "beltColor": "from-yellow-300 to-yellow-400",
+      "techniques": [
+        {
+          "korean": "Bakat Sonnal Taerigi",
+          "english": "Outward Knife Hand Strike",
+          "description": "Strike using outside blade of hand in outward motion",
+          "detailedDescription": "A fundamental strike using the outside blade of the hand (from little finger to wrist) in an outward swinging motion.",
+          "application": "Attacking neck, temple, or floating ribs. Effective against multiple opponents.",
+          "steps": [
+            "Form proper knife hand with fingers extended together",
+            "Swing arm in outward circular motion",
+            "Strike with outside blade of hand",
+            "Use hip rotation to enhance power",
+            "Retract quickly to defensive position"
+          ],
+          "commonMistakes": [
+            "Incorrect hand formation",
+            "Striking with wrong part of hand",
+            "Insufficient circular motion",
+            "Poor hip coordination",
+            "Leaving self exposed after strike"
+          ],
+          "image": "/images/techniques/bakat-sonnal-taerigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Yellow Belt with Green Stripe",
+      "beltColor": "from-yellow-400 to-green-500",
+      "techniques": [
+        {
+          "korean": "Sonkai Yop Taerigi",
+          "english": "Knife Hand Side Strike",
+          "description": "Sideways strike using knife hand in horizontal motion",
+          "detailedDescription": "A horizontal strike using the knife hand, delivered sideways to target areas like neck, ribs, or arms.",
+          "application": "Close-range attacks, striking vulnerable side areas, and combination techniques.",
+          "steps": [
+            "Form knife hand with proper alignment",
+            "Execute horizontal striking motion",
+            "Strike with knife hand blade",
+            "Maintain proper distance for horizontal impact",
+            "Retract along same horizontal path"
+          ],
+          "commonMistakes": [
+            "Incorrect horizontal path",
+            "Poor distance judgment",
+            "Striking with palm instead of blade",
+            "Insufficient snap in execution",
+            "Leaning into the strike"
+          ],
+          "image": "/images/techniques/sonnal-yop-taerigi.jpg"
+        },
+        {
+          "korean": "Dung Joomok Taerigi",
+          "english": "Back Fist Strike",
+          "description": "Strike using back of fist in snapping motion",
+          "detailedDescription": "A quick, snapping strike using the back of the fist, typically targeting head, face, or sensitive areas.",
+          "application": "Fast, surprising attacks, combination setups, and close-range striking.",
+          "steps": [
+            "Form loose fist with back knuckles as striking surface",
+            "Execute quick snapping motion from elbow",
+            "Strike with back of fist knuckles",
+            "Use wrist snap for additional speed",
+            "Retract immediately after contact"
+          ],
+          "commonMistakes": [
+            "Striking with wrong part of fist",
+            "Insufficient snapping motion",
+            "Telegraphing the strike",
+            "Poor wrist action",
+            "Inadequate retraction speed"
+          ],
+          "image": "/images/techniques/dung-joomok-taerigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt",
+      "beltColor": "from-green-500 to-green-600",
+      "techniques": [
+        {
+          "korean": "Anuro Sonkai Taerigi",
+          "english": "Inward Knife Hand Strike",
+          "description": "Knife hand strike delivered in inward circular motion",
+          "detailedDescription": "A circular strike using the knife hand in inward motion, targeting neck, head, or floating ribs from outside-in.",
+          "application": "Circular attacks around guards, striking from angles, and combination sequences.",
+          "steps": [
+            "Form knife hand with proper alignment",
+            "Execute inward circular motion",
+            "Strike with inside blade of hand",
+            "Use full circular momentum for power",
+            "Follow through and retract"
+          ],
+          "commonMistakes": [
+            "Incorrect circular path",
+            "Striking with palm instead of blade",
+            "Insufficient circular power",
+            "Poor timing of inward motion",
+            "Leaving center exposed"
+          ],
+          "image": "/images/techniques/an-sonnal-taerigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt with Blue Stripe",
+      "beltColor": "from-green-500 to-blue-500",
+      "techniques": [
+        {
+          "korean": "Ap Palkup Taerigi",
+          "english": "Front Elbow Strike",
+          "description": "Powerful strike using front of elbow in forward motion",
+          "detailedDescription": "A close-range striking technique using the point of the elbow in forward thrusting motion, generating tremendous power.",
+          "application": "Close-quarters combat, grappling situations, and powerful breaking techniques.",
+          "steps": [
+            "Bend elbow to 90-degree angle",
+            "Thrust elbow forward with body weight",
+            "Strike with point of elbow",
+            "Use hip rotation for maximum power",
+            "Recover to guarding position"
+          ],
+          "commonMistakes": [
+            "Insufficient elbow bend",
+            "Poor power generation",
+            "Incorrect striking point",
+            "Leaning too far forward",
+            "Slow recovery from close range"
+          ],
+          "image": "/images/techniques/ap-palkup-taerigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt",
+      "beltColor": "from-blue-500 to-blue-600",
+      "techniques": [
+        {
+          "korean": "Wi Palkup Taerigi",
+          "english": "Upper Elbow Strike",
+          "description": "Upward elbow strike targeting chin or solar plexus from below",
+          "detailedDescription": "An upward-directed elbow strike starting from low position and rising to target, using the elbow point as weapon.",
+          "application": "Close-range uppercut-like attacks, striking under guards, and countering against grabs.",
+          "steps": [
+            "Start from low position with elbow bent",
+            "Drive elbow upward in rising motion",
+            "Strike with elbow point to target",
+            "Use leg power to enhance upward force",
+            "Return to defensive position"
+          ],
+          "commonMistakes": [
+            "Insufficient upward power",
+            "Poor starting position",
+            "Incorrect elbow angle",
+            "Leaning back during upward motion",
+            "Inadequate target accuracy"
+          ],
+          "image": "/images/techniques/wi-palkup-taerigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt with Red Stripe",
+      "beltColor": "from-blue-500 to-red-500",
+      "techniques": [
+        {
+          "korean": "Yopdwi Taerigi",
+          "english": "Side Back Strike",
+          "description": "Sideways strike using back fist in horizontal motion",
+          "detailedDescription": "A horizontal back fist strike delivered sideways, combining speed of back fist with power of horizontal motion.",
+          "application": "Quick side attacks, combination techniques, and striking multiple opponents.",
+          "steps": [
+            "Form back fist striking surface",
+            "Execute horizontal swinging motion",
+            "Strike with back of fist knuckles",
+            "Use body rotation for power",
+            "Retract quickly to avoid counter"
+          ],
+          "commonMistakes": [
+            "Incorrect horizontal alignment",
+            "Poor back fist formation",
+            "Insufficient body rotation",
+            "Telegraphing the side motion",
+            "Inadequate speed in execution"
+          ],
+          "image": "/images/techniques/yop-dung-joomok-taerigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Red Belt",
+      "beltColor": "from-red-500 to-red-700",
+      "techniques": [
+        {
+          "korean": "Naeryo Taerigi",
+          "english": "Downward Strike",
+          "description": "Master-level strike delivered downward with various hand formations",
+          "detailedDescription": "An advanced striking technique delivered in downward motion, using appropriate hand formation for specific downward targets.",
+          "application": "Breaking techniques, striking down on opponents, and demonstrating master-level striking power.",
+          "steps": [
+            "Assume proper position for downward force",
+            "Execute powerful downward striking motion",
+            "Strike with appropriate hand formation",
+            "Use body weight to enhance downward power",
+            "Recover with complete control"
+          ],
+          "commonMistakes": [
+            "Insufficient downward power",
+            "Poor hand formation for downward strike",
+            "Loss of balance during execution",
+            "Inadequate target selection",
+            "Any hesitation in master-level technique"
+          ],
+          "image": "/images/techniques/naeryo-taerigi.jpg"
+        }
+      ]
+    }
+  ]
+}

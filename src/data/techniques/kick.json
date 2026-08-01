@@ -1,0 +1,445 @@
+{
+  "category": "Kicks",
+  "koreanName": "Chagi",
+  "description": "Dynamic leg techniques that combine power, speed, and precision for both offensive and defensive applications.",
+  "trainingPrinciples": {
+    "focusAreas": [
+      "Proper chambering and retraction",
+      "Hip rotation and flexibility",
+      "Balance and stability throughout execution",
+      "Target accuracy and timing",
+      "Smooth combination with other techniques"
+    ],
+    "safety": [
+      "Always warm up thoroughly before kicking",
+      "Build flexibility gradually over time",
+      "Use proper footwear and surface conditions",
+      "Maintain control throughout kick execution",
+      "Focus on form before height or power"
+    ]
+  },
+  "beltLevels": [
+    {
+      "belt": "White Belt with Yellow Stripe",
+      "beltColor": "from-yellow-300 to-yellow-400",
+      "techniques": [
+        {
+          "korean": "Ap cha Busigi",
+          "english": "Front Snap Kick",
+          "description": "Forward kick snapping from knee chamber, targeting midsection",
+          "detailedDescription": "A fundamental forward kick where the leg snaps straight from chamber position, using the ball of the foot as primary striking surface.",
+          "application": "Basic attacking kick to opponent's solar plexus, midsection, or face. Quick and direct.",
+          "steps": [
+            "Lift knee to chamber position, thigh parallel to ground",
+            "Extend leg forward in snapping motion",
+            "Strike with ball of the foot",
+            "Quickly retract leg back to chamber",
+            "Return to ready stance"
+          ],
+          "commonMistakes": [
+            "Insufficient chamber height",
+            "Kicking with toes instead of ball of foot",
+            "Poor balance during execution",
+            "Slow retraction after kick",
+            "Leaning back excessively"
+          ],
+          "image": "/images/techniques/ap-cha-busigi.jpg"
+        },
+        {
+          "korean": "Yop Ap Cha Busigi",
+          "english": "Side Front Snap Kick",
+          "description": "Angled snap kick combining front and side kicking elements",
+          "detailedDescription": "A versatile kick that combines elements of front and side kicking, delivered at a 45-degree angle to the target.",
+          "application": "Attacking from angles, useful against opponents who defend straight attacks well.",
+          "steps": [
+            "Chamber knee at 45-degree angle",
+            "Extend leg diagonally forward",
+            "Strike with ball of the foot",
+            "Keep hips partially rotated for power",
+            "Retract quickly to chamber position"
+          ],
+          "commonMistakes": [
+            "Incorrect angle of execution",
+            "Poor hip rotation coordination",
+            "Inconsistent striking surface",
+            "Loss of balance due to angle",
+            "Insufficient power generation"
+          ],
+          "image": "/images/techniques/yop-ap-cha-busigi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Yellow Belt",
+      "beltColor": "from-yellow-400 to-yellow-500",
+      "techniques": [
+        {
+          "korean": "Chau Momchugi",
+          "english": "Checking Kick",
+          "description": "Defensive kick used to check opponent's attacks and create distance",
+          "detailedDescription": "A defensive kicking technique used to stop opponent's advance, block attacks, or create space between combatants.",
+          "application": "Stopping forward-moving opponents, blocking low attacks, and creating defensive space.",
+          "steps": [
+            "Lift knee quickly to defensive position",
+            "Extend leg to meet opponent's advance",
+            "Make contact with sole or shin",
+            "Push opponent back or deflect attack",
+            "Retract immediately to defensive stance"
+          ],
+          "commonMistakes": [
+            "Insufficient defensive intent",
+            "Poor timing against opponent's movement",
+            "Incorrect contact surface",
+            "Leaving self exposed after kick",
+            "Inadequate retraction speed"
+          ],
+          "image": "/images/techniques/bada-chagi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Yellow Belt with Green Stripe",
+      "beltColor": "from-yellow-400 to-green-500",
+      "techniques": [
+        {
+          "korean": "Noollo Chagi",
+          "english": "Pressing Kick",
+          "description": "Pushing kick using sole of foot to move opponent or create distance",
+          "detailedDescription": "A pushing technique using the entire sole of the foot to press against opponent, moving them backward or off balance.",
+          "application": "Creating distance, breaking opponent's balance, setting up follow-up techniques.",
+          "steps": [
+            "Chamber knee high for maximum reach",
+            "Extend leg with pushing motion",
+            "Contact with entire sole of foot",
+            "Push through target with body weight",
+            "Retract quickly to avoid grabbing"
+          ],
+          "commonMistakes": [
+            "Pushing with toes instead of sole",
+            "Insufficient follow-through",
+            "Leaning too far forward",
+            "Slow retraction after push",
+            "Poor target selection"
+          ],
+          "image": "/images/techniques/noollo-chagi.jpg"
+        },
+        {
+          "korean": "Yop Cha Jirugi",
+          "english": "Side Piercing Kick",
+          "description": "Powerful side kick penetrating through target with heel",
+          "detailedDescription": "A strong side-oriented kick that penetrates through targets using the heel or blade of the foot as primary weapon.",
+          "application": "Powerful attacks to midsection, ribs, or head. Effective for breaking techniques.",
+          "steps": [
+            "Rotate hips fully to side position",
+            "Chamber knee high across body",
+            "Thrust leg sideways with penetrating force",
+            "Strike with heel or foot blade",
+            "Retract along same path"
+          ],
+          "commonMistakes": [
+            "Incomplete hip rotation",
+            "Striking with incorrect foot part",
+            "Poor alignment of kicking leg",
+            "Insufficient penetrating force",
+            "Leaning away from target"
+          ],
+          "image": "/images/techniques/yop-cha-jirugi.jpg"
+        },
+        {
+          "korean": "Naeryo Chagi",
+          "english": "Downward Kick",
+          "description": "Overhead kick striking downward onto target",
+          "detailedDescription": "A kick delivered from high to low, striking downward onto opponent's head, shoulders, or collarbone.",
+          "application": "Attacking taller opponents, striking down on bent-over opponents, or breaking high targets.",
+          "steps": [
+            "Chamber knee high with flexibility",
+            "Extend leg downward in axe-like motion",
+            "Strike with heel or bottom of foot",
+            "Use gravity to enhance power",
+            "Retract quickly to avoid imbalance"
+          ],
+          "commonMistakes": [
+            "Insufficient flexibility for height",
+            "Poor balance during downward motion",
+            "Incorrect striking surface",
+            "Over-committing to downward force",
+            "Leaving head exposed"
+          ],
+          "image": "/images/techniques/naeryo-chagi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt",
+      "beltColor": "from-green-500 to-green-600",
+      "techniques": [
+        {
+          "korean": "DwitCha Jirugi",
+          "english": "Back Piercing Kick",
+          "description": "Powerful kick thrusting backward to strike rear targets",
+          "detailedDescription": "A strong backward kick delivered while facing away from target, using heel for powerful rear attacks.",
+          "application": "Surprise attacks to rear opponents, escaping from grabs, or when turned away from attacker.",
+          "steps": [
+            "Look over shoulder to locate target",
+            "Chamber knee forward then thrust backward",
+            "Strike with heel to target",
+            "Use hip thrust for additional power",
+            "Retract quickly and turn to face opponent"
+          ],
+          "commonMistakes": [
+            "Poor target acquisition",
+            "Insufficient power generation",
+            "Leaning too far forward",
+            "Slow recovery after kick",
+            "Incorrect striking surface"
+          ],
+          "image": "/images/techniques/dwit-cha-jirugi.jpg"
+        },
+        {
+          "korean": "Dollyo Chagi",
+          "english": "Turning Kick",
+          "description": "Circular kick using instep, combining hip rotation and snapping motion",
+          "detailedDescription": "A fundamental circular kick using the instep of the foot, combining full hip rotation with snapping leg extension.",
+          "application": "Versatile attack to head, body, or legs. Most commonly used kicking technique in sparring.",
+          "steps": [
+            "Pivot on supporting foot, turning hips",
+            "Chamber knee across body",
+            "Snap leg in circular motion",
+            "Strike with instep of foot",
+            "Retract quickly to stance"
+          ],
+          "commonMistakes": [
+            "Incomplete hip rotation",
+            "Kicking with shin instead of instep",
+            "Poor pivoting on support foot",
+            "Telegraphing the kick",
+            "Insufficient snapping motion"
+          ],
+          "image": "/images/techniques/dollyo-chagi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt with Blue Stripe",
+      "beltColor": "from-green-500 to-blue-500",
+      "techniques": [
+        {
+          "korean": "Yop Dollyo Chagi",
+          "english": "Side Turning Kick",
+          "description": "Circular kick delivered from side stance with hip rotation",
+          "detailedDescription": "A turning kick executed from side-facing position, combining circular motion with side kick power principles.",
+          "application": "Angular attacks, catching opponents off guard from side angles, combination with side techniques.",
+          "steps": [
+            "Start from side stance position",
+            "Pivot while chambering knee",
+            "Execute circular kick with side power",
+            "Strike with instep or ball of foot",
+            "Return to side stance position"
+          ],
+          "commonMistakes": [
+            "Poor transition from side stance",
+            "Inconsistent striking surface",
+            "Loss of side power in circular motion",
+            "Poor angular targeting",
+            "Insufficient hip coordination"
+          ],
+          "image": "/images/techniques/yop-dollyo-chagi.jpg"
+        },
+        {
+          "korean": "Bandae Dollyo Gorochagi",
+          "english": "Reverse Hook Kick",
+          "description": "Back-leg hooking kick catching opponent from unexpected angle",
+          "detailedDescription": "A hooking technique using the back leg to strike from reverse angle, often catching opponents by surprise.",
+          "application": "Surprise attacks, countering against aggressive opponents, hitting around guards.",
+          "steps": [
+            "Pivot on front foot, turning back to target",
+            "Chamber back leg in hooking motion",
+            "Swing leg in circular hooking path",
+            "Strike with heel or sole of foot",
+            "Retract and face opponent quickly"
+          ],
+          "commonMistakes": [
+            "Telegraphing the reverse motion",
+            "Poor timing and surprise element",
+            "Insufficient hooking power",
+            "Leaving back exposed too long",
+            "Incorrect striking surface"
+          ],
+          "image": "/images/techniques/bandae-dwi-goro-chagi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt",
+      "beltColor": "from-blue-500 to-blue-600",
+      "techniques": [
+        {
+          "korean": "Yop cha Milgi ",
+          "english": "Side Pushing Kick",
+          "description": "Powerful side-oriented push kick for creating maximum distance",
+          "detailedDescription": "A strong pushing kick delivered sideways, using full body weight to create maximum distance from opponent.",
+          "application": "Creating defensive space, breaking opponent's stance, stopping forward momentum.",
+          "steps": [
+            "Rotate hips fully to side position",
+            "Chamber knee high across body",
+            "Thrust leg sideways with pushing force",
+            "Contact with sole of foot",
+            "Push through target with body weight"
+          ],
+          "commonMistakes": [
+            "Insufficient pushing force",
+            "Poor hip rotation for power",
+            "Striking instead of pushing",
+            "Loss of balance during push",
+            "Inadequate follow-through"
+          ],
+          "image": "/images/techniques/yop-milgi-chagi.jpg"
+        },
+        {
+          "korean": "Bandae Dollyo Chagi",
+          "english": "Reverse Turning Kick",
+          "description": "Circular kick using back leg with reverse hip action",
+          "detailedDescription": "A turning kick executed with the back leg, requiring reverse hip coordination and generating power from opposite rotation.",
+          "application": "Powerful surprise attacks, countering techniques, and combination sequences.",
+          "steps": [
+            "Pivot on front foot, turning hips reverse",
+            "Chamber back leg for circular motion",
+            "Execute turning kick with reverse power",
+            "Strike with instep of foot",
+            "Return to balanced stance"
+          ],
+          "commonMistakes": [
+            "Poor reverse hip coordination",
+            "Insufficient power generation",
+            "Telegraphing the back leg motion",
+            "Loss of balance during rotation",
+            "Inconsistent striking accuracy"
+          ],
+          "image": "/images/techniques/bandae-dollyo-chagi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt with Red Stripe",
+      "beltColor": "from-blue-500 to-red-500",
+      "techniques": [
+        {
+          "korean": "Golcho Chagi",
+          "english": "Hooking Kick",
+          "description": "Circular hooking motion striking with heel from outside-in",
+          "detailedDescription": "A deceptive kick using circular hooking motion to strike around opponent's guard, typically targeting head or ribs.",
+          "application": "Deceptive attacks around guards, striking unprotected areas, combination setups.",
+          "steps": [
+            "Chamber knee in circular path",
+            "Swing leg in hooking motion outside-in",
+            "Strike with heel or back of foot",
+            "Use hip rotation to enhance power",
+            "Retract along circular path"
+          ],
+          "commonMistakes": [
+            "Insufficient hooking motion",
+            "Poor timing against opponent's guard",
+            "Incorrect striking surface",
+            "Telegraphing the circular motion",
+            "Loss of balance during hook"
+          ],
+          "image": "/images/techniques/goro-chagi.jpg"
+        },
+        {
+          "korean": "Bandal Chagi",
+          "english": "Crescent Kick",
+          "description": "Sweeping circular kick in crescent moon shape",
+          "detailedDescription": "A sweeping kick following crescent-shaped path, used for blocking, sweeping, or striking with instep.",
+          "application": "Blocking attacks, sweeping opponent's guard, striking head or weapons.",
+          "steps": [
+            "Lift leg in circular crescent path",
+            "Sweep across target area",
+            "Contact with instep or shin",
+            "Follow through crescent motion",
+            "Return to balanced position"
+          ],
+          "commonMistakes": [
+            "Incorrect crescent path",
+            "Poor sweeping power",
+            "Insufficient flexibility",
+            "Loss of balance during sweep",
+            "Inadequate follow-through"
+          ],
+          "image": "/images/techniques/bandal-chagi.jpg"
+        },
+        {
+          "korean": "Anuro/Bakuro Sewo Chagi",
+          "english": "Inward/Outward Vertical Kick",
+          "description": "Vertical kicks striking with outside or inside foot edge",
+          "detailedDescription": "Pair of vertical kicks using either inward or outward motion, striking with the blade edges of the foot.",
+          "application": "Close-range attacks, breaking techniques, precision strikes to specific targets.",
+          "steps": [
+            "Chamber knee high vertically",
+            "Extend leg upward in vertical line",
+            "Strike with foot blade (inside or outside)",
+            "Maintain vertical alignment",
+            "Retract quickly to chamber"
+          ],
+          "commonMistakes": [
+            "Poor vertical alignment",
+            "Incorrect foot blade contact",
+            "Insufficient height or flexibility",
+            "Loss of balance vertically",
+            "Inconsistent striking surface"
+          ],
+          "image": "/images/techniques/an-bakat-sewo-chagi.jpg"
+        },
+        {
+          "korean": "Ollyo Chagi",
+          "english": "Upward Kick",
+          "description": "Kick thrusting upward to strike high targets from below",
+          "detailedDescription": "An upward-thrusting kick targeting opponent's chin, arms, or weapons from low position.",
+          "application": "Striking upward against taller opponents, attacking from crouch position, breaking high holds.",
+          "steps": [
+            "Chamber from low position",
+            "Thrust leg upward powerfully",
+            "Strike with ball of foot or instep",
+            "Use upward body momentum",
+            "Retract quickly to defensive position"
+          ],
+          "commonMistakes": [
+            "Insufficient upward power",
+            "Poor target acquisition from below",
+            "Leaning back during upward motion",
+            "Incorrect striking surface",
+            "Slow retraction from high position"
+          ],
+          "image": "/images/techniques/ollyo-chagi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Red Belt",
+      "beltColor": "from-red-500 to-red-700",
+      "techniques": [
+        {
+          "korean": "Bituro Chagi",
+          "english": "Twisting Kick",
+          "description": "Advanced kick combining multiple rotations and directional changes",
+          "detailedDescription": "A master-level kick involving complex body twists, multiple rotations, and deceptive directional changes.",
+          "application": "Advanced combination attacks, breaking multiple targets, demonstration of ultimate kicking mastery.",
+          "steps": [
+            "Initiate complex body rotation",
+            "Chamber with twisting motion",
+            "Execute kick with directional change",
+            "Strike with precise timing and power",
+            "Recover with complete control"
+          ],
+          "commonMistakes": [
+            "Insufficient body control during twists",
+            "Poor timing of directional changes",
+            "Loss of power during complex motion",
+            "Inadequate recovery control",
+            "Any hesitation in execution"
+          ],
+          "image": "/images/techniques/bituro-chagi.jpg"
+        }
+      ]
+    }
+  ]
+}

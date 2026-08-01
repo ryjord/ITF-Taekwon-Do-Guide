@@ -1,0 +1,605 @@
+{
+  "category": "Blocks",
+  "koreanName": "Makgi",
+  "description": "Defensive techniques designed to protect against attacks, redirect force, and create opportunities for counter-attacks.",
+  "trainingPrinciples": {
+    "focusAreas": [
+      "Proper angle and positioning for maximum protection",
+      "Timing and anticipation of incoming attacks",
+      "Economy of motion and efficiency",
+      "Transition from defense to counter-attack",
+      "Body alignment and stability during execution"
+    ],
+    "safety": [
+      "Always maintain proper wrist and forearm alignment",
+      "Use controlled force when practicing with partners",
+      "Focus on redirection rather than brute force",
+      "Keep non-blocking hand in guarding position",
+      "Build blocking endurance gradually"
+    ]
+  },
+  "beltLevels": [
+    {
+      "belt": "White Belt",
+      "beltColor": "from-gray-300 to-gray-900",
+      "techniques": [
+        {
+          "korean": "Kaunde AnPalmok Makgi",
+          "english": "Middle Inner Forearm Block",
+          "description": "Basic middle-level block using inner forearm to deflect attacks",
+          "detailedDescription": "A fundamental middle-level blocking technique using the inner surface of the forearm to deflect attacks aimed at the torso area.",
+          "application": "Defending against punches and strikes to the midsection, solar plexus, and ribs.",
+          "steps": [
+            "Start from ready stance with arms in guarding position",
+            "Swing blocking arm across body in circular motion",
+            "Make contact with inner forearm surface",
+            "Angle forearm at 45 degrees to deflect force",
+            "Retract to guarding position immediately"
+          ],
+          "commonMistakes": [
+            "Blocking with wrong part of forearm",
+            "Insufficient angle for deflection",
+            "Poor timing against attack",
+            "Leaving other areas exposed",
+            "Inadequate retraction speed"
+          ],
+          "image": "/images/techniques/kaunde-an-palmok-makgi.jpg"
+        },
+        {
+          "korean": "Najunde Bakat Palmok Makgi",
+          "english": "Low Outer Forearm Block",
+          "description": "Low-level block using outer forearm to defend against leg attacks",
+          "detailedDescription": "A low-level blocking technique using the outer surface of the forearm to defend against kicks and low attacks.",
+          "application": "Defending against low kicks, sweeps, and attacks to legs and lower body.",
+          "steps": [
+            "Assume stable stance for low defense",
+            "Swing arm downward in circular motion",
+            "Block with outer forearm surface",
+            "Maintain low body position for stability",
+            "Return to ready position quickly"
+          ],
+          "commonMistakes": [
+            "Blocking too high for low attacks",
+            "Poor stance stability during low block",
+            "Incorrect forearm surface contact",
+            "Slow recovery from low position",
+            "Inadequate power in block"
+          ],
+          "image": "/images/techniques/najunde-bakat-palmok-makgi.jpg"
+        },
+        {
+          "korean": "Najunde Sonkal Makgi",
+          "english": "Low Knife-Hand Block",
+          "description": "Low block using knife hand to defend against lower attacks",
+          "detailedDescription": "A low-level blocking technique using the knife hand (blade edge) to deflect attacks aimed at the lower body.",
+          "application": "Defending against low kicks, sweeps, and ground-level attacks with precision.",
+          "steps": [
+            "Form proper knife hand with fingers extended",
+            "Execute downward blocking motion",
+            "Block with knife hand blade edge",
+            "Angle hand to deflect force away",
+            "Retract to defensive position"
+          ],
+          "commonMistakes": [
+            "Incorrect knife hand formation",
+            "Blocking with palm instead of blade",
+            "Poor downward motion timing",
+            "Insufficient deflection angle",
+            "Leaving upper body exposed"
+          ],
+          "image": "/images/techniques/najunde-sonnal-makgi.jpg"
+        },
+        {
+          "korean": "Anuro Makgi",
+          "english": "Inward Block",
+          "description": "Basic inward blocking motion to deflect attacks from outside",
+          "detailedDescription": "A fundamental inward-directed block that moves from outside to inside, deflecting attacks coming from the outer areas.",
+          "application": "Defending against hooks, roundhouse strikes, and attacks from the sides.",
+          "steps": [
+            "Start with arm extended to side",
+            "Swing arm inward across body",
+            "Block with appropriate forearm surface",
+            "Deflect attack toward center line",
+            "Return to ready position"
+          ],
+          "commonMistakes": [
+            "Insufficient inward motion",
+            "Poor timing against circular attacks",
+            "Blocking too late or too early",
+            "Incorrect forearm surface",
+            "Over-committing to inward motion"
+          ],
+          "image": "/images/techniques/an-makgi.jpg"
+        },
+        {
+          "korean": "Bakuro Makgi",
+          "english": "Outward Block",
+          "description": "Basic outward blocking motion to deflect attacks from center",
+          "detailedDescription": "A fundamental outward-directed block that moves from inside to outside, deflecting attacks coming from the center line.",
+          "application": "Defending against straight punches, thrusts, and center-line attacks.",
+          "steps": [
+            "Start with arm near center line",
+            "Swing arm outward away from body",
+            "Block with appropriate forearm surface",
+            "Deflect attack away from center",
+            "Return to guarding position"
+          ],
+          "commonMistakes": [
+            "Insufficient outward motion",
+            "Poor center line protection",
+            "Blocking with incorrect angle",
+            "Leaving inside open after block",
+            "Inadequate power in outward motion"
+          ],
+          "image": "/images/techniques/bakat-makgi.jpg"
+        },
+        {
+          "korean": "Bakat Palmok Yop Makgi",
+          "english": "Outer Forearm Side Block",
+          "description": "Side block using outer forearm for lateral protection",
+          "detailedDescription": "A side-oriented blocking technique using the outer forearm to protect against attacks from the side angles.",
+          "application": "Defending against side attacks, multiple opponents, and creating lateral protection.",
+          "steps": [
+            "Assume side stance for lateral defense",
+            "Extend arm sideways with outer forearm forward",
+            "Block with outer forearm surface",
+            "Maintain side body alignment",
+            "Retract to side guarding position"
+          ],
+          "commonMistakes": [
+            "Poor side stance alignment",
+            "Incorrect forearm orientation",
+            "Insufficient lateral coverage",
+            "Leaving front exposed",
+            "Poor recovery to side defense"
+          ],
+          "image": "/images/techniques/bakat-palmok-yop-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "White Belt with Yellow Stripe",
+      "beltColor": "from-yellow-300 to-yellow-400",
+      "techniques": [
+        {
+          "korean": "Palmok Daebi Makgi",
+          "english": "Forearm Guarding Block",
+          "description": "Passive guarding position using forearms for continuous protection",
+          "detailedDescription": "A continuous guarding block using both forearms in ready position, providing constant protection while allowing quick transitions.",
+          "application": "Maintaining defensive readiness, protecting against unexpected attacks, and quick counter opportunities.",
+          "steps": [
+            "Position both forearms in guarding stance",
+            "Maintain slight bend in elbows for flexibility",
+            "Keep hands open or loosely closed",
+            "Remain alert for incoming attacks",
+            "Be ready to transition to specific blocks"
+          ],
+          "commonMistakes": [
+            "Guarding position too rigid",
+            "Hands too far from body",
+            "Poor alertness in guarding stance",
+            "Slow transition to active blocks",
+            "Inadequate coverage area"
+          ],
+          "image": "/images/techniques/palmok-daebi-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Yellow Belt",
+      "beltColor": "from-yellow-400 to-yellow-500",
+      "techniques": [
+        {
+          "korean": "Chookyo Makgi",
+          "english": "Rising Block",
+          "description": "Upward block to defend against overhead attacks",
+          "detailedDescription": "An upward-directed blocking technique designed to defend against overhead attacks, downward strikes, and attacks to the head.",
+          "application": "Defending against overhead strikes, axe kicks, and attacks targeting the head and shoulders.",
+          "steps": [
+            "Start with arm in low position",
+            "Execute upward rising motion",
+            "Block with forearm at angle",
+            "Deflect attack upward and away",
+            "Return to ready position"
+          ],
+          "commonMistakes": [
+            "Insufficient upward power",
+            "Blocking too low for overhead attacks",
+            "Poor angle for deflection",
+            "Leaving body exposed during rise",
+            "Slow recovery from high position"
+          ],
+          "image": "/images/techniques/chookyo-makgi.jpg"
+        },
+        {
+          "korean": "Sonkai Daebi Makgi",
+          "english": "Knife-Hand Guarding Block",
+          "description": "Guarding position using knife hands for precise defense",
+          "detailedDescription": "A sophisticated guarding block using knife hand formation, allowing for precise defensive positioning and quick counter-attacks.",
+          "application": "Advanced ready position, precise defense setup, and quick transitions to knife-hand techniques.",
+          "steps": [
+            "Form both hands in knife hand position",
+            "Position in guarding stance with precision",
+            "Maintain alert posture with knife hands",
+            "Be prepared for quick defensive actions",
+            "Transition smoothly to attacks or other blocks"
+          ],
+          "commonMistakes": [
+            "Incorrect knife hand formation",
+            "Guarding position too tense",
+            "Poor precision in hand placement",
+            "Slow transition from guard",
+            "Inadequate defensive awareness"
+          ],
+          "image": "/images/techniques/sonnal-daebi-makgi.jpg"
+        },
+        {
+          "korean": "Sang Palmok Makgi",
+          "english": "Twin Forearm Block",
+          "description": "Simultaneous block using both forearms for maximum coverage",
+          "detailedDescription": "A powerful blocking technique using both forearms simultaneously, providing maximum defensive coverage and stability.",
+          "application": "Defending against powerful attacks, multiple strikes, and situations requiring maximum defensive power.",
+          "steps": [
+            "Assume strong stable stance",
+            "Execute simultaneous block with both arms",
+            "Use both forearms in coordinated motion",
+            "Maintain balance during twin arm action",
+            "Return to balanced ready position"
+          ],
+          "commonMistakes": [
+            "Uneven power between arms",
+            "Poor coordination in twin motion",
+            "Loss of balance during execution",
+            "Insufficient defensive coverage",
+            "Slow recovery from twin block"
+          ],
+          "image": "/images/techniques/sang-palmok-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Yellow Belt with Green Stripe",
+      "beltColor": "from-yellow-400 to-green-500",
+      "techniques": [
+        {
+          "korean": "Hechyo Makgi",
+          "english": "Wedging Block",
+          "description": "Block that wedges between attacker and defender to create space",
+          "detailedDescription": "A strategic blocking technique that wedges into the space between attacker and defender, creating distance and disrupting attacks.",
+          "application": "Creating defensive space, stopping forward momentum, and disrupting close-range attacks.",
+          "steps": [
+            "Identify closing distance with opponent",
+            "Execute wedging motion into space",
+            "Use forearm or body to create wedge",
+            "Push opponent back or create angle",
+            "Recover to defensive position"
+          ],
+          "commonMistakes": [
+            "Poor timing of wedging motion",
+            "Insufficient wedging power",
+            "Incorrect angle for space creation",
+            "Leaving self exposed during wedge",
+            "Inadequate follow-up positioning"
+          ],
+          "image": "/images/techniques/hechyo-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt",
+      "beltColor": "from-green-500 to-green-600",
+      "techniques": [
+        {
+          "korean": "Dollimyo Makgi",
+          "english": "Circular Block",
+          "description": "Flowing circular motion to redirect attacks with minimal effort",
+          "detailedDescription": "An advanced blocking technique using circular motion to redirect attacks with efficiency and fluidity, following Taoist principles.",
+          "application": "Redirection of powerful attacks, flowing defense against multiple strikes, and energy-efficient blocking.",
+          "steps": [
+            "Initiate circular motion with arm",
+            "Guide attack along circular path",
+            "Use minimal force for maximum effect",
+            "Maintain fluid continuous motion",
+            "Return to center with control"
+          ],
+          "commonMistakes": [
+            "Circular motion too small or large",
+            "Poor timing of circular redirection",
+            "Using excessive force",
+            "Loss of fluidity in motion",
+            "Inadequate control of circular path"
+          ],
+          "image": "/images/techniques/dollmyo-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Green Belt with Blue Stripe",
+      "beltColor": "from-green-500 to-blue-500",
+      "techniques": [
+        {
+          "korean": "Sonbadak Golcho Makgi",
+          "english": "Palm Hooking Block",
+          "description": "Block using palm in hooking motion to catch and redirect",
+          "detailedDescription": "A sophisticated blocking technique using the palm in a hooking motion to catch attacks and redirect them with control.",
+          "application": "Catching and controlling attacks, setting up grappling techniques, and precise redirection.",
+          "steps": [
+            "Form palm in hooking position",
+            "Execute hooking motion to catch attack",
+            "Control caught limb or weapon",
+            "Redirect with palm control",
+            "Release and return to defense"
+          ],
+          "commonMistakes": [
+            "Poor palm formation for hooking",
+            "Insufficient hooking motion",
+            "Lack of control after catch",
+            "Slow redirection timing",
+            "Inadequate release technique"
+          ],
+          "image": "/images/techniques/sonbadak-golcho-makgi.jpg"
+        },
+        {
+          "korean": "Sang Sonkal Makgi",
+          "english": "Twin Knife-Hand Block",
+          "description": "Simultaneous block using both knife hands for precision defense",
+          "detailedDescription": "An advanced blocking technique using both knife hands simultaneously, providing precise defensive coverage and quick counter opportunities.",
+          "application": "Precise defense against multiple attacks, sophisticated guarding positions, and quick knife-hand counters.",
+          "steps": [
+            "Form both hands in precise knife hand",
+            "Execute simultaneous knife-hand block",
+            "Maintain precision in both hand positions",
+            "Coordinate twin motion with balance",
+            "Return to ready with control"
+          ],
+          "commonMistakes": [
+            "Inconsistent knife hand formation",
+            "Poor coordination between hands",
+            "Loss of precision in twin motion",
+            "Insufficient defensive coverage",
+            "Slow transition from twin block"
+          ],
+          "image": "/images/techniques/sang-sonnal-makgi.jpg"
+        },
+        {
+          "korean": "Doo Palmok Makgi",
+          "english": "Double Forearm Block",
+          "description": "Powerful block using reinforced forearm for maximum defense",
+          "detailedDescription": "A reinforced blocking technique using both arms together or one arm reinforced for maximum defensive power against strong attacks.",
+          "application": "Defending against powerful breaking techniques, strong attacks, and situations requiring reinforced defense.",
+          "steps": [
+            "Position arms for reinforced blocking",
+            "Execute powerful reinforced block",
+            "Use body alignment for maximum power",
+            "Absorb or deflect strong attack",
+            "Recover with maintained stability"
+          ],
+          "commonMistakes": [
+            "Poor reinforcement alignment",
+            "Insufficient power for strong attacks",
+            "Loss of stability during powerful block",
+            "Inadequate absorption technique",
+            "Slow recovery from reinforced position"
+          ],
+          "image": "/images/techniques/doo-palmok-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt",
+      "beltColor": "from-blue-500 to-blue-600",
+      "techniques": [
+        {
+          "korean": "Sonkal Dung Makgi",
+          "english": "Reverse Knife-Hand Block",
+          "description": "Block using back of knife hand for unique defensive angles",
+          "detailedDescription": "An advanced blocking technique using the back of the knife hand, allowing for unique defensive angles and quick transitions.",
+          "application": "Defending from unusual angles, quick defensive reactions, and sophisticated counter setups.",
+          "steps": [
+            "Form reverse knife hand position",
+            "Execute block with back of hand",
+            "Use unique angles for defense",
+            "Transition quickly to counter techniques",
+            "Return to defensive readiness"
+          ],
+          "commonMistakes": [
+            "Incorrect reverse hand formation",
+            "Poor angle selection for defense",
+            "Slow transition to counters",
+            "Insufficient defensive coverage",
+            "Awkward body positioning"
+          ],
+          "image": "/images/techniques/sonnal-dung-makgi.jpg"
+        },
+        {
+          "korean": "Sonbadak Ollyo Makgi",
+          "english": "Palm Upward Block",
+          "description": "Upward block using palm for soft deflection",
+          "detailedDescription": "A soft blocking technique using the palm in upward motion, focusing on redirection rather than hard impact.",
+          "application": "Soft deflection of attacks, redirection of force, and situations requiring gentle defense.",
+          "steps": [
+            "Position palm facing upward",
+            "Execute upward blocking motion",
+            "Use palm for soft deflection",
+            "Redirect force with minimal resistance",
+            "Return to ready position smoothly"
+          ],
+          "commonMistakes": [
+            "Using hard impact instead of soft deflection",
+            "Poor palm positioning",
+            "Insufficient upward motion",
+            "Inadequate redirection technique",
+            "Slow recovery from soft block"
+          ],
+          "image": "/images/techniques/sonbadak-ollyo-makgi.jpg"
+        },
+        {
+          "korean": "Kyocha Sonkal Chookyo Makgi",
+          "english": "X Knife-Hand Rising Block",
+          "description": "Rising block with crossed knife hands for reinforced overhead defense",
+          "detailedDescription": "A reinforced rising block using crossed knife hands in X formation, providing strong overhead protection.",
+          "application": "Strong defense against powerful overhead attacks, reinforced head protection, and breaking techniques.",
+          "steps": [
+            "Cross knife hands in X formation",
+            "Execute rising block with crossed hands",
+            "Use X formation for reinforced defense",
+            "Deflect powerful overhead attacks",
+            "Uncross and return to ready"
+          ],
+          "commonMistakes": [
+            "Poor X formation with knife hands",
+            "Insufficient rising power",
+            "Awkward uncrossing motion",
+            "Inadequate overhead coverage",
+            "Slow transition from X block"
+          ],
+          "image": "/images/techniques/kyocha-sonnal-chookyo-makgi.jpg"
+        },
+        {
+          "korean": "Sonbadak Noollo Makgi",
+          "english": "Palm Pressing Block",
+          "description": "Block using palm in pressing motion to control attacks",
+          "detailedDescription": "A controlling blocking technique using the palm in pressing motion to manage and control incoming attacks.",
+          "application": "Controlling opponent's attacks, managing distance, and setting up precise counters.",
+          "steps": [
+            "Position palm for pressing motion",
+            "Execute pressing block against attack",
+            "Use palm to control and press",
+            "Manage distance and positioning",
+            "Return to controlled ready position"
+          ],
+          "commonMistakes": [
+            "Insufficient pressing force",
+            "Poor palm control technique",
+            "Inadequate distance management",
+            "Slow pressing reaction",
+            "Loss of control during press"
+          ],
+          "image": "/images/techniques/sonbadak-noollo-makgi.jpg"
+        },
+        {
+          "korean": "Sang bandal Son Digutja Makgi",
+          "english": "Twin Ark Hand U-Shape Block",
+          "description": "Block using both hands in U-shape ark hand formation",
+          "detailedDescription": "A sophisticated blocking technique using both hands in U-shaped ark hand formation, providing unique defensive coverage.",
+          "application": "Specialized defense against specific attacks, unique angle protection, and advanced pattern applications.",
+          "steps": [
+            "Form both hands in U-shape ark position",
+            "Execute U-shape blocking motion",
+            "Use unique formation for specific defense",
+            "Maintain U-shape throughout block",
+            "Return to ready with control"
+          ],
+          "commonMistakes": [
+            "Incorrect U-shape hand formation",
+            "Poor execution of unique blocking motion",
+            "Insufficient defensive coverage",
+            "Awkward body alignment",
+            "Slow recovery from specialized block"
+          ],
+          "image": "/images/techniques/sang-ark-hand-u-shape-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt with Red Stripe",
+      "beltColor": "from-blue-500 to-red-500",
+      "techniques": [
+        {
+          "korean": "Kyocha Joomok Noollo Makgi",
+          "english": "X Fist Pressing Block",
+          "description": "Pressing block with crossed fists in X formation",
+          "detailedDescription": "A powerful pressing block using crossed fists in X formation, combining pressing and reinforced defensive principles.",
+          "application": "Strong pressing defense against powerful attacks, combined reinforcement and control.",
+          "steps": [
+            "Cross fists in X formation",
+            "Execute pressing block with crossed fists",
+            "Use X formation for reinforced press",
+            "Control and press against attack",
+            "Uncross and return to defense"
+          ],
+          "commonMistakes": [
+            "Poor X fist formation",
+            "Insufficient pressing power",
+            "Awkward crossing/uncrossing",
+            "Inadequate control during press",
+            "Slow transition from X press"
+          ],
+          "image": "/images/techniques/kyocha-joomok-noollo-makgi.jpg"
+        },
+        {
+          "korean": "San Makgi",
+          "english": "W-Shape Block",
+          "description": "Block using W-shaped hand formation for unique defense",
+          "detailedDescription": "A specialized blocking technique using W-shaped hand formation, providing unique defensive angles and coverage.",
+          "application": "Specialized defense in advanced patterns, unique angle protection, and demonstration of advanced blocking skill.",
+          "steps": [
+            "Form hands in precise W-shape",
+            "Execute W-shape blocking motion",
+            "Use unique formation for specific defense",
+            "Maintain W-shape precision",
+            "Return to ready position"
+          ],
+          "commonMistakes": [
+            "Incorrect W-shape formation",
+            "Poor execution of specialized motion",
+            "Insufficient defensive application",
+            "Loss of formation during block",
+            "Inadequate precision in advanced technique"
+          ],
+          "image": "/images/techniques/w-shape-makgi.jpg"
+        },
+        {
+          "korean": "Doo Palmok Miro Makgi",
+          "english": "Double Forearm Pushing Block",
+          "description": "Pushing block using double forearm for maximum forward defense",
+          "detailedDescription": "A powerful pushing block using double forearm action to create strong forward defensive pressure.",
+          "application": "Creating strong forward defensive space, pushing back opponents, and powerful defensive actions.",
+          "steps": [
+            "Position for double forearm push",
+            "Execute powerful pushing block",
+            "Use both forearms for maximum push",
+            "Create defensive space forward",
+            "Recover to balanced position"
+          ],
+          "commonMistakes": [
+            "Insufficient pushing power",
+            "Poor double forearm coordination",
+            "Loss of balance during push",
+            "Inadequate forward space creation",
+            "Slow recovery from powerful push"
+          ],
+          "image": "/images/techniques/doo-palmok-milgi-makgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Red Belt",
+      "beltColor": "from-red-500 to-red-700",
+      "techniques": [
+        {
+          "korean": "Sonbadak Miro Makgi",
+          "english": "Palm Pushing Block",
+          "description": "Master-level pushing block using palm for ultimate control",
+          "detailedDescription": "The ultimate pushing block technique using the palm with master-level control, power, and precision in defensive pushing actions.",
+          "application": "Master-level defensive control, ultimate pushing defense, and demonstration of complete blocking mastery.",
+          "steps": [
+            "Assume master-level ready position",
+            "Execute palm push with complete control",
+            "Use palm for ultimate pushing defense",
+            "Demonstrate master-level power and precision",
+            "Recover with complete defensive control"
+          ],
+          "commonMistakes": [
+            "Any imperfection in control",
+            "Insufficient master-level power",
+            "Poor precision in pushing defense",
+            "Loss of complete defensive awareness",
+            "Inadequate demonstration of mastery"
+          ],
+          "image": "/images/techniques/sonbadak-milgi-makgi.jpg"
+        }
+      ]
+    }
+  ]
+}

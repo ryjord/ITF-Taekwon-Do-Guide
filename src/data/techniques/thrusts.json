@@ -1,0 +1,144 @@
+{
+  "category": "Thrusts",
+  "koreanName": "Tulgi",
+  "description": "Close-range techniques using fingertips, palms, and elbows for precise, powerful attacks.",
+  "trainingPrinciples": {
+    "focusAreas": [
+      "Proper finger alignment and tension",
+      "Hip rotation for power generation", 
+      "Precise targeting of vital points",
+      "Controlled speed and accuracy"
+    ],
+    "safety": [
+      "Always use controlled force in training",
+      "Focus on form before power",
+      "Use appropriate targets and padding",
+      "Master basic stances first"
+    ]
+  },
+  "beltLevels": [
+    {
+      "belt": "Yellow Belt with Green Stripe",
+      "beltColor": "from-yellow-400 to-green-400",
+      "techniques": [
+        {
+          "korean": "Sun Sonkut Tulgi",
+          "english": "Straight Fingertip Thrust",
+          "description": "Forward thrust with fingertips aligned, targeting vital points",
+          "detailedDescription": "A fundamental thrust technique where all four fingertips are aligned and thrust forward in a straight line. The power comes from hip rotation and shoulder extension, targeting precise vital points.",
+          "application": "Used for precise attacks to soft targets like throat or solar plexus. Effective in close-range self-defense situations.",
+          "steps": [
+            "Start in walking stance with guarding block",
+            "Extend fingers straight, keeping them tightly together", 
+            "Rotate hips forward while thrusting hand forward",
+            "Focus power to the fingertips at point of impact",
+            "Quickly retract to ready position"
+          ],
+          "commonMistakes": [
+            "Incorrect finger/wrist alignment",
+            "Insufficient hip rotation", 
+            "Over-extending and losing balance",
+            "Poor targeting accuracy"
+          ],
+          "image": "/images/techniques/sun-sonkut-tulgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Blue Belt with Red Stripe",
+      "beltColor": "from-blue-500 to-red-500", 
+      "techniques": [
+        {
+          "korean": "Dwijibun Sonkut Tulgi",
+          "english": "Upset Fingertip Thrust",
+          "description": "Upward thrust with fingertips, attacking from below",
+          "detailedDescription": "An upward-directed thrust starting from low position, targeting the opponent's chin, nose, or under the jaw. Uses an upward scooping motion.",
+          "application": "Effective against taller opponents or when ducking under attacks. Targets vulnerable areas from unexpected angles.",
+          "steps": [
+            "Begin in low stance or while ducking",
+            "Thrust upward in an arc motion from low to high",
+            "Keep fingers extended and rigid",
+            "Use leg power to enhance upward motion", 
+            "Follow through with body weight transfer"
+          ],
+          "commonMistakes": [
+            "Starting from incorrect position",
+            "Insufficient upward power",
+            "Poor finger alignment",
+            "Losing balance during upward motion"
+          ],
+          "image": "/images/techniques/dwijibun-sonkut-tulgi.jpg"
+        },
+        {
+          "korean": "Sang Yop Palkup Tulgi",
+          "english": "Twin Side Elbow Thrust", 
+          "description": "Simultaneous horizontal elbow thrusts to both sides",
+          "detailedDescription": "A powerful defensive technique using both elbows simultaneously thrusting horizontally to the sides. Excellent for close-range defense.",
+          "application": "Close-range defense against multiple attackers or when grabbed from both sides. Creates space in crowded situations.",
+          "steps": [
+            "Assume solid sitting or horse riding stance",
+            "Bend elbows to 90 degrees at shoulder height",
+            "Thrust both elbows outward simultaneously",
+            "Keep forearms vertical for maximum power",
+            "Maintain stable base throughout movement"
+          ],
+          "commonMistakes": [
+            "Uneven elbow thrusts",
+            "Poor stance stability", 
+            "Insufficient power generation",
+            "Incorrect elbow angle"
+          ],
+          "image": "/images/techniques/sang-yop-palkup-tulgi.jpg"
+        },
+        {
+          "korean": "Opun Sonkut Tulgi",
+          "english": "Flat Fingertip Thrust",
+          "description": "Thrust with flat palm and extended fingers",
+          "detailedDescription": "A thrust variation using the entire palm with fingers extended flat. Distributes impact across larger surface area.",
+          "application": "Targeting larger areas like the face or chest. Useful for pushing attacks and creating distance.",
+          "steps": [
+            "Form flat palm with fingers together",
+            "Thrust forward with palm facing target", 
+            "Keep wrist straight and rigid",
+            "Use body momentum for power",
+            "Aim for center mass or facial area"
+          ],
+          "commonMistakes": [
+            "Bent wrist during thrust",
+            "Poor palm formation",
+            "Insufficient body momentum",
+            "Incorrect targeting"
+          ],
+          "image": "/images/techniques/opun-sonkut-tulgi.jpg"
+        }
+      ]
+    },
+    {
+      "belt": "Red Belt",
+      "beltColor": "from-red-500 to-red-700",
+      "techniques": [
+        {
+          "korean": "Yop Palkup Tulgi",
+          "english": "Single Side Elbow Thrust", 
+          "description": "Powerful horizontal elbow thrust to the side",
+          "detailedDescription": "An advanced elbow technique delivering powerful horizontal thrust to the side. Uses full body rotation for maximum impact.",
+          "application": "Close-quarters combat and breaking techniques. Highly effective in grappling situations.",
+          "steps": [
+            "Start with elbow bent and close to body",
+            "Rotate hips and shoulders forcefully",
+            "Thrust elbow horizontally at target height", 
+            "Keep fist close to shoulder for power",
+            "Follow through with full body rotation"
+          ],
+          "commonMistakes": [
+            "Insufficient hip rotation",
+            "Poor elbow positioning",
+            "Losing balance during rotation",
+            "Incorrect follow-through"
+          ],
+          "image": "/images/techniques/yop-palkup-tulgi.jpg"
+        }
+      ]
+    }
+  ]
+}
