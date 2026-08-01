@@ -1,4 +1,4 @@
-import { AlertCircle, ChevronLeft, Construction, PlayCircle } from 'lucide-react'
+import { AlertCircle, ChevronLeft, Construction, Info, PlayCircle } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
 import { getBeltColorClass } from '@/lib/beltColors'
@@ -145,6 +145,13 @@ export const PatternDetail = ({ pattern, onBack }) => {
                 {pattern.focus || 'fundamental techniques and principles'}.
               </p>
             </div>
+
+            {pattern.movementsSource && (
+              <div className="mt-4 flex gap-2 rounded-lg border border-border bg-muted/30 p-3">
+                <Info className="mt-0.5 size-4 shrink-0 text-foreground/50" aria-hidden="true" />
+                <p className="text-xs leading-relaxed text-foreground/60">{pattern.movementsSource}</p>
+              </div>
+            )}
           </div>
         </div>
       </CardContent>
