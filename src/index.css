@@ -1,105 +1,151 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
 
-/* ==================== */
-/* DARK MODE COLOURS (DEFAULT) */
-/* ==================== */
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: 'Geist Variable', sans-serif;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* ITF brand palette: black / red / white, red as the constant accent across themes */
 :root, .dark {
-  /* Core colours */
-  --background: 0 0% 10%;          /* Black background */
-  --foreground: 0 0% 100%;        /* White text */
-  --primary: 0 74% 30%;           /* Dark red */
-  --primary-foreground: 0 0% 100%; /* White text on primary */
-  --secondary: 0 74% 25%;         /* Redish crimson */
-  --secondary-foreground: 0 0% 100%; /* White text on secondary */
-  --border: 0 0% 20%;             /* Dark gray border */
-  
-  /* Hover states */
-  --primary-hover: 0 74% 40%;     /* Lighter red on hover */
-  --text-hover: 0 74% 20%;        /* Darker red for text on hover */
-  --glow-color: 350 100% 88% / 0.4; /* Pink glow */
+    --background: oklch(0.16 0 0);
+    --foreground: oklch(0.99 0 0);
+    --card: oklch(0.2 0 0);
+    --card-foreground: oklch(0.99 0 0);
+    --popover: oklch(0.2 0 0);
+    --popover-foreground: oklch(0.99 0 0);
+    --primary: oklch(0.36 0.16 25);
+    --primary-foreground: oklch(0.99 0 0);
+    --secondary: oklch(0.3 0.15 20);
+    --secondary-foreground: oklch(0.99 0 0);
+    --muted: oklch(0.24 0 0);
+    --muted-foreground: oklch(0.65 0 0);
+    --accent: oklch(0.27 0 0);
+    --accent-foreground: oklch(0.99 0 0);
+    --destructive: oklch(0.58 0.22 25);
+    --border: oklch(1 0 0 / 12%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.46 0.18 25);
+    --chart-1: oklch(0.36 0.16 25);
+    --chart-2: oklch(0.65 0 0);
+    --chart-3: oklch(0.5 0 0);
+    --chart-4: oklch(0.4 0 0);
+    --chart-5: oklch(0.3 0 0);
+    --radius: 0.5rem;
+    --sidebar: oklch(0.18 0 0);
+    --sidebar-foreground: oklch(0.99 0 0);
+    --sidebar-primary: oklch(0.36 0.16 25);
+    --sidebar-primary-foreground: oklch(0.99 0 0);
+    --sidebar-accent: oklch(0.27 0 0);
+    --sidebar-accent-foreground: oklch(0.99 0 0);
+    --sidebar-border: oklch(1 0 0 / 12%);
+    --sidebar-ring: oklch(0.46 0.18 25);
+
+    /* legacy tokens still read directly (hsl()) by components pending redesign */
+    --primary-hover: 0 74% 40%;
+    --text-hover: 0 74% 20%;
+    --glow-color: 350 100% 88% / 0.4;
 }
 
-/* ==================== */
-/* LIGHT MODE COLOURS */
-/* ==================== */
 .light {
-  /* Core colours */
-  --background: 0 0% 90%;         /* Light gray background */
-  --foreground: 0 0% 0%;          /* Black text */
-  --primary-foreground: 0 0% 100%; /* White text on primary */
-  --secondary: 10 80% 50%;        /* Orangey red */
-  --secondary-foreground: 0 0% 100%; /* White text on secondary */
-  --border: 0 0% 85%;             /* Light gray border */
-  
-  /* Hover states */
-  --primary-hover: 0 74% 70%;     /* Lighter red on hover */
-  --text-hover: 0 74% 50%;        /* Darker red for text on hover */
-  --glow-color: 350 100% 88% / 0.6; /* Pink glow */
+    --background: oklch(0.97 0 0);
+    --foreground: oklch(0.15 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.15 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.15 0 0);
+    --primary: oklch(0.36 0.16 25);
+    --primary-foreground: oklch(0.99 0 0);
+    --secondary: oklch(0.55 0.19 30);
+    --secondary-foreground: oklch(0.99 0 0);
+    --muted: oklch(0.93 0 0);
+    --muted-foreground: oklch(0.4 0 0);
+    --accent: oklch(0.9 0 0);
+    --accent-foreground: oklch(0.15 0 0);
+    --destructive: oklch(0.58 0.22 25);
+    --border: oklch(0.88 0 0);
+    --input: oklch(0.88 0 0);
+    --ring: oklch(0.5 0.18 25);
+    --chart-1: oklch(0.36 0.16 25);
+    --chart-2: oklch(0.4 0 0);
+    --chart-3: oklch(0.5 0 0);
+    --chart-4: oklch(0.65 0 0);
+    --chart-5: oklch(0.8 0 0);
+    --sidebar: oklch(1 0 0);
+    --sidebar-foreground: oklch(0.15 0 0);
+    --sidebar-primary: oklch(0.36 0.16 25);
+    --sidebar-primary-foreground: oklch(0.99 0 0);
+    --sidebar-accent: oklch(0.9 0 0);
+    --sidebar-accent-foreground: oklch(0.15 0 0);
+    --sidebar-border: oklch(0.88 0 0);
+    --sidebar-ring: oklch(0.5 0.18 25);
+
+    --primary-hover: 0 74% 70%;
+    --text-hover: 0 74% 50%;
+    --glow-color: 350 100% 88% / 0.6;
 }
 
-/* ============== */
-/* BASE STYLES */
-/* ============== */
-html {
-  scroll-behavior: smooth;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    }
 }
 
-body {
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
-  transition: background-color 300ms, color 300ms;
-}
+/* ============================================================ */
+/* LEGACY UTILITIES — still used by components pending redesign  */
+/* in later phases. Remove each block once nothing references it */
+/* (tracked in the makeover roadmap, Phases 2-9).                */
+/* ============================================================ */
 
-/* ============== */
-/* COLOR UTILITIES */
-/* ============== */
-.bg-background {
-  background-color: hsl(var(--background));
-}
-
-.bg-foreground {
-  background-color: hsl(var(--foreground));
-}
-
-.text-background {
-  color: hsl(var(--background));
-}
-
-.text-foreground {
-  color: hsl(var(--foreground));
-}
-
-.bg-primary {
-  background-color: hsl(var(--primary));
-}
-
-.text-primary {
-  color: hsl(var(--primary));
-}
-
-.bg-secondary {
-  background-color: hsl(var(--secondary));
-}
-
-.text-secondary {
-  color: hsl(var(--secondary));
-}
-
-.border-primary {
-  border-color: hsl(var(--primary));
-}
-
-.border-border {
-  border-color: hsl(var(--border));
-}
-
-/* ============== */
-/* INTERACTIVE STATES */
-/* ============== */
-
-/* Primary button with hover effects */
 .btn-primary {
   background-color: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
@@ -118,7 +164,6 @@ body {
   transition-duration: 100ms;
 }
 
-/* Secondary button */
 .btn-secondary {
   background-color: hsl(var(--secondary));
   color: hsl(var(--secondary-foreground));
@@ -132,7 +177,6 @@ body {
   box-shadow: 0 4px 12px hsl(var(--glow-color));
 }
 
-/* Text links with hover effects */
 .text-link {
   color: hsl(var(--primary));
   transition: all 200ms ease;
@@ -147,7 +191,6 @@ body {
   margin: -2px -4px;
 }
 
-/* Card hover effects */
 .hover-card {
   transition: all 300ms ease;
   border: 1px solid hsl(var(--border));
@@ -161,7 +204,6 @@ body {
   border-color: hsl(var(--primary));
 }
 
-/* Glow effects */
 .text-glow {
   text-shadow: 0 0 10px hsl(var(--glow-color));
 }
@@ -174,15 +216,11 @@ body {
   box-shadow: 0 0 20px hsl(var(--glow-color));
 }
 
-/* Border glow */
 .border-glow {
   border: 1px solid hsl(var(--primary));
   box-shadow: 0 0 10px hsl(var(--glow-color));
 }
 
-/* ============== */
-/* NAVIGATION SPECIFIC */
-/* ============== */
 .navbar-link {
   color: hsl(var(--foreground));
   transition: all 200ms ease;
@@ -196,7 +234,6 @@ body {
   text-shadow: 0 0 8px hsl(var(--glow-color));
 }
 
-/* Mobile menu background */
 .mobile-menu {
   background-color: hsl(var(--background));
   border: 1px solid hsl(var(--border));
@@ -221,9 +258,9 @@ body {
 .animate-float-fast { animation: float 2s ease-in-out infinite; }
 .animate-spin-slow { animation: spin 20s linear infinite; }
 .animate-ping-slow { animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite; }
-.animate-gradient { 
-  background-size: 200% 200%; 
-  animation: gradient 3s ease infinite; 
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }
 
 @keyframes fade-in {
@@ -302,7 +339,6 @@ body {
   animation: stagger-fade-in 0.6s ease-out forwards;
 }
 
-
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -318,24 +354,7 @@ body {
   animation: slide-in 0.6s ease-out forwards;
 }
 
-
-
-
 /* Slideshow specific animations */
-@keyframes bounce-slow {
-  0%, 100% { 
-    transform: translateY(0px); 
-  }
-  50% { 
-    transform: translateY(-10px); 
-  }
-}
-
-.animate-bounce-slow {
-  animation: bounce-slow 3s ease-in-out infinite;
-}
-
-/* Smooth slide transitions */
 .slide-enter {
   transform: translateX(100%);
   opacity: 0;
