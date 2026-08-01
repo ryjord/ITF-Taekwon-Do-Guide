@@ -144,63 +144,6 @@ const AchievementBadge = ({ achievementId }) => {
 }
 
 /**
- * DebugInfo Component
- * 
- * DEVELOPMENT-ONLY component that displays debug information about
- * the progress system and localStorage state. Commented out but kept
- * for emergency debugging purposes.
- * 
- * @returns {JSX.Element} Debug information component
- */
-const DebugInfo = () => {
-  // Individual selectors to prevent infinite loops
-  const totalGamesPlayed = useGlobalProgress((state) => state.totalGamesPlayed)
-  const totalPoints = useGlobalProgress((state) => state.totalPoints)
-  const timePlayed = useGlobalProgress((state) => state.timePlayed)
-  const achievements = useGlobalProgress((state) => state.achievements)
-  
-  return (
-    <div className="bg-yellow-100 border border-yellow-400 rounded-2xl p-4 mt-6">
-      <h4 className="font-bold mb-2 text-yellow-800">🔧 Debug Information:</h4>
-      <div className="grid grid-cols-2 gap-4 text-sm">
-        <div>
-          <strong>LocalStorage Status:</strong> 
-          <span className={localStorage.getItem('Taekwon-Do-progress') ? 'text-green-600' : 'text-red-600'}>
-            {localStorage.getItem('Taekwon-Do-progress') ? ' ✅ Has Data' : ' ❌ Empty'}
-          </span>
-        </div>
-        <div>
-          <strong>Total Games:</strong> {totalGamesPlayed}
-        </div>
-        <div>
-          <strong>Total Points:</strong> {totalPoints}
-        </div>
-        <div>
-          <strong>Achievements:</strong> {achievements.length}
-        </div>
-      </div>
-      <details className="mt-3">
-        <summary className="cursor-pointer text-yellow-800 font-medium">Raw Progress Data</summary>
-        <pre className="text-xs overflow-auto bg-yellow-50 p-2 mt-2 rounded border">
-          {JSON.stringify({
-            totalGamesPlayed,
-            totalPoints,
-            timePlayed,
-            achievements
-          }, null, 2)}
-        </pre>
-      </details>
-      <details className="mt-2">
-        <summary className="cursor-pointer text-yellow-800 font-medium">LocalStorage Data</summary>
-        <pre className="text-xs overflow-auto bg-yellow-50 p-2 mt-2 rounded border">
-          {localStorage.getItem('Taekwon-Do-progress') || 'No data in localStorage'}
-        </pre>
-      </details>
-    </div>
-  )
-}
-
-/**
  * ProgressDashboard Component
  * 
  * Main progress tracking dashboard that displays comprehensive user statistics,
@@ -378,9 +321,6 @@ export const ProgressDashboard = () => {
       {renderGameTypeProgress()}
       {renderAchievementsGallery()}
       {renderRecentAchievements()}
-      
-      {/* Debug Information - Commented out but kept for emergency use */}
-      {/* <DebugInfo /> */}
     </div>
   )
 }
