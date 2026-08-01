@@ -1,381 +1,222 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback } from 'react'
+import { Check, FileText, Sparkles, Volume2, X } from 'lucide-react'
 
-/**
- * TranslationGame Component
- * 
- * A professional translation learning game with randomized question order,
- * comprehensive progress tracking, and detailed performance analytics.
- * 
- * Features:
- * - Randomized question order for better learning retention
- * - Flexible answer validation with spelling variations
- * - Audio pronunciation support
- * - Progress tracking and scoring
- * - Time-based challenge with visual progress
- * 
- * @param {Object} quiz - Quiz configuration object
- * @param {Function} onComplete - Callback when game completes with standardized results
- * @returns {JSX.Element} Translation game interface
- */
+import { cn, formatTime, shuffle } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Progress } from '@/components/ui/progress'
+
+import { StatTile } from '../StatTile'
+import { useGameTimer } from '../../../hooks/useGameTimer'
+
+const COMMON_VARIATIONS = {
+  colour: 'color',
+  favourite: 'favorite',
+  centre: 'center',
+  honour: 'honor',
+  defence: 'defense',
+}
+
+const normalizeAnswer = (answer) => answer.toLowerCase().trim().replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, '')
+
+const isAnswerCorrect = (userAnswer, correctAnswer) => {
+  const normalizedUser = normalizeAnswer(userAnswer)
+  const normalizedCorrect = normalizeAnswer(correctAnswer)
+
+  if (normalizedUser === normalizedCorrect) return true
+
+  if (
+    COMMON_VARIATIONS[normalizedUser] === normalizedCorrect ||
+    COMMON_VARIATIONS[normalizedCorrect] === normalizedUser
+  ) {
+    return true
+  }
+
+  const withoutArticles = (str) => str.replace(/^(a|an|the)\s+/i, '')
+  if (withoutArticles(normalizedUser) === withoutArticles(normalizedCorrect)) return true
+
+  if (
+    normalizedUser + 's' === normalizedCorrect ||
+    normalizedUser === normalizedCorrect + 's' ||
+    normalizedUser + 'es' === normalizedCorrect ||
+    normalizedUser === normalizedCorrect + 'es'
+  ) {
+    return true
+  }
+
+  return false
+}
+
 export const TranslationGame = ({ quiz, onComplete }) => {
-  // ===== STATE MANAGEMENT =====
-  
-  /** @type {[number, Function]} Current question index in shuffled deck */
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  
-  /** @type {[string, Function]} User's current translation input */
   const [userInput, setUserInput] = useState('')
-  
-  /** @type {[number, Function]} Current accumulated score */
   const [score, setScore] = useState(0)
-  
-  /** @type {[number, Function]} Count of correctly answered questions */
   const [correctAnswers, setCorrectAnswers] = useState(0)
-  
-  /** @type {[number, Function]} Remaining time in seconds */
-  const [timeLeft, setTimeLeft] = useState(quiz.timeLimit)
-  
-  /** @type {[string, Function]} Current game state: 'playing' | 'finished' */
   const [gameState, setGameState] = useState('playing')
-  
-  /** @type {[Array, Function]} Shuffled copy of quiz questions for random order */
-  const [shuffledQuestions, setShuffledQuestions] = useState([])
-  
-  /** @type {[{show: boolean, isCorrect: boolean, message: string}, Function]} Feedback state for user responses */
+  const [shuffledQuestions] = useState(() => shuffle(quiz.questions))
   const [feedback, setFeedback] = useState({ show: false, isCorrect: false, message: '' })
-  
-  /** @type {[Array, Function]} Track all answered questions for detailed results */
   const [answeredQuestions, setAnsweredQuestions] = useState([])
 
-  // ===== CALCULATED VALUES =====
-
-  /**
-   * Calculates points per question ensuring perfect score equals total available points
-   * Uses base point distribution with remainder handling for perfect scores
-   * @returns {number} Points awarded for each correct answer
-   */
-  const calculatePointsPerQuestion = useCallback(() => {
-    return Math.floor(quiz.points / quiz.questions.length)
-  }, [quiz.points, quiz.questions.length])
-
-  /**
-   * Gets the current question data from shuffled deck
-   * @returns {Object|null} Current question object or null if not available
-   */
+  const pointsPerQuestion = Math.floor(quiz.points / quiz.questions.length)
   const currentQuestion = shuffledQuestions[currentQuestionIndex]
 
-  // ===== EFFECTS & INITIALIZATION =====
-
-  /**
-   * Initialize game by shuffling questions on component mount
-   * Uses Fisher-Yates shuffle algorithm for true randomization
-   */
-  useEffect(() => {
-    const shuffleQuestions = () => {
-      const questions = [...quiz.questions]
-      // Fisher-Yates shuffle algorithm for true randomization
-      for (let i = questions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1))
-        ;[questions[i], questions[j]] = [questions[j], questions[i]]
-      }
-      setShuffledQuestions(questions)
-    }
-
-    shuffleQuestions()
-  }, [quiz.questions])
-
-  /**
-   * Game timer effect - counts down remaining time
-   * Automatically ends game when time reaches zero
-   */
-  useEffect(() => {
-    if (timeLeft > 0 && gameState === 'playing') {
-      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000)
-      return () => clearTimeout(timer)
-    } else if (timeLeft === 0 && gameState === 'playing') {
-      finishGame()
-    }
-  }, [timeLeft, gameState])
-
-  // ===== GAME LOGIC =====
-
-  /**
-   * Normalizes answers for flexible comparison
-   * Removes punctuation, extra spaces, and converts to lowercase
-   * @param {string} answer - The answer to normalize
-   * @returns {string} Normalized answer string
-   */
-  const normalizeAnswer = useCallback((answer) => {
-    return answer.toLowerCase().trim().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
-  }, [])
-
-  /**
-   * Validates user answer with flexible matching rules
-   * Supports spelling variations, article differences, and plural forms
-   * @param {string} userAnswer - User's submitted answer
-   * @param {string} correctAnswer - Expected correct answer
-   * @returns {boolean} Whether answer is considered correct
-   */
-  const isAnswerCorrect = useCallback((userAnswer, correctAnswer) => {
-    const normalizedUser = normalizeAnswer(userAnswer)
-    const normalizedCorrect = normalizeAnswer(correctAnswer)
-    
-    // Exact match
-    if (normalizedUser === normalizedCorrect) return true
-    
-    // Allow minor spelling variations
-    const commonVariations = {
-      'colour': 'color',
-      'favourite': 'favorite',
-      'centre': 'center',
-      'honour': 'honor',
-      'defence': 'defense'
-    }
-    
-    if (commonVariations[normalizedUser] === normalizedCorrect || 
-        commonVariations[normalizedCorrect] === normalizedUser) {
-      return true
-    }
-    
-    // Allow answers without articles for simplicity
-    const withoutArticles = (str) => str.replace(/^(a|an|the)\s+/i, '')
-    if (withoutArticles(normalizedUser) === withoutArticles(normalizedCorrect)) {
-      return true
-    }
-
-    // Allow plural/singular variations for simple cases
-    if ((normalizedUser + 's' === normalizedCorrect) || 
-        (normalizedUser === normalizedCorrect + 's') ||
-        (normalizedUser + 'es' === normalizedCorrect) ||
-        (normalizedUser === normalizedCorrect + 'es')) {
-      return true
-    }
-    
-    return false
-  }, [normalizeAnswer])
-
-  /**
-   * Plays audio pronunciation for current question if available
-   * Handles errors gracefully to prevent game interruption
-   */
-  const playAudio = useCallback(() => {
+  const playAudio = () => {
     if (currentQuestion?.audio) {
       const audio = new Audio(currentQuestion.audio)
-      audio.play().catch(error => {
-        console.warn('Audio playback failed:', error)
-        // Gracefully handle audio errors without breaking game flow
+      audio.play().catch((error) => console.warn('Audio playback failed:', error))
+    }
+  }
+
+  const finishGame = useCallback(
+    (finalScore, finalCorrectCount, timeUsed) => {
+      setGameState('finished')
+
+      const isPerfectScore = finalCorrectCount === quiz.questions.length
+      const adjustedScore = isPerfectScore ? quiz.points : finalScore
+      const accuracy = (finalCorrectCount / quiz.questions.length) * 100
+      const timePerQuestion = timeUsed / quiz.questions.length
+
+      onComplete({
+        gameType: quiz.gameType,
+        category: quiz.category,
+        score: adjustedScore,
+        timeUsed,
+        perfectScore: isPerfectScore,
+        totalQuestions: quiz.questions.length,
+        correctAnswers: finalCorrectCount,
+        accuracy,
+        timePerQuestion,
+        completionRate: 100,
+        shuffled: true,
+        totalPossiblePoints: quiz.points,
+        averageTimePerQuestion: timePerQuestion,
+        answeredQuestions,
       })
-    }
-  }, [currentQuestion])
+    },
+    [quiz, answeredQuestions, onComplete]
+  )
 
-  /**
-   * Finalizes game results and triggers completion callback
-   * Ensures perfect score calculation and provides comprehensive analytics
-   * @param {number} finalScore - Final game score
-   * @param {number} finalCorrectCount - Final count of correct answers
-   */
-  const finishGame = useCallback((finalScore = score, finalCorrectCount = correctAnswers) => {
-    setGameState('finished')
-    const timeUsed = quiz.timeLimit - timeLeft
-    
-    // Ensure perfect score equals total available points
-    const isPerfectScore = finalCorrectCount === quiz.questions.length
-    const adjustedScore = isPerfectScore ? quiz.points : finalScore
-    
-    // Calculate accuracy and performance metrics
-    const accuracy = (finalCorrectCount / quiz.questions.length) * 100
-    const timePerQuestion = timeUsed / quiz.questions.length
-    
-    // Standardized results object for progress tracking system
-    const standardizedResults = {
-      // Core game identification
-      gameType: quiz.gameType,
-      category: quiz.category,
-      
-      // Performance metrics
-      score: adjustedScore,
-      timeUsed: timeUsed,
-      perfectScore: isPerfectScore,
-      
-      // Question-specific analytics
-      totalQuestions: quiz.questions.length,
-      correctAnswers: finalCorrectCount,
-      
-      // Advanced metrics for progress system
-      accuracy: accuracy,
-      timePerQuestion: timePerQuestion,
-      completionRate: 100, // Translation games are always 100% completed
-      
-      // Additional context for achievements
-      shuffled: true, // Indicates questions were randomized
-      totalPossiblePoints: quiz.points,
-      averageTimePerQuestion: timePerQuestion,
-      
-      // Detailed results for review
-      answeredQuestions: answeredQuestions
-    }
-    
-    // Trigger completion callback with standardized data
-    onComplete(standardizedResults)
-  }, [score, correctAnswers, quiz, timeLeft, answeredQuestions, onComplete])
+  const timeLeft = useGameTimer(quiz.timeLimit, {
+    isActive: gameState === 'playing',
+    onExpire: useCallback(
+      () => finishGame(score, correctAnswers, quiz.timeLimit),
+      [finishGame, score, correctAnswers, quiz.timeLimit]
+    ),
+  })
 
-  /**
-   * Handles answer submission with validation and progression
-   * @param {Event} e - Form submission event
-   */
-  const handleSubmit = useCallback((e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    
     if (!userInput.trim()) return
 
-    const pointsPerQuestion = calculatePointsPerQuestion()
     const isCorrect = isAnswerCorrect(userInput, currentQuestion.english)
-    
-    // Calculate what the new values will be
     const newScore = isCorrect ? score + pointsPerQuestion : score
     const newCorrectCount = isCorrect ? correctAnswers + 1 : correctAnswers
 
-    // Show feedback to user
-    if (isCorrect) {
-      setFeedback({
-        show: true,
-        isCorrect: true,
-        message: 'Correct! 🎉'
-      })
-    } else {
-      setFeedback({
-        show: true,
-        isCorrect: false,
-        message: `Almost! The answer is "${currentQuestion.english}"`
-      })
-    }
+    setFeedback(
+      isCorrect
+        ? { show: true, isCorrect: true, message: 'Correct!' }
+        : { show: true, isCorrect: false, message: `Almost! The answer is "${currentQuestion.english}"` }
+    )
 
-    // Record the answered question
-    const newAnsweredQuestions = [...answeredQuestions, {
-      ...currentQuestion,
-      userAnswer: userInput,
-      isCorrect,
-      points: isCorrect ? pointsPerQuestion : 0
-    }]
+    const newAnsweredQuestions = [
+      ...answeredQuestions,
+      { ...currentQuestion, userAnswer: userInput, isCorrect, points: isCorrect ? pointsPerQuestion : 0 },
+    ]
     setAnsweredQuestions(newAnsweredQuestions)
 
-    // Check if this is the last question
     const isLastQuestion = currentQuestionIndex >= shuffledQuestions.length - 1
+    const timeUsed = quiz.timeLimit - timeLeft
 
-    // Move to next question or finish after a brief delay for user feedback
     setTimeout(() => {
       if (isLastQuestion) {
-        // For the last question, finish the game with updated values
-        finishGame(newScore, newCorrectCount)
+        finishGame(newScore, newCorrectCount, timeUsed)
       } else {
-        // Update state and continue to next question
         if (isCorrect) {
           setScore(newScore)
           setCorrectAnswers(newCorrectCount)
         }
-        setCurrentQuestionIndex(prev => prev + 1)
+        setCurrentQuestionIndex((prev) => prev + 1)
         setUserInput('')
         setFeedback({ show: false, isCorrect: false, message: '' })
       }
-    }, 1500) // 1.5 second delay for user to see feedback
-  }, [userInput, currentQuestion, calculatePointsPerQuestion, isAnswerCorrect, score, correctAnswers, currentQuestionIndex, shuffledQuestions.length, answeredQuestions, finishGame])
+    }, 1500)
+  }
 
-  /**
-   * Handles question skip with progression
-   */
-  const handleSkip = useCallback(() => {
-    setFeedback({
-      show: true,
-      isCorrect: false,
-      message: `Skipped! The answer was "${currentQuestion.english}"`
-    })
+  const handleSkip = () => {
+    setFeedback({ show: true, isCorrect: false, message: `Skipped! The answer was "${currentQuestion.english}"` })
 
-    // Record skipped question
-    const newAnsweredQuestions = [...answeredQuestions, {
-      ...currentQuestion,
-      userAnswer: 'skipped',
-      isCorrect: false,
-      points: 0
-    }]
+    const newAnsweredQuestions = [
+      ...answeredQuestions,
+      { ...currentQuestion, userAnswer: 'skipped', isCorrect: false, points: 0 },
+    ]
     setAnsweredQuestions(newAnsweredQuestions)
 
-    // Check if this is the last question
     const isLastQuestion = currentQuestionIndex >= shuffledQuestions.length - 1
+    const timeUsed = quiz.timeLimit - timeLeft
 
     setTimeout(() => {
       if (isLastQuestion) {
-        // For the last question, finish the game
-        finishGame(score, correctAnswers)
+        finishGame(score, correctAnswers, timeUsed)
       } else {
-        // Continue to next question
-        setCurrentQuestionIndex(prev => prev + 1)
+        setCurrentQuestionIndex((prev) => prev + 1)
         setUserInput('')
         setFeedback({ show: false, isCorrect: false, message: '' })
       }
-    }, 1000) // 1 second delay for skip feedback
-  }, [currentQuestion, currentQuestionIndex, shuffledQuestions.length, answeredQuestions, score, correctAnswers, finishGame])
+    }, 1000)
+  }
 
-  // ===== RENDER METHODS =====
-
-  /**
-   * Renders game completion screen with comprehensive statistics
-   * @returns {JSX.Element} Completion screen component
-   */
-  const renderCompletionScreen = () => {
+  if (gameState === 'finished') {
     const isPerfectScore = correctAnswers === quiz.questions.length
     const finalScore = isPerfectScore ? quiz.points : score
     const accuracy = (correctAnswers / quiz.questions.length) * 100
-    
+    const timeUsed = quiz.timeLimit - timeLeft
+
     return (
-      <div className="text-center space-y-6">
-        <div className="text-6xl mb-4">📝</div>
+      <div className="space-y-6 text-center">
+        <FileText className="mx-auto size-14 text-primary" aria-hidden="true" />
         <h2 className="text-3xl font-bold text-foreground">Translation Complete!</h2>
-        
-        {/* Perfect Score Celebration */}
+
         {isPerfectScore && (
-          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-2 px-4 rounded-full inline-block">
-            ⭐ Perfect Score! ⭐
+          <div className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground">
+            <Sparkles className="size-4" aria-hidden="true" />
+            Perfect Score!
           </div>
         )}
-        
-        {/* Performance Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-          <StatBox value={finalScore} label="Points" />
-          <StatBox 
-            value={`${correctAnswers}/${quiz.questions.length}`} 
-            label="Correct" 
-          />
-          <StatBox 
-            value={`${accuracy.toFixed(1)}%`} 
-            label="Accuracy" 
-          />
-          <StatBox 
-            value={`${Math.floor((quiz.timeLimit - timeLeft) / 60)}:${(quiz.timeLimit - timeLeft) % 60 < 10 ? '0' : ''}${(quiz.timeLimit - timeLeft) % 60}`}
-            label="Time" 
-          />
+
+        <div className="mx-auto grid max-w-2xl grid-cols-2 gap-4 md:grid-cols-4">
+          <StatTile value={finalScore} label="Points" />
+          <StatTile value={`${correctAnswers}/${quiz.questions.length}`} label="Correct" />
+          <StatTile value={`${accuracy.toFixed(1)}%`} label="Accuracy" />
+          <StatTile value={formatTime(timeUsed)} label="Time" />
         </div>
 
-        {/* Results Summary */}
-        <div className="max-w-2xl mx-auto bg-card rounded-xl p-6 border space-y-4">
+        <div className="mx-auto max-w-2xl space-y-4 rounded-xl border bg-card p-6 text-left">
           <h3 className="text-xl font-bold text-foreground">Your Answers</h3>
           {answeredQuestions.map((question, index) => (
-            <div key={index} className={`p-4 rounded-lg border-2 ${
-              question.isCorrect ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'
-            }`}>
-              <div className="flex justify-between items-start">
-                <div className="text-left">
+            <div
+              key={index}
+              className={cn(
+                'rounded-lg border-2 p-4',
+                question.isCorrect ? 'border-success/30 bg-success/10' : 'border-destructive/30 bg-destructive/10'
+              )}
+            >
+              <div className="flex items-start justify-between">
+                <div>
                   <div className="font-semibold text-foreground">{question.romanized}</div>
                   <div className="text-sm text-foreground/60">{question.korean}</div>
-                  <div className="text-sm mt-1">
-                    Your answer: <span className={question.isCorrect ? "text-green-600" : "text-red-600"}>
+                  <div className="mt-1 text-sm">
+                    Your answer:{' '}
+                    <span className={question.isCorrect ? 'text-success' : 'text-destructive'}>
                       {question.userAnswer}
                     </span>
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className={`font-bold ${question.isCorrect ? 'text-green-600' : 'text-red-600'}`}>
-                    {question.isCorrect ? '✓' : '✗'}
-                  </div>
+                  {question.isCorrect ? (
+                    <Check className="ml-auto size-5 text-success" aria-hidden="true" />
+                  ) : (
+                    <X className="ml-auto size-5 text-destructive" aria-hidden="true" />
+                  )}
                   <div className="text-sm text-foreground/60">+{question.points}</div>
                 </div>
               </div>
@@ -386,108 +227,59 @@ export const TranslationGame = ({ quiz, onComplete }) => {
     )
   }
 
-  /**
-   * Renders individual statistic box for completion screen
-   * @param {string|number} value - The statistic value to display
-   * @param {string} label - The label for the statistic
-   * @returns {JSX.Element} Statistic box component
-   */
-  const StatBox = ({ value, label }) => (
-    <div className="bg-primary/10 rounded-xl p-4">
-      <div className="text-2xl font-bold text-primary">{value}</div>
-      <div className="text-sm text-foreground/70">{label}</div>
-    </div>
-  )
-
-  // ===== MAIN COMPONENT RENDER =====
-
-  // Show completion screen if game is finished
-  if (gameState === 'finished') {
-    return renderCompletionScreen()
-  }
-
-  // Show loading state if questions haven't been shuffled yet
   if (!currentQuestion) {
     return (
-      <div className="flex justify-center items-center h-48">
+      <div className="flex h-48 items-center justify-center">
         <div className="text-lg text-foreground/60">Loading questions...</div>
       </div>
     )
   }
 
-  // Render main game interface
   return (
-    <div className="space-y-6 max-w-2xl mx-auto">
-      {/* Game Header with Progress Info */}
-      <div className="flex justify-between items-center">
+    <div className="mx-auto max-w-2xl space-y-6">
+      <div className="flex items-center justify-between">
         <div className="text-sm text-foreground/60">
           Question {currentQuestionIndex + 1} of {shuffledQuestions.length}
         </div>
-        <div className="text-sm font-semibold text-primary">
-          Time: {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}
-        </div>
+        <div className="text-sm font-semibold text-primary">Time: {formatTime(timeLeft)}</div>
       </div>
 
-      {/* Progress Bar */}
-      <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-        <div 
-          className="bg-primary h-2 rounded-full transition-all duration-300"
-          style={{ width: `${((currentQuestionIndex + 1) / shuffledQuestions.length) * 100}%` }}
-          role="progressbar"
-          aria-valuenow={currentQuestionIndex + 1}
-          aria-valuemin={0}
-          aria-valuemax={shuffledQuestions.length}
-        />
-      </div>
+      <Progress value={((currentQuestionIndex + 1) / shuffledQuestions.length) * 100} />
 
-      {/* Game Area */}
-      <div className="bg-card rounded-2xl p-8 shadow-lg border text-center space-y-6">
-        {/* Word to Translate */}
+      <div className="space-y-6 rounded-2xl border bg-card p-8 text-center shadow-lg">
         <div className="space-y-4">
-          <div className="text-foreground/60 text-sm">Write the English translation:</div>
-          <div className="text-4xl font-bold text-primary mb-2">
-            {currentQuestion.romanized}
-          </div>
-          <div className="text-2xl text-foreground/80">
-            {currentQuestion.korean}
-          </div>
-          
-          {/* Audio Button */}
+          <div className="text-sm text-foreground/60">Write the English translation:</div>
+          <div className="mb-2 text-4xl font-bold text-primary">{currentQuestion.romanized}</div>
+          <div className="text-2xl text-foreground/80">{currentQuestion.korean}</div>
+
           {currentQuestion.audio && (
-            <button
-              onClick={playAudio}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2"
-              aria-label="Play pronunciation"
-            >
-              <span>🔊</span>
+            <Button type="button" variant="secondary" onClick={playAudio} aria-label="Play pronunciation">
+              <Volume2 className="size-4" aria-hidden="true" />
               Listen
-            </button>
+            </Button>
           )}
         </div>
 
-        {/* Input Area */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="relative">
-            <input
-              type="text"
-              value={userInput}
-              onChange={(e) => setUserInput(e.target.value)}
-              placeholder="Type the English translation..."
-              className="w-full px-4 py-3 text-lg border-2 border-primary rounded-xl focus:outline-none focus:border-primary/70 bg-background text-center disabled:opacity-50 disabled:cursor-not-allowed"
-              disabled={feedback.show}
-              autoFocus
-              aria-label="Translation input"
-            />
-          </div>
+          <Input
+            type="text"
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
+            placeholder="Type the English translation..."
+            className="h-auto rounded-xl border-2 border-primary px-4 py-3 text-center text-lg"
+            disabled={feedback.show}
+            autoFocus
+            aria-label="Translation input"
+          />
 
-          {/* Feedback Message */}
           {feedback.show && (
-            <div 
-              className={`p-4 rounded-xl text-lg font-semibold ${
-                feedback.isCorrect 
-                  ? 'bg-green-100 text-green-800 border border-green-300' 
-                  : 'bg-red-100 text-red-800 border border-red-300'
-              }`}
+            <div
+              className={cn(
+                'rounded-xl p-4 text-lg font-semibold',
+                feedback.isCorrect
+                  ? 'border border-success/30 bg-success/15 text-success'
+                  : 'border border-destructive/30 bg-destructive/10 text-destructive'
+              )}
               role="alert"
               aria-live="polite"
             >
@@ -495,40 +287,26 @@ export const TranslationGame = ({ quiz, onComplete }) => {
             </div>
           )}
 
-          {/* Action Buttons */}
-          <div className="flex gap-4 justify-center pt-4">
-            <button
-              type="button"
-              onClick={handleSkip}
-              disabled={feedback.show}
-              className="px-6 py-3 border-2 border-foreground/20 text-foreground/70 rounded-xl hover:bg-foreground/5 disabled:opacity-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
-              aria-label="Skip question"
-            >
+          <div className="flex justify-center gap-4 pt-4">
+            <Button type="button" variant="outline" onClick={handleSkip} disabled={feedback.show} aria-label="Skip question">
               Skip
-            </button>
-            <button
-              type="submit"
-              disabled={feedback.show || !userInput.trim()}
-              className="px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary/90 disabled:opacity-50 transition-colors font-semibold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-              aria-label="Check answer"
-            >
+            </Button>
+            <Button type="submit" disabled={feedback.show || !userInput.trim()} aria-label="Check answer">
               Check Answer
-            </button>
+            </Button>
           </div>
         </form>
       </div>
 
-      {/* Instructions */}
-      <div className="text-center text-foreground/60 text-sm">
+      <div className="text-center text-sm text-foreground/60">
         Type the English meaning of the Korean word. Don't worry about capitalization or small spelling mistakes!
       </div>
 
-      {/* Score Display */}
       <div className="text-center">
-        <div className="inline-block bg-primary/10 rounded-full px-4 py-2">
-          <span className="text-sm text-foreground/60 mr-2">Score:</span>
+        <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm">
+          <span className="text-foreground/60">Score:</span>
           <span className="font-bold text-primary">{score}</span>
-          <span className="text-sm text-foreground/60 ml-2">/ {quiz.points}</span>
+          <span className="text-foreground/60">/ {quiz.points}</span>
         </div>
       </div>
     </div>

@@ -1,371 +1,198 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useCallback } from 'react'
+import { PartyPopper, Sparkles } from 'lucide-react'
 
-/**
- * MCQGame Component
- * 
- * A professional multiple-choice quiz game with randomized question order,
- * comprehensive progress tracking, and detailed performance analytics.
- * 
- * Features:
- * - Randomized question order for fair assessment
- * - Real-time scoring with perfect score guarantees
- * - Progress tracking for achievements system
- * - Detailed explanations and feedback
- * - Time-based challenge with visual progress
- * 
- * @param {Object} quiz - Quiz configuration object
- * @param {Function} onComplete - Callback when game completes with standardized results
- * @returns {JSX.Element} MCQ game interface
- */
+import { Progress } from '@/components/ui/progress'
+import { cn, formatTime, shuffle } from '@/lib/utils'
+
+import { StatTile } from '../StatTile'
+import { useGameTimer } from '../../../hooks/useGameTimer'
+
 export const MCQGame = ({ quiz, onComplete }) => {
-  // ===== STATE MANAGEMENT =====
-  
-  /** @type {[number, Function]} Current question index in shuffled deck */
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  
-  /** @type {[number|null, Function]} Index of selected answer or null if not answered */
   const [selectedAnswer, setSelectedAnswer] = useState(null)
-  
-  /** @type {[number, Function]} Current accumulated score */
   const [score, setScore] = useState(0)
-  
-  /** @type {[number, Function]} Count of correctly answered questions */
   const [correctAnswers, setCorrectAnswers] = useState(0)
-  
-  /** @type {[number, Function]} Remaining time in seconds */
-  const [timeLeft, setTimeLeft] = useState(quiz.timeLimit)
-  
-  /** @type {[string, Function]} Current game state: 'playing' | 'finished' */
   const [gameState, setGameState] = useState('playing')
-  
-  /** @type {[Array, Function]} Shuffled copy of quiz questions for random order */
-  const [shuffledQuestions, setShuffledQuestions] = useState([])
+  const [shuffledQuestions] = useState(() => shuffle(quiz.questions))
 
-  // ===== CALCULATED VALUES =====
-
-  /**
-   * Calculates points per question ensuring perfect score equals total available points
-   * Uses base point distribution with remainder handling for perfect scores
-   * @returns {number} Points awarded for each correct answer
-   */
-  const calculatePointsPerQuestion = useCallback(() => {
-    return Math.floor(quiz.points / quiz.questions.length)
-  }, [quiz.points, quiz.questions.length])
-
-  /**
-   * Gets the current question data from shuffled deck
-   * @returns {Object|null} Current question object or null if not available
-   */
+  const pointsPerQuestion = Math.floor(quiz.points / quiz.questions.length)
   const currentQuestion = shuffledQuestions[currentQuestionIndex]
 
-  // ===== EFFECTS & INITIALIZATION =====
+  const finishGame = useCallback(
+    (finalScore, finalCorrectCount, timeUsed) => {
+      setGameState('finished')
 
-  /**
-   * Initialize game by shuffling questions on component mount
-   * Uses Fisher-Yates shuffle algorithm for true randomization
-   */
-  useEffect(() => {
-    const shuffleQuestions = () => {
-      const questions = [...quiz.questions]
-      // Fisher-Yates shuffle algorithm for true randomization
-      for (let i = questions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1))
-        ;[questions[i], questions[j]] = [questions[j], questions[i]]
+      const isPerfectScore = finalCorrectCount === quiz.questions.length
+      const adjustedScore = isPerfectScore ? quiz.points : finalScore
+      const accuracy = (finalCorrectCount / quiz.questions.length) * 100
+      const timePerQuestion = timeUsed / quiz.questions.length
+
+      onComplete({
+        gameType: quiz.gameType,
+        category: quiz.category,
+        score: adjustedScore,
+        timeUsed,
+        perfectScore: isPerfectScore,
+        totalQuestions: quiz.questions.length,
+        correctAnswers: finalCorrectCount,
+        accuracy,
+        timePerQuestion,
+        completionRate: 100,
+        shuffled: true,
+        totalPossiblePoints: quiz.points,
+        averageTimePerQuestion: timePerQuestion,
+      })
+    },
+    [quiz, onComplete]
+  )
+
+  const timeLeft = useGameTimer(quiz.timeLimit, {
+    isActive: gameState === 'playing',
+    onExpire: useCallback(() => finishGame(score, correctAnswers, quiz.timeLimit), [finishGame, score, correctAnswers, quiz.timeLimit]),
+  })
+
+  const handleAnswerSelect = (answerIndex) => {
+    setSelectedAnswer(answerIndex)
+
+    const isCorrect = answerIndex === currentQuestion.correctAnswer
+    const newScore = isCorrect ? score + pointsPerQuestion : score
+    const newCorrectCount = isCorrect ? correctAnswers + 1 : correctAnswers
+    const isLastQuestion = currentQuestionIndex >= shuffledQuestions.length - 1
+
+    setTimeout(() => {
+      if (isLastQuestion) {
+        finishGame(newScore, newCorrectCount, quiz.timeLimit - timeLeft)
+      } else {
+        if (isCorrect) {
+          setScore(newScore)
+          setCorrectAnswers(newCorrectCount)
+        }
+        setCurrentQuestionIndex((prev) => prev + 1)
+        setSelectedAnswer(null)
       }
-      setShuffledQuestions(questions)
-    }
-
-    shuffleQuestions()
-  }, [quiz.questions])
-
-  /**
-   * Game timer effect - counts down remaining time
-   * Automatically ends game when time reaches zero
-   */
-  useEffect(() => {
-    if (timeLeft > 0 && gameState === 'playing') {
-      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000)
-      return () => clearTimeout(timer)
-    } else if (timeLeft === 0 && gameState === 'playing') {
-      finishGame()
-    }
-  }, [timeLeft, gameState])
-
-  // ===== GAME LOGIC =====
-
-/**
- * Finalizes game results and triggers completion callback
- * Ensures perfect score calculation and provides comprehensive analytics
- * @param {number} finalScore - Final game score
- * @param {number} finalCorrectCount - Final count of correct answers
- */
-const finishGame = useCallback((finalScore = score, finalCorrectCount = correctAnswers) => {
-  setGameState('finished')
-  const timeUsed = quiz.timeLimit - timeLeft
-  
-  // Ensure perfect score equals total available points
-  const isPerfectScore = finalCorrectCount === quiz.questions.length
-  const adjustedScore = isPerfectScore ? quiz.points : finalScore
-  
-  // Calculate accuracy and performance metrics
-  const accuracy = (finalCorrectCount / quiz.questions.length) * 100
-  const timePerQuestion = timeUsed / quiz.questions.length
-  
-  // Standardized results object for progress tracking system
-  const standardizedResults = {
-    // Core game identification
-    gameType: quiz.gameType,
-    category: quiz.category,
-    
-    // Performance metrics
-    score: adjustedScore,
-    timeUsed: timeUsed,
-    perfectScore: isPerfectScore,
-    
-    // Question-specific analytics
-    totalQuestions: quiz.questions.length,
-    correctAnswers: finalCorrectCount,
-    
-    // Advanced metrics for progress system
-    accuracy: accuracy,
-    timePerQuestion: timePerQuestion,
-    completionRate: 100, // MCQ games are always 100% completed
-    
-    // Additional context for achievements
-    shuffled: true, // Indicates questions were randomized
-    totalPossiblePoints: quiz.points,
-    averageTimePerQuestion: timePerQuestion
+    }, 1000)
   }
-  
-  // Trigger completion callback with standardized data
-  onComplete(standardizedResults)
-}, [score, correctAnswers, quiz, timeLeft, onComplete])
 
-/**
- * Handles user answer selection with validation and progression
- * @param {number} answerIndex - Index of the selected answer option
- */
-const handleAnswerSelect = useCallback((answerIndex) => {
-  setSelectedAnswer(answerIndex)
-  
-  const pointsPerQuestion = calculatePointsPerQuestion()
-  const isCorrect = answerIndex === currentQuestion.correctAnswer
-  
-  // Calculate what the new values will be
-  const newScore = isCorrect ? score + pointsPerQuestion : score
-  const newCorrectCount = isCorrect ? correctAnswers + 1 : correctAnswers
-
-  // Check if this is the last question
-  const isLastQuestion = currentQuestionIndex >= shuffledQuestions.length - 1
-
-  // Move to next question or finish after a brief delay for user feedback
-  setTimeout(() => {
-    if (isLastQuestion) {
-      // For the last question, finish the game with updated values
-      finishGame(newScore, newCorrectCount)
-    } else {
-      // Update state and continue to next question
-      if (isCorrect) {
-        setScore(newScore)
-        setCorrectAnswers(newCorrectCount)
-      }
-      setCurrentQuestionIndex(prev => prev + 1)
-      setSelectedAnswer(null)
-    }
-  }, 1000) // 1 second delay for user to see feedback
-}, [currentQuestionIndex, shuffledQuestions.length, calculatePointsPerQuestion, score, correctAnswers, currentQuestion, finishGame])
-  
-
-  // ===== RENDER METHODS =====
-
-  /**
-   * Renders game completion screen with comprehensive statistics
-   * @returns {JSX.Element} Completion screen component
-   */
-  const renderCompletionScreen = () => {
+  if (gameState === 'finished') {
     const isPerfectScore = correctAnswers === quiz.questions.length
     const finalScore = isPerfectScore ? quiz.points : score
     const accuracy = (correctAnswers / quiz.questions.length) * 100
-    
+    const timeUsed = quiz.timeLimit - timeLeft
+
     return (
-      <div className="text-center space-y-6">
-        <div className="text-6xl mb-4">🎉</div>
+      <div className="space-y-6 text-center">
+        <PartyPopper className="mx-auto size-14 text-primary" aria-hidden="true" />
         <h2 className="text-3xl font-bold text-foreground">Quiz Complete!</h2>
-        
-        {/* Perfect Score Celebration */}
+
         {isPerfectScore && (
-          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-2 px-4 rounded-full inline-block">
-            ⭐ Perfect Score! ⭐
+          <div className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-primary-foreground">
+            <Sparkles className="size-4" aria-hidden="true" />
+            Perfect Score!
           </div>
         )}
-        
-        {/* Performance Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-          <StatBox value={finalScore} label="Points" />
-          <StatBox 
-            value={`${correctAnswers}/${quiz.questions.length}`} 
-            label="Correct" 
-          />
-          <StatBox 
-            value={`${accuracy.toFixed(1)}%`} 
-            label="Accuracy" 
-          />
-          <StatBox 
-            value={`${Math.floor((quiz.timeLimit - timeLeft) / 60)}:${(quiz.timeLimit - timeLeft) % 60 < 10 ? '0' : ''}${(quiz.timeLimit - timeLeft) % 60}`}
-            label="Time" 
-          />
+
+        <div className="mx-auto grid max-w-2xl grid-cols-2 gap-4 md:grid-cols-4">
+          <StatTile value={finalScore} label="Points" />
+          <StatTile value={`${correctAnswers}/${quiz.questions.length}`} label="Correct" />
+          <StatTile value={`${accuracy.toFixed(1)}%`} label="Accuracy" />
+          <StatTile value={formatTime(timeUsed)} label="Time" />
         </div>
-        
-        {/* Performance Feedback */}
-        <div className="bg-primary/10 rounded-xl p-4 max-w-md mx-auto">
-          <h4 className="font-semibold text-primary mb-2">Performance Summary</h4>
-          <p className="text-foreground/70 text-sm">
-            {accuracy >= 90 ? "Outstanding! You've mastered this material!" :
-             accuracy >= 75 ? "Great job! You have a solid understanding." :
-             accuracy >= 60 ? "Good effort! Keep practicing to improve." :
-             "Keep studying! Review the material and try again."}
+
+        <div className="mx-auto max-w-md rounded-xl bg-primary/10 p-4">
+          <h4 className="mb-2 font-semibold text-primary">Performance Summary</h4>
+          <p className="text-sm text-foreground/70">
+            {accuracy >= 90
+              ? "Outstanding! You've mastered this material!"
+              : accuracy >= 75
+                ? 'Great job! You have a solid understanding.'
+                : accuracy >= 60
+                  ? 'Good effort! Keep practicing to improve.'
+                  : 'Keep studying! Review the material and try again.'}
           </p>
         </div>
       </div>
     )
   }
 
-  /**
-   * Renders individual statistic box for completion screen
-   * @param {string|number} value - The statistic value to display
-   * @param {string} label - The label for the statistic
-   * @returns {JSX.Element} Statistic box component
-   */
-  const StatBox = ({ value, label }) => (
-    <div className="bg-primary/10 rounded-xl p-4">
-      <div className="text-2xl font-bold text-primary">{value}</div>
-      <div className="text-sm text-foreground/70">{label}</div>
-    </div>
-  )
-
-  /**
-   * Renders answer option with visual feedback states
-   * @param {string} option - The answer option text
-   * @param {number} index - The index of the answer option
-   * @returns {JSX.Element} Answer option button component
-   */
-  const renderAnswerOption = (option, index) => {
-    const isSelected = selectedAnswer === index
-    const isCorrect = index === currentQuestion.correctAnswer
-    const showCorrect = selectedAnswer !== null && isCorrect
-    const showIncorrect = isSelected && !isCorrect
-    
-    return (
-      <button
-        key={index}
-        onClick={() => handleAnswerSelect(index)}
-        disabled={selectedAnswer !== null}
-        className={`p-4 rounded-xl border-2 text-left transition-all duration-200 w-full ${
-          selectedAnswer === null
-            ? 'bg-background border-border hover:border-primary/50 hover:bg-primary/5 cursor-pointer'
-            : showCorrect
-            ? 'bg-green-500 text-white border-green-500 shadow-lg transform scale-105'
-            : showIncorrect
-            ? 'bg-red-500 text-white border-red-500 opacity-80'
-            : 'bg-background border-border opacity-50 cursor-not-allowed'
-        }`}
-        aria-label={`Option ${String.fromCharCode(65 + index)}: ${option}`}
-        aria-pressed={isSelected}
-        aria-describedby={selectedAnswer !== null && isCorrect ? "correct-answer" : undefined}
-      >
-        <div className="flex items-center">
-          {/* Option Letter Indicator */}
-          <div className={`w-8 h-8 rounded-full border-2 flex items-center justify-center mr-3 font-semibold flex-shrink-0 ${
-            selectedAnswer === null
-              ? 'border-primary text-primary'
-              : showCorrect || showIncorrect
-              ? 'border-white text-white'
-              : 'border-gray-300 text-gray-300'
-          }`}>
-            {String.fromCharCode(65 + index)}
-          </div>
-          
-          {/* Option Text */}
-          <span className="text-left flex-1">{option}</span>
-        </div>
-      </button>
-    )
-  }
-
-  /**
-   * Renders explanation panel when answer is selected
-   * @returns {JSX.Element} Explanation component
-   */
-  const renderExplanation = () => (
-    <div 
-      className="bg-primary/10 border border-primary/20 rounded-xl p-4 mt-6 animate-fade-in"
-      role="region"
-      aria-label="Answer Explanation"
-    >
-      <h4 className="font-semibold text-primary mb-2">Explanation:</h4>
-      <p className="text-foreground/70" id="correct-answer">
-        {currentQuestion.explanation}
-      </p>
-    </div>
-  )
-
-  // ===== MAIN COMPONENT RENDER =====
-
-  // Show completion screen if game is finished
-  if (gameState === 'finished') {
-    return renderCompletionScreen()
-  }
-
-  // Show loading state if questions haven't been shuffled yet
   if (!currentQuestion) {
     return (
-      <div className="flex justify-center items-center h-48">
+      <div className="flex h-48 items-center justify-center">
         <div className="text-lg text-foreground/60">Loading questions...</div>
       </div>
     )
   }
 
-  // Render main game interface
   return (
     <div className="space-y-6">
-      {/* Game Header with Progress Info */}
-      <div className="flex justify-between items-center">
+      <div className="flex items-center justify-between">
         <div className="text-sm text-foreground/60">
           Question {currentQuestionIndex + 1} of {shuffledQuestions.length}
         </div>
-        <div className="text-sm font-semibold text-primary">
-          Time: {Math.floor(timeLeft / 60)}:{timeLeft % 60 < 10 ? '0' : ''}{timeLeft % 60}
-        </div>
+        <div className="text-sm font-semibold text-primary">Time: {formatTime(timeLeft)}</div>
       </div>
 
-      {/* Progress Bar */}
-      <div className="w-full bg-gray-200 rounded-full h-2 dark:bg-gray-700">
-        <div 
-          className="bg-primary h-2 rounded-full transition-all duration-300"
-          style={{ width: `${((currentQuestionIndex + 1) / shuffledQuestions.length) * 100}%` }}
-          role="progressbar"
-          aria-valuenow={currentQuestionIndex + 1}
-          aria-valuemin={0}
-          aria-valuemax={shuffledQuestions.length}
-        />
-      </div>
+      <Progress value={((currentQuestionIndex + 1) / shuffledQuestions.length) * 100} />
 
-      {/* Question */}
       <div className="text-center">
-        <h3 className="text-2xl font-bold text-foreground mb-6">
-          {currentQuestion.question}
-        </h3>
-        
-        {/* Answer Options Grid */}
-        <div className="grid grid-cols-1 gap-3 max-w-2xl mx-auto">
-          {currentQuestion.options.map((option, index) => 
-            renderAnswerOption(option, index)
-          )}
+        <h3 className="mb-6 text-2xl font-bold text-foreground">{currentQuestion.question}</h3>
+
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-3">
+          {currentQuestion.options.map((option, index) => {
+            const isSelected = selectedAnswer === index
+            const isCorrect = index === currentQuestion.correctAnswer
+            const showCorrect = selectedAnswer !== null && isCorrect
+            const showIncorrect = isSelected && !isCorrect
+
+            return (
+              <button
+                key={option}
+                onClick={() => handleAnswerSelect(index)}
+                disabled={selectedAnswer !== null}
+                className={cn(
+                  'w-full rounded-xl border-2 p-4 text-left transition-all duration-200',
+                  selectedAnswer === null
+                    ? 'cursor-pointer border-border bg-background hover:border-primary/50 hover:bg-primary/5'
+                    : showCorrect
+                      ? 'border-success bg-success/15 text-success'
+                      : showIncorrect
+                        ? 'border-destructive bg-destructive/15 text-destructive'
+                        : 'cursor-not-allowed border-border bg-background opacity-50'
+                )}
+                aria-label={`Option ${String.fromCharCode(65 + index)}: ${option}`}
+                aria-pressed={isSelected}
+                aria-describedby={selectedAnswer !== null && isCorrect ? 'correct-answer' : undefined}
+              >
+                <div className="flex items-center">
+                  <div
+                    className={cn(
+                      'mr-3 flex size-8 shrink-0 items-center justify-center rounded-full border-2 font-semibold',
+                      selectedAnswer === null
+                        ? 'border-primary text-primary'
+                        : showCorrect
+                          ? 'border-success text-success'
+                          : showIncorrect
+                            ? 'border-destructive text-destructive'
+                            : 'border-border text-foreground/40'
+                    )}
+                  >
+                    {String.fromCharCode(65 + index)}
+                  </div>
+                  <span className="flex-1 text-left">{option}</span>
+                </div>
+              </button>
+            )
+          })}
         </div>
       </div>
 
-      {/* Explanation (when answered) */}
-      {selectedAnswer !== null && renderExplanation()}
+      {selectedAnswer !== null && (
+        <div className="animate-fade-in mt-6 rounded-xl border border-primary/20 bg-primary/10 p-4" role="region" aria-label="Answer Explanation">
+          <h4 className="mb-2 font-semibold text-primary">Explanation:</h4>
+          <p className="text-foreground/70" id="correct-answer">
+            {currentQuestion.explanation}
+          </p>
+        </div>
+      )}
     </div>
   )
 }

@@ -113,7 +113,6 @@ export const useGlobalProgress = create(
             // Unlock achievement if condition is met
             if (conditionMet) {
               newAchievements.push(achievement.id)
-              console.log(`🎉 Achievement unlocked: ${achievement.name}`)
             }
           })
           
@@ -141,18 +140,14 @@ export const useGlobalProgress = create(
           achievements: [...currentState.achievements]
         }
 
-        console.log('📊 New progress calculated:', newProgress)
-
         // ===== ACHIEVEMENT EVALUATION =====
 
         /** @type {Array<string>} Newly unlocked achievement IDs */
         const newAchievements = checkAchievements(newProgress, gameResults)
-        console.log('🏆 Achievements to add:', newAchievements)
 
         // Add new achievements to progress state
         if (newAchievements.length > 0) {
           newProgress.achievements = [...newProgress.achievements, ...newAchievements]
-          console.log('✅ Final progress with achievements:', newProgress)
         }
 
         // ===== STATE UPDATE =====
@@ -192,8 +187,6 @@ export const useGlobalProgress = create(
             history: { games: 0, points: 0 }
           }
         })
-        
-        console.log('🔄 Progress reset to initial state')
       }
     }),
     {
