@@ -7,7 +7,7 @@
       "beltColor": "White",
       "beltRank": "10th Kup",
       "meaning": "Four-direction Punch - basic punching practice in four directions",
-      "diagram": "➕",
+      "diagram": "\u2795",
       "patternShape": "+",
       "patternDescription": "Four-direction movement pattern",
       "focus": "Basic punching, stances, and directional awareness",
@@ -15,17 +15,29 @@
         {
           "stance": "Parallel Ready Stance",
           "description": "Assume parallel ready stance facing D",
-          "steps": ["Feet shoulder width", "Hands in ready position", "Bow"]
+          "steps": [
+            "Feet shoulder width",
+            "Hands in ready position",
+            "Bow"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Left walking stance toward D while executing low block",
-          "steps": ["Step left forward", "Left low block", "Right fist on hip"]
+          "steps": [
+            "Step left forward",
+            "Left low block",
+            "Right fist on hip"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Right walking stance toward D while executing middle punch",
-          "steps": ["Step right forward", "Right middle punch", "Maintain stance"]
+          "steps": [
+            "Step right forward",
+            "Right middle punch",
+            "Maintain stance"
+          ]
         }
       ]
     },
@@ -36,7 +48,7 @@
       "beltColor": "White",
       "beltRank": "10th Kup",
       "meaning": "Four-direction Block - basic blocking practice in four directions",
-      "diagram": "🛡️",
+      "diagram": "\ud83d\udee1\ufe0f",
       "patternShape": "+",
       "patternDescription": "Four-direction blocking pattern",
       "focus": "Basic blocking techniques and directional movement",
@@ -44,12 +56,20 @@
         {
           "stance": "Parallel Ready Stance",
           "description": "Assume parallel ready stance facing D",
-          "steps": ["Natural ready stance", "Hands relaxed", "Focus forward"]
+          "steps": [
+            "Natural ready stance",
+            "Hands relaxed",
+            "Focus forward"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Left walking stance toward D while executing rising block",
-          "steps": ["Step left forward", "Left rising block", "Right guard"]
+          "steps": [
+            "Step left forward",
+            "Left rising block",
+            "Right guard"
+          ]
         }
       ]
     },
@@ -60,7 +80,7 @@
       "beltColor": "White with Yellow Stripe",
       "beltRank": "9th Kup",
       "meaning": "Heaven and Earth - representing the beginning of the world",
-      "diagram": "🌍",
+      "diagram": "\ud83c\udf0d",
       "patternShape": "+",
       "patternDescription": "Cross-shaped pattern representing heaven and earth",
       "focus": "Introduction to pattern training, basic blocks and punches",
@@ -68,99 +88,179 @@
         {
           "stance": "Parallel Ready Stance",
           "description": "Assume parallel ready stance facing D",
-          "steps": ["Feet shoulder width", "Hands in ready position", "Bow"]
+          "steps": [
+            "Feet shoulder width",
+            "Hands in ready position",
+            "Bow"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Turn left to B, left walking stance, left low block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left outward low block"]
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left outward low block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to B, right walking stance, right middle punch",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn right 180° to A, right walking stance, right low block",
-          "steps": ["Turn 180° right", "Right walking stance", "Right outward low block"]
+          "description": "Turn right 180\u00b0 to A, right walking stance, right low block",
+          "steps": [
+            "Turn 180\u00b0 right",
+            "Right walking stance",
+            "Right outward low block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to A, left walking stance, left middle punch",
-          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 90° to D, left walking stance, left inner forearm middle block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+          "description": "Turn left 90\u00b0 to D, left walking stance, left inner forearm middle block",
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to D, right walking stance, right middle punch",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn right 180° to C, right walking stance, right inner forearm middle block",
-          "steps": ["Turn 180° right", "Right walking stance", "Right inner forearm middle block"]
+          "description": "Turn right 180\u00b0 to C, right walking stance, right inner forearm middle block",
+          "steps": [
+            "Turn 180\u00b0 right",
+            "Right walking stance",
+            "Right inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to C, left walking stance, left middle punch",
-          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 90° to B, left walking stance, left low block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left outward low block"]
+          "description": "Turn left 90\u00b0 to B, left walking stance, left low block",
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left outward low block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to B, right walking stance, right middle punch",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to B, left walking stance, left middle punch",
-          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to B, right walking stance, right middle punch with kihap",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch", "Kihap!"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch",
+            "Kihap!"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 180° to A, left walking stance, left low block",
-          "steps": ["Turn 180° left", "Left walking stance", "Left outward low block"]
+          "description": "Turn left 180\u00b0 to A, left walking stance, left low block",
+          "steps": [
+            "Turn 180\u00b0 left",
+            "Left walking stance",
+            "Left outward low block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to A, right walking stance, right middle punch",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to A, left walking stance, left middle punch",
-          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to A, right walking stance, right middle punch with kihap",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch", "Kihap!"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch",
+            "Kihap!"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 90° to D, left walking stance, left inner forearm middle block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+          "description": "Turn left 90\u00b0 to D, left walking stance, left inner forearm middle block",
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left inner forearm middle block"
+          ]
         },
         {
           "stance": "Parallel Ready Stance",
           "description": "Bring right foot to left foot, parallel ready stance facing D",
-          "steps": ["Bring feet together", "Hands in ready position", "End"]
+          "steps": [
+            "Bring feet together",
+            "Hands in ready position",
+            "End"
+          ]
         }
-      ]
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=pRbmNys1tKI",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "dan-gun",
@@ -169,117 +269,204 @@
       "beltColor": "Yellow",
       "beltRank": "8th Kup",
       "meaning": "Named after the holy Dan-Gun, legendary founder of Korea in 2333 BC",
-      "diagram": "⛰️",
-      "patternShape": "工",
+      "diagram": "\u26f0\ufe0f",
+      "patternShape": "\u5de5",
       "patternDescription": "Chinese character for 'worker' or 'founder'",
       "focus": "Walking stance, middle section punches, and front snap kick",
       "movements": [
         {
           "stance": "Parallel Ready Stance",
           "description": "Assume parallel ready stance facing D",
-          "steps": ["Feet shoulder width", "Hands in ready position", "Bow"]
+          "steps": [
+            "Feet shoulder width",
+            "Hands in ready position",
+            "Bow"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Turn left to B, left walking stance, left middle block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to B, right walking stance, right high punch",
-          "steps": ["Step forward", "Right walking stance", "Right high section punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right high section punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn right 180° to A, right walking stance, right middle block",
-          "steps": ["Turn 180° right", "Right walking stance", "Right inner forearm middle block"]
+          "description": "Turn right 180\u00b0 to A, right walking stance, right middle block",
+          "steps": [
+            "Turn 180\u00b0 right",
+            "Right walking stance",
+            "Right inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to A, left walking stance, left high punch",
-          "steps": ["Step forward", "Left walking stance", "Left high section punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left high section punch"
+          ]
         },
         {
           "stance": "L-Stance",
-          "description": "Turn left 90° to D, right L-stance, knife-hand guarding block",
-          "steps": ["Turn 90° left", "Right L-stance", "Knife-hand guarding block"]
+          "description": "Turn left 90\u00b0 to D, right L-stance, knife-hand guarding block",
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Right L-stance",
+            "Knife-hand guarding block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to D, left walking stance, left middle punch",
-          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to D, right walking stance, right middle punch",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "L-Stance",
-          "description": "Turn right 270° to C, left L-stance, knife-hand guarding block",
-          "steps": ["Turn 270° right", "Left L-stance", "Knife-hand guarding block"]
+          "description": "Turn right 270\u00b0 to C, left L-stance, knife-hand guarding block",
+          "steps": [
+            "Turn 270\u00b0 right",
+            "Left L-stance",
+            "Knife-hand guarding block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to C, right walking stance, right middle punch",
-          "steps": ["Step forward", "Right walking stance", "Right middle punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to C, left walking stance, left middle punch",
-          "steps": ["Step forward", "Left walking stance", "Left middle punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 90° to B, left walking stance, left middle block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+          "description": "Turn left 90\u00b0 to B, left walking stance, left middle block",
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to B, right walking stance, right high punch",
-          "steps": ["Step forward", "Right walking stance", "Right high section punch"]
+          "steps": [
+            "Step forward",
+            "Right walking stance",
+            "Right high section punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn right 180° to A, right walking stance, right middle block",
-          "steps": ["Turn 180° right", "Right walking stance", "Right inner forearm middle block"]
+          "description": "Turn right 180\u00b0 to A, right walking stance, right middle block",
+          "steps": [
+            "Turn 180\u00b0 right",
+            "Right walking stance",
+            "Right inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Step forward to A, left walking stance, left high punch",
-          "steps": ["Step forward", "Left walking stance", "Left high section punch"]
+          "steps": [
+            "Step forward",
+            "Left walking stance",
+            "Left high section punch"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 90° to D, left walking stance, left middle block",
-          "steps": ["Turn 90° left", "Left walking stance", "Left inner forearm middle block"]
+          "description": "Turn left 90\u00b0 to D, left walking stance, left middle block",
+          "steps": [
+            "Turn 90\u00b0 left",
+            "Left walking stance",
+            "Left inner forearm middle block"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Right front snap kick, landing in right walking stance, right middle punch",
-          "steps": ["Right front snap kick", "Land in walking stance", "Right middle punch"]
+          "steps": [
+            "Right front snap kick",
+            "Land in walking stance",
+            "Right middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Left front snap kick, landing in left walking stance, left middle punch",
-          "steps": ["Left front snap kick", "Land in walking stance", "Left middle punch"]
+          "steps": [
+            "Left front snap kick",
+            "Land in walking stance",
+            "Left middle punch"
+          ]
         },
         {
           "stance": "Walking Stance",
           "description": "Right front snap kick, landing in right walking stance, right middle punch with kihap",
-          "steps": ["Right front snap kick", "Land in walking stance", "Right middle punch", "Kihap!"]
+          "steps": [
+            "Right front snap kick",
+            "Land in walking stance",
+            "Right middle punch",
+            "Kihap!"
+          ]
         },
         {
           "stance": "Walking Stance",
-          "description": "Turn left 270° to C, left walking stance, left middle block",
-          "steps": ["Turn 270° left", "Left walking stance", "Left inner forearm middle block"]
+          "description": "Turn left 270\u00b0 to C, left walking stance, left middle block",
+          "steps": [
+            "Turn 270\u00b0 left",
+            "Left walking stance",
+            "Left inner forearm middle block"
+          ]
         },
         {
           "stance": "Parallel Ready Stance",
           "description": "Bring right foot to left foot, parallel ready stance facing D",
-          "steps": ["Bring feet together", "Hands in ready position", "End"]
+          "steps": [
+            "Bring feet together",
+            "Hands in ready position",
+            "End"
+          ]
         }
-      ]
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=GoZFgtc9kHQ",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "do-san",
@@ -288,11 +475,13 @@
       "beltColor": "Yellow with Green Stripe",
       "beltRank": "7th Kup",
       "meaning": "Pseudonym of the patriot Ahn Chang-Ho (1876-1938)",
-      "diagram": "📚",
-      "patternShape": "山",
+      "diagram": "\ud83d\udcda",
+      "patternShape": "\u5c71",
       "patternDescription": "Mountain shape representing steadfastness",
       "focus": "Front stance, twin forearm block, and side piercing kick",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=WqUy-MeFSJs",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "won-hyo",
@@ -301,11 +490,13 @@
       "beltColor": "Green",
       "beltRank": "6th Kup",
       "meaning": "The noted monk who introduced Buddhism to the Silla Dynasty in 686 AD",
-      "diagram": "☸️",
-      "patternShape": "十",
+      "diagram": "\u2638\ufe0f",
+      "patternShape": "\u5341",
       "patternDescription": "Cross pattern representing Buddhism",
       "focus": "L-stance, forearm guarding block, and side thrusting kick",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=UIldWDhfddM",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "yul-gok",
@@ -314,11 +505,13 @@
       "beltColor": "Green with Blue Stripe",
       "beltRank": "5th Kup",
       "meaning": "Pseudonym of great philosopher and scholar Yi I (1536-1584)",
-      "diagram": "🎓",
-      "patternShape": "士",
+      "diagram": "\ud83c\udf93",
+      "patternShape": "\u58eb",
       "patternDescription": "Scholar pattern representing learning",
       "focus": "Sitting stance, upset punches, and knife-hand strikes",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=IYjaMnn8IsM",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "joong-gun",
@@ -327,11 +520,13 @@
       "beltColor": "Blue",
       "beltRank": "4th Kup",
       "meaning": "Named after patriot Ahn Joong-Gun who assassinated Hiro-Bumi Ito",
-      "diagram": "⚔️",
-      "patternShape": "工",
+      "diagram": "\u2694\ufe0f",
+      "patternShape": "\u5de5",
       "patternDescription": "Pattern representing 32 movements for his age at death",
       "focus": "Twisting stance, twin vertical punches, and back fist strikes",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=79vzu3Hgm3U",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "toi-gye",
@@ -340,11 +535,13 @@
       "beltColor": "Blue with Red Stripe",
       "beltRank": "3rd Kup",
       "meaning": "Pen name of the noted scholar Yi Hwang (16th century)",
-      "diagram": "🏔️",
-      "patternShape": "士",
+      "diagram": "\ud83c\udfd4\ufe0f",
+      "patternShape": "\u58eb",
       "patternDescription": "Scholar pattern representing his 37 years of development",
       "focus": "X-stance, circular blocks, and reverse knife-hand strikes",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=dXySPEHjwW0",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "hwa-rang",
@@ -353,11 +550,13 @@
       "beltColor": "Red",
       "beltRank": "2nd Kup",
       "meaning": "Named after the Hwa-Rang youth group of the Silla Dynasty",
-      "diagram": "🌸",
-      "patternShape": "工",
+      "diagram": "\ud83c\udf38",
+      "patternShape": "\u5de5",
       "patternDescription": "Pattern representing the youth group",
       "focus": "Low stance, elbow strikes, and knee strikes",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=1oZjONeEBkQ",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "choong-moo",
@@ -366,11 +565,13 @@
       "beltColor": "Red with Black Stripe",
       "beltRank": "1st Kup",
       "meaning": "Named after Admiral Yi Soon-Sin who invented the first armored battleship",
-      "diagram": "⚓",
-      "patternShape": "十",
+      "diagram": "\u2693",
+      "patternShape": "\u5341",
       "patternDescription": "Pattern ending with left hand attack representing his unfinished work",
       "focus": "Bending ready stance, upward kicks, and flying techniques",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=ivdVFnOXu3A",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "kwang-gae",
@@ -379,11 +580,13 @@
       "beltColor": "Black",
       "beltRank": "1st Dan",
       "meaning": "Named after Kwang-Gae-Toh-Wang, 19th king of the Koguryo Dynasty",
-      "diagram": "👑",
-      "patternShape": "士",
+      "diagram": "\ud83d\udc51",
+      "patternShape": "\u58eb",
       "patternDescription": "Pattern representing expansion and recovery of lost territories",
       "focus": "Wide stance, palm heel strikes, and pushing techniques",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=9QcmRQWUxao",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "po-eun",
@@ -392,11 +595,13 @@
       "beltColor": "Black",
       "beltRank": "1st Dan",
       "meaning": "Pseudonym of loyal subject Chong Mong-Chu (14th century)",
-      "diagram": "📜",
-      "patternShape": "一",
+      "diagram": "\ud83d\udcdc",
+      "patternShape": "\u4e00",
       "patternDescription": "Straight line representing his unerring loyalty to the king",
       "focus": "Fixed stance, side elbow thrust, and horizontal strikes",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=Y0aqGAcY2ac",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "ge-baek",
@@ -405,11 +610,13 @@
       "beltColor": "Black",
       "beltRank": "1st Dan",
       "meaning": "Named after Ge-Baek, a great general from the Baek Je Dynasty",
-      "diagram": "⚡",
-      "patternShape": "丨",
+      "diagram": "\u26a1",
+      "patternShape": "\u4e28",
       "patternDescription": "Straight line representing severe and strict military discipline",
       "focus": "Close stance, slow motion techniques, and simultaneous blocks",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=GLXdxtZ93WI",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "eui-am",
@@ -418,11 +625,13 @@
       "beltColor": "Black",
       "beltRank": "2nd Dan",
       "meaning": "Pseudonym of Son Byong Hi, leader of Korean Independence Movement",
-      "diagram": "✊",
-      "patternShape": "山",
+      "diagram": "\u270a",
+      "patternShape": "\u5c71",
       "patternDescription": "Mountain shape representing his spirit",
       "focus": "Shifted stance, U-shaped blocks, and circular techniques",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=0VsXxqtDfQg",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "choong-jang",
@@ -431,11 +640,13 @@
       "beltColor": "Black",
       "beltRank": "2nd Dan",
       "meaning": "Pseudonym of Kim Duk Ryang, a great general and poet",
-      "diagram": "🎭",
-      "patternShape": "工",
+      "diagram": "\ud83c\udfad",
+      "patternShape": "\u5de5",
       "patternDescription": "Pattern ending with left hand attack representing his tragic death",
       "focus": "Bent wrist strikes, pressing blocks, and crescent kicks",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=3W25EELkbfQ",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "juche",
@@ -444,11 +655,13 @@
       "beltColor": "Black",
       "beltRank": "2nd Dan",
       "meaning": "Philosophical idea that man is the master of everything",
-      "diagram": "🔥",
-      "patternShape": "山",
+      "diagram": "\ud83d\udd25",
+      "patternShape": "\u5c71",
       "patternDescription": "Mountain shape representing the Baekdu Mountain",
       "focus": "Overlapping kicks, jumping techniques, and combination attacks",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=AvggWswVP9c",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "sam-il",
@@ -457,11 +670,13 @@
       "beltColor": "Black",
       "beltRank": "3rd Dan",
       "meaning": "Historical date of Korean Independence Movement (March 1, 1919)",
-      "diagram": "🇰🇷",
-      "patternShape": "卍",
+      "diagram": "\ud83c\uddf0\ud83c\uddf7",
+      "patternShape": "\u534d",
       "patternDescription": "Pattern representing the revolutionary spirit",
       "focus": "Waving techniques, circular motions, and rhythmic patterns",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=7KqbZ6G3-3k",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "yoo-sin",
@@ -470,11 +685,13 @@
       "beltColor": "Black",
       "beltRank": "3rd Dan",
       "meaning": "Named after General Kim Yoo Sin, unified three kingdoms of Korea",
-      "diagram": "🕊️",
-      "patternShape": "十",
+      "diagram": "\ud83d\udd4a\ufe0f",
+      "patternShape": "\u5341",
       "patternDescription": "Pattern representing unification",
       "focus": "Flexible stances, flowing movements, and continuous techniques",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=Hh78kUHoTxA",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "choi-yong",
@@ -483,11 +700,13 @@
       "beltColor": "Black",
       "beltRank": "3rd Dan",
       "meaning": "Named after General Choi Yong, premier and commander-in-chief",
-      "diagram": "🛡️",
-      "patternShape": "工",
+      "diagram": "\ud83d\udee1\ufe0f",
+      "patternShape": "\u5de5",
       "patternDescription": "Pattern representing loyalty and patriotism",
       "focus": "Strong linear movements, powerful strikes, and stable stances",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=UGcbCeQyksY",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "yong-gae",
@@ -496,11 +715,13 @@
       "beltColor": "Black",
       "beltRank": "4th Dan",
       "meaning": "Named after famous general during Koguryo Dynasty",
-      "diagram": "🌊",
-      "patternShape": "士",
+      "diagram": "\ud83c\udf0a",
+      "patternShape": "\u58eb",
       "patternDescription": "Pattern representing his aggressive battles",
       "focus": "Aggressive attacks, rapid combinations, and powerful kicks",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=9WaIlVkCWDM",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "ul-ji",
@@ -509,11 +730,13 @@
       "beltColor": "Black",
       "beltRank": "4th Dan",
       "meaning": "Named after General Ul-Ji Moon Dok who defended Korea against Chinese",
-      "diagram": "🏹",
-      "patternShape": "士",
+      "diagram": "\ud83c\udff9",
+      "patternShape": "\u58eb",
       "patternDescription": "Pattern representing his skillful tactics",
       "focus": "Deceptive movements, tactical positioning, and counter-attacks",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=GKMhqmzG1y8",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "moon-moo",
@@ -522,11 +745,13 @@
       "beltColor": "Black",
       "beltRank": "4th Dan",
       "meaning": "Named after 30th king of Silla Dynasty",
-      "diagram": "👑",
-      "patternShape": "一",
+      "diagram": "\ud83d\udc51",
+      "patternShape": "\u4e00",
       "patternDescription": "Pattern representing his death and burial at sea",
       "focus": "Graceful movements, flowing transitions, and circular defense",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=nnKNrv_sWRQ",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "so-san",
@@ -535,11 +760,13 @@
       "beltColor": "Black",
       "beltRank": "5th Dan",
       "meaning": "Pseudonym of Choi Hyong Ung, great monk during Yi Dynasty",
-      "diagram": "🙏",
-      "patternShape": "山",
+      "diagram": "\ud83d\ude4f",
+      "patternShape": "\u5c71",
       "patternDescription": "Mountain pattern representing his monastic life",
       "focus": "Endurance techniques, long combinations, and spiritual focus",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=neev_YAAgDQ",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "se-jong",
@@ -548,11 +775,13 @@
       "beltColor": "Black",
       "beltRank": "5th Dan",
       "meaning": "Named after greatest Korean king, inventor of Korean alphabet",
-      "diagram": "🔠",
-      "patternShape": "王",
+      "diagram": "\ud83d\udd20",
+      "patternShape": "\u738b",
       "patternDescription": "King pattern representing his majesty",
       "focus": "Precise movements, intellectual approach, and strategic positioning",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=KbLf1KELSzo",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     },
     {
       "id": "tong-il",
@@ -561,11 +790,13 @@
       "beltColor": "Black",
       "beltRank": "6th Dan",
       "meaning": "Represents the unification of Korea which has been divided since 1945",
-      "diagram": "☮️",
-      "patternShape": "一",
+      "diagram": "\u262e\ufe0f",
+      "patternShape": "\u4e00",
       "patternDescription": "Straight line representing unified Korea",
       "focus": "Unified techniques, harmonious movements, and complete mastery",
-      "movements": []
+      "movements": [],
+      "videoUrl": "https://www.youtube.com/watch?v=yNmgJFwstMM",
+      "videoSource": "ITFtuls (youtube.com/user/ITFtuls) \u2014 unverified against official ITF UK syllabus, community-sourced pattern demonstration"
     }
   ]
 }
