@@ -1,68 +1,54 @@
-// imports
 import { useState } from 'react'
+import { Footprints, Hand, LayoutGrid, Shield, Swords, Wind, Zap } from 'lucide-react'
+
 import { TechniquesHero } from '../components/TechniquesPage/TechniquesHero'
 import { CategoryNavigation } from '../components/TechniquesPage/CategoryNavigation'
 import { TechniquesOverview } from '../components/TechniquesPage/TechniquesOverview'
-import { StancesCategory } from '../components/TechniquesPage/categories/StancesCategory'
-import { StrikesCategory } from '../components/TechniquesPage/categories/StrikesCategory'
-import { BlocksCategory } from '../components/TechniquesPage/categories/BlocksCategory'
-import { KicksCategory } from '../components/TechniquesPage/categories/KicksCategory'
-import { ThrustsCategory } from '../components/TechniquesPage/categories/ThrustsCategory'
-import { PunchesCategory } from '../components/TechniquesPage/categories/PunchesCategory'
+import { TechniqueCategoryPage } from '../components/TechniquesPage/TechniqueCategoryPage'
+import stanceData from '../data/techniques/stance.json'
+import strikesData from '../data/techniques/strikes.json'
+import blocksData from '../data/techniques/blocks.json'
+import kickData from '../data/techniques/kick.json'
+import thrustsData from '../data/techniques/thrusts.json'
+import punchesData from '../data/techniques/punches.json'
 
-// Main Techniques Page Component
+// Navigation metadata (id/name/icon) plus the raw technique data lives here;
+// display copy (title/description/count) is derived from each category's
+// own data at the point of use instead of being duplicated and hand-typed,
+// since that duplication had already drifted out of sync (e.g. strikes'
+// Korean name).
+const CATEGORIES = [
+  { id: 'overview', name: 'Overview', icon: LayoutGrid },
+  { id: 'stances', name: 'Stances', icon: Footprints, data: stanceData },
+  { id: 'strikes', name: 'Strikes', icon: Swords, data: strikesData },
+  { id: 'blocks', name: 'Blocks', icon: Shield, data: blocksData },
+  { id: 'kicks', name: 'Kicks', icon: Zap, data: kickData },
+  { id: 'thrusts', name: 'Thrusts', icon: Wind, data: thrustsData },
+  { id: 'punches', name: 'Punches', icon: Hand, data: punchesData },
+]
+
 export const Techniques = () => {
   const [currentCategory, setCurrentCategory] = useState('overview')
 
-  // Category configuration
-  const categories = [
-    { id: 'overview', name: 'Overview' },
-    { id: 'stances', name: 'Stances' },
-    { id: 'strikes', name: 'Strikes'},
-    { id: 'blocks', name: 'Blocks'},
-    { id: 'kicks', name: 'Kicks'},
-    { id: 'thrusts', name: 'Thrusts'},
-    { id: 'punches', name: 'Punches' }
-  ]
-
-  // Render current category component
-  const renderCurrentCategory = () => {
-    switch (currentCategory) {
-      case 'overview':
-        return <TechniquesOverview onCategorySelect={setCurrentCategory} />
-      case 'stances':
-        return <StancesCategory />
-      case 'strikes':
-        return <StrikesCategory />
-      case 'blocks':
-        return <BlocksCategory />
-      case 'kicks':
-        return <KicksCategory />
-      case 'thrusts':
-        return <ThrustsCategory />
-      case 'punches':
-        return <PunchesCategory />
-      default:
-        return <TechniquesOverview onCategorySelect={setCurrentCategory} />
-    }
-  }
+  const selected = CATEGORIES.find((category) => category.id === currentCategory)
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
       <TechniquesHero />
-      
-      {/* Sticky Category Navigation */}
+
       <CategoryNavigation
-        categories={categories}
+        categories={CATEGORIES}
         currentCategory={currentCategory}
         onCategoryChange={setCurrentCategory}
       />
-      
-      {/* Dynamic Content Area with Smooth Transitions */}
+
       <main className="transition-all duration-300 ease-in-out">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {renderCurrentCategory()}
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          {currentCategory === 'overview' || !selected?.data ? (
+            <TechniquesOverview categories={CATEGORIES} onCategorySelect={setCurrentCategory} />
+          ) : (
+            <TechniqueCategoryPage data={selected.data} />
+          )}
         </div>
       </main>
     </div>
