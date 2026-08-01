@@ -20,8 +20,7 @@
   },
   "beltLevels": [
     {
-      "belt": "White Belt",
-      "beltColor": "from-gray-300 to-gray-900",
+      "belt": "White",
       "techniques": [
         {
           "korean": "Kaunde AnPalmok Makgi",
@@ -158,8 +157,7 @@
       ]
     },
     {
-      "belt": "White Belt with Yellow Stripe",
-      "beltColor": "from-yellow-300 to-yellow-400",
+      "belt": "White with Yellow Stripe",
       "techniques": [
         {
           "korean": "Palmok Daebi Makgi",
@@ -186,8 +184,7 @@
       ]
     },
     {
-      "belt": "Yellow Belt",
-      "beltColor": "from-yellow-400 to-yellow-500",
+      "belt": "Yellow",
       "techniques": [
         {
           "korean": "Chookyo Makgi",
@@ -258,8 +255,7 @@
       ]
     },
     {
-      "belt": "Yellow Belt with Green Stripe",
-      "beltColor": "from-yellow-400 to-green-500",
+      "belt": "Yellow with Green Stripe",
       "techniques": [
         {
           "korean": "Hechyo Makgi",
@@ -286,8 +282,7 @@
       ]
     },
     {
-      "belt": "Green Belt",
-      "beltColor": "from-green-500 to-green-600",
+      "belt": "Green",
       "techniques": [
         {
           "korean": "Dollimyo Makgi",
@@ -314,8 +309,7 @@
       ]
     },
     {
-      "belt": "Green Belt with Blue Stripe",
-      "beltColor": "from-green-500 to-blue-500",
+      "belt": "Green with Blue Stripe",
       "techniques": [
         {
           "korean": "Sonbadak Golcho Makgi",
@@ -386,8 +380,7 @@
       ]
     },
     {
-      "belt": "Blue Belt",
-      "beltColor": "from-blue-500 to-blue-600",
+      "belt": "Blue",
       "techniques": [
         {
           "korean": "Sonkal Dung Makgi",
@@ -502,8 +495,7 @@
       ]
     },
     {
-      "belt": "Blue Belt with Red Stripe",
-      "beltColor": "from-blue-500 to-red-500",
+      "belt": "Blue with Red Stripe",
       "techniques": [
         {
           "korean": "Kyocha Joomok Noollo Makgi",
@@ -574,8 +566,7 @@
       ]
     },
     {
-      "belt": "Red Belt",
-      "beltColor": "from-red-500 to-red-700",
+      "belt": "Red",
       "techniques": [
         {
           "korean": "Sonbadak Miro Makgi",

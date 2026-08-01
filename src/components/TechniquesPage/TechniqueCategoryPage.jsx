@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
+import { getBeltColorClass } from '@/lib/beltColors'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { TechniqueModal } from './TechniqueModal'
@@ -56,8 +57,8 @@ export const TechniqueCategoryPage = ({ data }) => {
                 >
                   <div
                     className={cn(
-                      'absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-linear-to-r px-6 py-2 text-sm font-bold uppercase tracking-wide text-black shadow-md',
-                      beltLevel.beltColor
+                      'absolute -top-4 left-1/2 -translate-x-1/2 rounded-full border-2 px-6 py-2 text-sm font-bold uppercase tracking-wide shadow-md',
+                      getBeltColorClass(beltLevel.belt)
                     )}
                   >
                     {beltLevel.belt}

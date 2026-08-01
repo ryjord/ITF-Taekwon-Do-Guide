@@ -20,8 +20,7 @@
   },
   "beltLevels": [
     {
-      "belt": "White Belt",
-      "beltColor": "from-gray-300 to-gray-900",
+      "belt": "White",
       "techniques": [
         {
           "korean": "Charyot Sogi",
@@ -180,8 +179,7 @@
       ]
     },
     {
-      "belt": "White Belt with Yellow Stripe",
-      "beltColor": "from-yellow-300 to-yellow-500",
+      "belt": "White with Yellow Stripe",
       "techniques": [
         {
           "korean": "Niunja Sogi",
@@ -230,8 +228,7 @@
       ]
     },
     {
-      "belt": "Green Belt",
-      "beltColor": "from-green-500 to-green-700",
+      "belt": "Green",
       "techniques": [
         {
           "korean": "Gojung Sogi",
@@ -302,8 +299,7 @@
       ]
     },
     {
-      "belt": "Green Belt with Blue Stripe",
-      "beltColor": "from-green-500 to-blue-500",
+      "belt": "Green with Blue Stripe",
       "techniques": [
         {
           "korean": "Kyocha Sogi",
@@ -330,8 +326,7 @@
       ]
     },
     {
-      "belt": "Blue Belt",
-      "beltColor": "from-blue-500 to-blue-700",
+      "belt": "Blue",
       "techniques": [
         {
           "korean": "Moa Junbi Sogi B",
@@ -402,8 +397,7 @@
       ]
     },
     {
-      "belt": "Red Belt",
-      "beltColor": "from-red-500 to-red-700",
+      "belt": "Red",
       "techniques": [
         {
           "korean": "Moa Junbi Sogi C",

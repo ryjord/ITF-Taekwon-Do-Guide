@@ -20,8 +20,7 @@
   },
   "beltLevels": [
     {
-      "belt": "White Belt with Yellow Stripe",
-      "beltColor": "from-yellow-300 to-yellow-400",
+      "belt": "White with Yellow Stripe",
       "techniques": [
         {
           "korean": "Bakat Sonnal Taerigi",
@@ -48,8 +47,7 @@
       ]
     },
     {
-      "belt": "Yellow Belt with Green Stripe",
-      "beltColor": "from-yellow-400 to-green-500",
+      "belt": "Yellow with Green Stripe",
       "techniques": [
         {
           "korean": "Sonkai Yop Taerigi",
@@ -98,8 +96,7 @@
       ]
     },
     {
-      "belt": "Green Belt",
-      "beltColor": "from-green-500 to-green-600",
+      "belt": "Green",
       "techniques": [
         {
           "korean": "Anuro Sonkai Taerigi",
@@ -126,8 +123,7 @@
       ]
     },
     {
-      "belt": "Green Belt with Blue Stripe",
-      "beltColor": "from-green-500 to-blue-500",
+      "belt": "Green with Blue Stripe",
       "techniques": [
         {
           "korean": "Ap Palkup Taerigi",
@@ -154,8 +150,7 @@
       ]
     },
     {
-      "belt": "Blue Belt",
-      "beltColor": "from-blue-500 to-blue-600",
+      "belt": "Blue",
       "techniques": [
         {
           "korean": "Wi Palkup Taerigi",
@@ -182,8 +177,7 @@
       ]
     },
     {
-      "belt": "Blue Belt with Red Stripe",
-      "beltColor": "from-blue-500 to-red-500",
+      "belt": "Blue with Red Stripe",
       "techniques": [
         {
           "korean": "Yopdwi Taerigi",
@@ -210,8 +204,7 @@
       ]
     },
     {
-      "belt": "Red Belt",
-      "beltColor": "from-red-500 to-red-700",
+      "belt": "Red",
       "techniques": [
         {
           "korean": "Naeryo Taerigi",
