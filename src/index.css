@@ -217,28 +217,6 @@
   box-shadow: 0 0 10px hsl(var(--glow-color));
 }
 
-.navbar-link {
-  color: var(--foreground);
-  transition: all 200ms ease;
-  border-radius: 4px;
-  padding: 8px 12px;
-}
-
-.navbar-link:hover {
-  color: hsl(var(--text-hover));
-  background-color: hsl(var(--primary-hover));
-  text-shadow: 0 0 8px hsl(var(--glow-color));
-}
-
-.mobile-menu {
-  background-color: var(--background);
-  border: 1px solid var(--border);
-}
-
-.theme-transition * {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
 @keyframes float {
   0%, 100% { transform: translateY(0px) rotate(var(--tw-rotate, 0)); }
   50% { transform: translateY(-20px) rotate(var(--tw-rotate, 0)); }
