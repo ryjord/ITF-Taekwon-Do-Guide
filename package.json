@@ -1,4 +1,7 @@
 {
+  "name": "itf-taekwon-do-guide",
+  "version": "1.0.0",
+  "private": true,
   "type": "module",
   "devDependencies": {
     "@eslint/js": "^10.0.1",

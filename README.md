@@ -1,123 +1,123 @@
-# 🥋 ITF Taekwondo Guide
-
 <div align="center">
 
-*A modern, comprehensive digital guide to ITF Taekwondo - built with passion and precision*
+# ITF Taekwon-Do Guide
 
-![ITF Taekwondo](https://img.shields.io/badge/ITF-Taekwondo-red) 
-![React](https://img.shields.io/badge/React-18.2-blue) 
-![Vite](https://img.shields.io/badge/Vite-Build-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+A study companion for ITF Taekwon-Do students preparing for grading — patterns, techniques,
+terminology, history, and belt requirements in one place, with interactive quizzes to test
+retention.
 
-**Est. April 11th, 1955 • The Art of Foot and Fist**
+![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646cff?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-components-000000)
+![License](https://img.shields.io/badge/license-All_Rights_Reserved-red)
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-installation) • [Pages](#-pages)• [License](#-License)
+[Features](#features) · [Tech stack](#tech-stack) · [Getting started](#getting-started) · [Pages](#pages) · [Content sourcing](#content-sourcing) · [License](#license)
 
 </div>
 
 ## Overview
 
-The **ITF Taekwondo Guide** is a modern web application dedicated to preserving and teaching the traditional International Taekwondo Federation (ITF) system. This comprehensive digital guide provides interactive resources for students, instructors, and enthusiasts worldwide.
+ITF Taekwon-Do Guide is a reference and revision app for students of the International
+Taekwon-Do Federation (ITF) system — the style founded by General Choi Hong Hi in 1955. It
+brings together the 26 patterns (Tul), 78 techniques across six categories, 90 terminology
+terms, the belt grading structure, and 40 quizzes across six game types, so a student can look
+something up or drill themselves on it without digging through a syllabus PDF.
+
+![Home page](docs/screenshots/home.jpg)
 
 ## Features
 
-### **Modern Design**
-- **Dark/Light Theme** - Automatic theme switching with persistent user preferences
-- **Responsive Layout** - Flawless experience across all devices
-- **Smooth Animations** - Elegant hover effects and page transitions
-- **Color-coded Sections** - Intuitive visual organization using ITF branding
+**Patterns (Tul)** — all 26 patterns from Chon-Ji through Tong-Il, plus the two foundational
+Saju drills, with belt level, movement count, and a linked video demonstration for each.
 
-### **Comprehensive Content**
-- **24 Patterns (Tul)** - Step-by-step guides from Chon-Ji to Tong-Il
-- **100+ Techniques** - Detailed breakdowns of strikes, blocks, and stances
-- **Interactive Quiz** - Test your knowledge with engaging challenges
-- **Training Drills** - Practical combinations and footwork exercises
-- **Korean Terminology** - Complete vocabulary with pronunciation guides
-- **Rich History** - ITF heritage and General Choi's legacy
+**Techniques** — 78 techniques across stances, blocks, strikes, thrusts, punches, and kicks,
+grouped by the belt level they're introduced at, with Korean names and descriptions.
 
-### **User Experience**
-- **Instant Navigation** - Client-side routing for seamless browsing
-- **Smart Navigation** - Priority-based menu with dropdown organization
-- **Mobile-Optimized** - Touch-friendly interfaces and mobile-specific layouts
-- **Progressive Disclosure** - Learning-optimised content structure
+**Terminology** — 90 Korean terms across 18 categories, with audio pronunciation and a
+searchable, filterable table.
 
-## Tech Stack
+**History** — a chronological timeline of the ITF's founding, key figures, and its evolution
+since the 2002 organisational split.
 
-| Layer | Technology | Purpose |
-|-------|------------|---------|
-| **Frontend** | React 18 + TypeScript | Modern component-based UI |
-| **Build Tool** | Vite | Lightning-fast development |
-| **Routing** | React Router DOM | Single-page application navigation |
-| **Styling** | Tailwind CSS | Utility-first responsive design |
-| **Icons** | Heroicons + Emojis | Visual consistency and accessibility |
-| **State** | React Hooks | Local component state management |
+**Grading & Belts** — what each belt colour represents, a grade-by-grade breakdown from 10th
+kup to 1st dan and above, and what's actually tested at a grading.
 
-## Installation
+![Grading page](docs/screenshots/grading.png)
+
+**Quiz hub** — 40 quizzes across 6 game types (multiple choice, word search, translation,
+crossword, flashcards, and matching), filterable by category, game type, and difficulty, with
+a progress dashboard and unlockable achievements tracked locally in the browser.
+
+![Quiz hub](docs/screenshots/quiz.png)
+
+**Patterns matrix** — a filterable library view of all patterns organised by belt level.
+
+![Patterns page](docs/screenshots/patterns.png)
+
+Every page supports light and dark themes, and is responsive from mobile to desktop.
+
+## Tech stack
+
+| Layer              | Technology                                  |
+| ------------------- | -------------------------------------------- |
+| Framework           | React 19 + Vite 7                            |
+| Routing             | React Router 7                               |
+| Styling             | Tailwind CSS 4                               |
+| Component library   | shadcn/ui on Radix UI primitives             |
+| Icons               | lucide-react                                 |
+| State               | Zustand (with `persist` for saved progress)  |
+| Fonts               | Geist Variable                               |
+
+## Getting started
 
 ### Prerequisites
-- Node.js 16+ 
-- npm or yarn
 
-### Quick Start
+- Node.js 20.19+ (or 22.12+)
+- npm
+
+### Setup
+
 ```bash
-# For educational purposes. will not work for others though.
-
-# Clone the repository
-git clone https://github.com/xmrenigmax/itf-taekwondo-guide.git
-
-# Navigate to project directory
-cd itf-taekwondo-guide
-
-# Install dependencies
+git clone https://github.com/ryjord/ITF-Taekwon-Do-Guide.git
+cd ITF-Taekwon-Do-Guide
 npm install
-
-# Start development server
 npm run dev
 ```
 
-## pages
-| Page | Description | Status |
-|-------|------------|---------|
-| **Home** | Hero, Features & Philosophy | ✅ Complete |
-| **Techniques** | Comprehensive technique library | 🚧 In Progress |
-| **Patterns** | 24 ITF patterns with animations | 🚧 In Progress|
-| **Drills** | Training combinations and exercises | 🚧 In Progress|
-| **Terminology** | Korean vocabulary and commands | 🚧 In Progress |
-| **History** | ITF heritage and timeline | 🚧 In Progress |
-| **Quiz** | Interactive knowledge testing | 🚧 In Progress |
+Other scripts:
 
-## Design Systems
-
-### Colour Palette
-```css
-/* Dark Mode (Default) */
---primary: #991b1b;    /* Dark Red */
---background: #000000;  /* Black */
---foreground: #ffffff;  /* White */
-
-/* Light Mode */
---primary: #dc2626;    /* Light Red */  
---background: #f3f4f6; /* Light Gray */
---foreground: #000000; /* Black */
+```bash
+npm run build     # production build
+npm run preview   # preview the production build locally
+npm run lint       # run eslint
 ```
 
-### Typography
+## Pages
 
-- **Headings:** Bold, impactful with primary colour accents
-- **Body:** Readable, accessible contrast ratios
-- **Korean:** Romanisation to ensure readability
+| Route          | Description                                                       |
+| --------------- | -------------------------------------------------------------------- |
+| `/`             | Home — hero, feature highlights, and philosophy                     |
+| `/techniques`   | Technique library by category and belt level                        |
+| `/patterns`     | Pattern matrix and individual pattern detail pages                   |
+| `/terminology`  | Searchable Korean terminology table with audio                       |
+| `/history`      | ITF history timeline                                                 |
+| `/grading`      | Belt meanings, grade-by-grade progression, and grading structure     |
+| `/quiz`         | Quiz hub, all six game types, and the progress dashboard             |
+
+## Content sourcing
+
+Pattern, technique, and terminology data is compiled from publicly available ITF-affiliated
+resources. The grading criteria and belt-colour meanings on the `/grading` page are sourced
+from General Choi Hong Hi's writings and independent ITF-affiliated publications, with sources
+linked directly on the page — individual ITF schools set their own exact syllabus and
+requirements, so this content is general guidance, not an official syllabus. It should not be
+treated as a substitute for instruction from a qualified ITF instructor.
+
+Pattern video links point to third-party YouTube demonstrations and are provided for reference;
+they are not officially affiliated with or endorsed by the video creators.
 
 ## License
 
-This project is **All Rights Reserved**. The source code is provided for viewing and educational purposes only. 
-
-**You may:**
-- View and learn from the code structure
-- Use concepts for personal educational projects
-
-**You may not:**
-- Copy, modify, or distribute the source code
-- Use this code in your own projects
-- Create derivative works
-
-This project is shared with the ITF Taekwondo community to benefit practitioners worldwide.
+All rights reserved — see [LICENSE](LICENSE). The source is available to view for educational
+reference; it isn't licensed for reuse, modification, or redistribution.

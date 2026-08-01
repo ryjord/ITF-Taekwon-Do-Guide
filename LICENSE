@@ -1,23 +1,24 @@
-# Personal License
+All Rights Reserved
 
-Copyright (c) 2025 xmrenigmax
+Copyright (c) 2026 Riley Jordan (xmrenigmax)
 
-All rights reserved.
+This repository and its contents are made available for viewing and educational
+reference only. No license is granted to copy, modify, distribute, sublicense,
+or create derivative works from this source code, in whole or in part, without
+prior written permission from the copyright holder.
 
-This project and its source code are provided for viewing and educational purposes only.
+You may:
+  - View and read the source code
+  - Learn from the architecture, patterns, and techniques used in this project
 
-## YOU MAY:
-- View the source code
-- Learn from the code structure and design patterns
-- Use concepts and ideas for personal educational projects
+You may not, without prior written permission:
+  - Copy, fork for redistribution, or reuse this source code in another project
+  - Modify and redistribute this code, in original or derivative form
+  - Use this code, in whole or in part, for commercial purposes
 
-## YOU MAY NOT:
-- Copy, modify, or distribute the source code
-- Use this code in your own projects
-- Create derivative works based on this code
-- Use this code for commercial purposes
+The content in this project relating to ITF Taekwon-Do belt meanings, grading
+structure, and pattern/technique information is compiled from publicly
+available sources for educational purposes and is not affiliated with, or
+endorsed by, any official ITF governing body.
 
-This project is the intellectual property of xmrenigmax and is shared for the ITF Taekwondo 
-community's benefit. Unauthorized use, reproduction, or distribution is prohibited.
-
-For permissions beyond the scope of this license, please contact the author.
+For permissions beyond the scope of this license, contact the copyright holder.
