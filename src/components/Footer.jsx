@@ -148,7 +148,8 @@ export const Footer = () => {
           {/* Resources Section */}
           {renderLinkSection([
             { name: "Terminology", href: "/terminology" },
-            { name: "History", href: "/history" }
+            { name: "History", href: "/history" },
+            { name: "Grading", href: "/grading" }
           ], "Resources")}
         </div>
 

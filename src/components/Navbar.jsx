@@ -30,6 +30,7 @@ const MainNavItems = [
 const AdditionalNavItems = [
   { name: "Terminology", href: "/terminology" },
   { name: "Quiz", href: "/quiz" },
+  { name: "Grading", href: "/grading" },
 ]
 
 export const Navbar = () => {
