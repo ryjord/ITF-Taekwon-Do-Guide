@@ -9,6 +9,7 @@ import { StatTile } from '../QuizPage/StatTile'
 import { ACHIEVEMENT_ICONS, CATEGORY_ICONS, DEFAULT_ACHIEVEMENT_ICON } from '../QuizPage/quizIcons'
 import { useGlobalProgress } from '../../hooks/useGlobalProgess'
 import achievementsData from '../../data/achievements/achievements.json'
+import categoriesData from '../../data/quiz/QuizCategories.json'
 
 const CATEGORY_NAMES = {
   terminology: 'Korean Terminology',
@@ -16,6 +17,8 @@ const CATEGORY_NAMES = {
   techniques: 'Techniques',
   history: 'History',
 }
+
+const GAME_TYPE_NAMES = Object.fromEntries(categoriesData.gameTypes.map((g) => [g.id, g.name]))
 
 const CategoryProgressBar = ({ category, games, points }) => {
   const Icon = CATEGORY_ICONS[category]
@@ -106,7 +109,7 @@ export const ProgressDashboard = () => {
         </h2>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
           {Object.entries(gamesCompleted).map(([gameType, count]) => (
-            <StatTile key={gameType} value={count} label={gameType.charAt(0).toUpperCase() + gameType.slice(1)} />
+            <StatTile key={gameType} value={count} label={GAME_TYPE_NAMES[gameType] || gameType} />
           ))}
         </div>
       </section>
